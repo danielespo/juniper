@@ -8,6 +8,9 @@ from itertools import combinations
 # 1.1: networkX set(G) likes creating a fake node 0 which we have to get rid of
 # I was not getting rid of it and hence it kept picking 0 and well, stalling
 
+# Notes from yesterday:
+#   -> if it's getting stuck you might as well pause it, try that?
+
 def read_dimacs(filename):
     clauses = []
     with open(filename, 'r') as file:
@@ -30,26 +33,26 @@ def read_dimacs(filename):
                     clauses.append(clause)
     return num_vars, clauses
 
+# Helper functions for WSAT
+
+def evaluate_clause(clause, assignment):
+    return any(
+        (var > 0 and assignment.get(abs(var), False)) or
+        (var < 0 and not assignment.get(abs(var), False))
+        for var in clause
+    )
+
+def get_unsatisfied_clauses(clauses, assignment):
+    return [clause for clause in clauses if not evaluate_clause(clause, assignment)]
+
+def get_variables(clauses):
+    return set(abs(var) for clause in clauses for var in clause)
+
+def flip_variable(assignment, var):
+    assignment[var] = not assignment[var]
+    
 # A2 Algorithm
 def ColorWalkSAT(clauses, colors, max_tries, max_loops, p):
-
-    # Same as before
-    def evaluate_clause(clause, assignment):
-        return any(
-            (var > 0 and assignment.get(abs(var), False)) or
-            (var < 0 and not assignment.get(abs(var), False))
-            for var in clause
-        )
-
-    def get_unsatisfied_clauses(clauses, assignment):
-        return [clause for clause in clauses if not evaluate_clause(clause, assignment)]
-    
-    def get_variables(clauses):
-        return set(abs(var) for clause in clauses for var in clause)
-    
-    def flip_variable(assignment, var):
-        assignment[var] = not assignment[var]
-    
     color_vars = {}
     variables = list(get_variables(clauses))
     for var in variables:
@@ -57,7 +60,7 @@ def ColorWalkSAT(clauses, colors, max_tries, max_loops, p):
         if color is not None:
             color_vars.setdefault(color, []).append(var)
         else:
-            raise ValueError("All  variables should have a color, did NetworkX fail?")
+            raise ValueError("Not all variables have a color, did NetworkX fail?")
             #color_vars.setdefault('no_color', []).append(var) # Colorless variables, future version (have regular wsat in parallel)
 
     for _ in range(max_tries):
@@ -94,43 +97,51 @@ def ColorWalkSAT(clauses, colors, max_tries, max_loops, p):
                     vars_in_clause_and_color = [
                         abs(var) for var in clause if abs(var) in vars_in_color
                     ]
-                    var_to_flip = vars_in_clause_and_color
+                    var_to_flip = random.choice(vars_in_clause_and_color)
                 else:
-                    # Flip a variable that minimizes the number of unsatisfied clauses if flipped
-                    # now whiteboard version
-                    """
-                    Traceback (most recent call last):
-                    File "/home/dae/SatExperiments/juniper/wsatA2.py", line 176, in <module>
-                        main()
-                    File "/home/dae/SatExperiments/juniper/wsatA2.py", line 164, in main
-                        result = ColorWalkSAT(clauses, colors, max_tries, max_loops, probability)
-                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    File "/home/dae/SatExperiments/juniper/wsatA2.py", line 113, in ColorWalkSAT
-                        flip_variable(assignment, var_to_flip) #can either be random or not
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-                    File "/home/dae/SatExperiments/juniper/wsatA2.py", line 51, in flip_variable
-                        assignment[var] = not assignment[var]
-                                            ~~~~~~~~~~^^^^^
-                    TypeError: unhashable type: 'list'""" # TODO fix this obnoxious bug
-
                     break_counts = []
-                    for clause in unsat_clauses_in_color:
-                        for var in clause:
-                            if abs(var) in vars_in_color:
-                                assignment[abs(var)] = not assignment[abs(var)]
-                                break_counts.append((len(get_unsatisfied_clauses(clauses, assignment)), abs(var)))
-                                assignment[abs(var)] = not assignment[abs(var)]  # Undo the flip
-                    
+                    for var in vars_in_color:  # Iterate over all variables of this color
+                        # Flip the variable
+                        assignment[var] = not assignment[var]
+                        
+                        # Calculate how many clauses are unsatisfied after flipping
+                        unsatisfied_after_flip = len(get_unsatisfied_clauses(clauses, assignment))
+                        
+                        # Append the result to break_counts
+                        break_counts.append((unsatisfied_after_flip, var))
+                        
+                        # Undo the flip
+                        assignment[var] = not assignment[var]  
+
+                    # Select the variable with the least break value
                     min_break = min(break_counts, key=lambda x: x[0])
                     vars_with_min_break = [var for break_count, var in break_counts if break_count == min_break[0]]
                     var_to_flip = random.choice(vars_with_min_break)
-                
-                flip_variable(assignment, var_to_flip) #can either be random or not
+
+                flip_variable(assignment, var_to_flip)
 
     return "FAIL"
 
+def GenerateColors(clauses):
+
+    variables = set(abs(literal) for clause in clauses for literal in clause)
+   
+    G = nx.Graph()
+    G.add_nodes_from(variables)  # Variable adjacency graph
+
+    # Iff variables appear in the same clause, make an edge
+    for clause in clauses:
+        vars_in_clause = set(abs(literal) for literal in clause)
+        for var1, var2 in combinations(vars_in_clause, 2):
+            G.add_edge(var1, var2)
+
+    # Greedy coloring , returns dictionary of unique colors (0 to n) for each node
+    colors = nx.coloring.greedy_color(G, strategy='largest_first')
+    return colors
+
 def main():
     
+    # Parse user commands
     parser = argparse.ArgumentParser(description='ColoringWalksat SAT Solver.')
     parser.add_argument('-cnf', help='Path to SAT problem in .cnf format', required=True)
     parser.add_argument('-p', type=float, help='Probability float between 0 and 1', required=True)
@@ -143,42 +154,27 @@ def main():
     max_tries = args.max_tries
     max_loops = args.max_loops
 
-    # Read and preprocess the CNF file
+    # Read the CNF file
     try:
         num_vars, clauses = read_dimacs(filepath)
     except Exception as e:
         print(f"Error reading CNF file: {e}")
         raise ValueError
 
-    # Time how long preprocessing took in wall clock time
+    # Time preprocessing took in wall clock time
     start_color_time = time.perf_counter()
-
-    variables = set(abs(literal) for clause in clauses for literal in clause)
-
-    # Variable adjacency graph
-    G = nx.Graph()
-    G.add_nodes_from(variables)
-
-    # Edges between variables that appear together in a clause
-    for clause in clauses:
-        vars_in_clause = set(abs(literal) for literal in clause)
-        for var1, var2 in combinations(vars_in_clause, 2):
-            G.add_edge(var1, var2)
-
-    # Greedy coloring , returns dictionary of unique colors (0 to n) for each node
-    colors = nx.coloring.greedy_color(G, strategy='largest_first')
+    colors = GenerateColors(clauses)
     end_color_time = time.perf_counter()
-    
-    number_of_colors = len(set(colors.values()))
-    print("GraphColoring found "+ str(number_of_colors) +" colors")
     time_color = end_color_time - start_color_time
 
-    # Running WalkSAT
+    number_of_colors = len(set(colors.values()))
+    print("GraphColoring found "+ str(number_of_colors) +" colors")
+    
 
+    # Running WalkSAT
     start_colorwalksat_process_time = time.perf_counter()
     result = ColorWalkSAT(clauses, colors, max_tries, max_loops, probability)
     end_colorwalksat_process_time = time.perf_counter()
-
     time_colorwalksat = end_colorwalksat_process_time - start_colorwalksat_process_time
 
     if result != "FAIL":
