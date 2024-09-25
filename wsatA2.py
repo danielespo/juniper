@@ -5,11 +5,34 @@ import time
 import sys
 from itertools import combinations
 
-# 1.1: networkX set(G) likes creating a fake node 0 which we have to get rid of
-# I was not getting rid of it and hence it kept picking 0 and well, stalling
-
 # Notes from yesterday:
 #   -> if it's getting stuck you might as well pause it, try that?
+#   A: No need, works fine with George suggestion
+
+"""
+Approach #A2 with George/Dima suggested change: 
+
+1) Inside "for v in c" loop (i.e., iterate over different colors)
+2) Choose cc clauses from C (i.e., cc UNSAT clauses, each with one variable of v color)
+3) Follow the same algorithm as in WalkSAT to determine cc candidate variables to flip, 
+say set cc_candidates_to_flip
+4) In cc_candidates_to_flip, pick only variables of v color to flip 
+5) If you chose the greedy flip of wsat, instead pick the greediest of that color
+
+
+Commentary:
+
+The good thing about the color picking is that it's more variables
+Which is also its con, in the regular SKC Walksat code we really only care about
+3 or so variables if considering 3SAT problems. Of course, more options could also
+mean better options, but not always. 
+
+More options could also mean more time to make a decision, which for a SAT solver
+is not the best thing to spend doing.
+
+""" 
+
+# Helper functions for ColoringWSAT algorithm
 
 def read_dimacs(filename):
     clauses = []
@@ -33,8 +56,6 @@ def read_dimacs(filename):
                     clauses.append(clause)
     return num_vars, clauses
 
-# Helper functions for WSAT
-
 def evaluate_clause(clause, assignment):
     return any(
         (var > 0 and assignment.get(abs(var), False)) or
@@ -51,77 +72,6 @@ def get_variables(clauses):
 def flip_variable(assignment, var):
     assignment[var] = not assignment[var]
     
-# A2 Algorithm
-def ColorWalkSAT(clauses, colors, max_tries, max_loops, p):
-    color_vars = {}
-    variables = list(get_variables(clauses))
-    for var in variables:
-        color = colors.get(var, None)
-        if color is not None:
-            color_vars.setdefault(color, []).append(var)
-        else:
-            raise ValueError("Not all variables have a color, did NetworkX fail?")
-            #color_vars.setdefault('no_color', []).append(var) # Colorless variables, future version (have regular wsat in parallel)
-
-    for _ in range(max_tries):
-        variables = list(get_variables(clauses))
-        assignment = {var: random.choice([True, False]) for var in variables}
-
-        for _ in range(max_loops):
-            unsatisfied = get_unsatisfied_clauses(clauses, assignment)
-            
-            if not unsatisfied:
-                return assignment  # Found a satisfying assignment
-
-            # Iterate over colors
-            for color in color_vars:
-                
-                # Doing this again as a safety
-                unsatisfied = get_unsatisfied_clauses(clauses, assignment) # can check len unsat to see what's going on
-                vars_in_color = color_vars[color]
-                # Find unsatisfied clauses involving variables of this color
-                unsat_clauses_in_color = [
-                    clause for clause in unsatisfied
-                    if any(abs(var) in vars_in_color for var in clause)
-                ]
-
-                if not unsat_clauses_in_color:
-                    break  # No unsatisfied clauses involving this color
-
-                # Randomly select one unsatisfied clause which has this color present (at least one literal has the color)
-                clause = random.choice(unsat_clauses_in_color)
-
-                if random.random() < p:
-                    # Flip a the variable from the clause iff it also has the given color.
-                    # each clause has only one variable of each color
-                    vars_in_clause_and_color = [
-                        abs(var) for var in clause if abs(var) in vars_in_color
-                    ]
-                    var_to_flip = random.choice(vars_in_clause_and_color)
-                else:
-                    break_counts = []
-                    for var in vars_in_color:  # Iterate over all variables of this color
-                        # Flip the variable
-                        assignment[var] = not assignment[var]
-                        
-                        # Calculate how many clauses are unsatisfied after flipping
-                        unsatisfied_after_flip = len(get_unsatisfied_clauses(clauses, assignment))
-                        
-                        # Append the result to break_counts
-                        break_counts.append((unsatisfied_after_flip, var))
-                        
-                        # Undo the flip
-                        assignment[var] = not assignment[var]  
-
-                    # Select the variable with the least break value
-                    min_break = min(break_counts, key=lambda x: x[0])
-                    vars_with_min_break = [var for break_count, var in break_counts if break_count == min_break[0]]
-                    var_to_flip = random.choice(vars_with_min_break)
-
-                flip_variable(assignment, var_to_flip)
-
-    return "FAIL"
-
 def GenerateColors(clauses):
 
     variables = set(abs(literal) for clause in clauses for literal in clause)
@@ -138,6 +88,73 @@ def GenerateColors(clauses):
     # Greedy coloring , returns dictionary of unique colors (0 to n) for each node
     colors = nx.coloring.greedy_color(G, strategy='largest_first')
     return colors
+
+# A2 Algorithm
+def ColorWalkSAT(clauses, colors, max_tries, max_loops, p):
+    color_vars = {}
+    variables = list(get_variables(clauses))
+    for var in variables:
+        color = colors.get(var, None)
+        if color is not None:
+            color_vars.setdefault(color, []).append(var)
+        else:
+            raise ValueError("Not all variables have a color, did NetworkX fail?")
+
+    for _tries in range(max_tries):
+        variables = list(get_variables(clauses))
+        assignment = {var: random.choice([True, False]) for var in variables}
+
+        for _loops in range(max_loops):
+            unsatisfied = get_unsatisfied_clauses(clauses, assignment)
+            
+            if not unsatisfied: # found a satisfying assignment, return all
+                return assignment, _tries, _loops 
+
+            # Iterate over colors
+            for color in color_vars:
+                # the kanazawa alternative here is taking data from buffer
+                unsatisfied = get_unsatisfied_clauses(clauses, assignment) 
+
+                vars_in_color = color_vars[color]
+                # Find unsatisfied clauses involving variables 
+                # of this color
+                unsat_clauses_in_color = [
+                    clause for clause in unsatisfied
+                    if any(abs(var) in vars_in_color for var in clause)
+                ]
+
+                if not unsat_clauses_in_color:
+                    break  # No unsatisfied clauses involving this color awesome
+
+                clause = random.choice(unsat_clauses_in_color)
+
+                if random.random() < p:
+                    # Flip a the variable from the clause iff it also has the given color.
+                    # each clause has only one variable of each color
+                    vars_in_clause_and_color = [
+                        abs(var) for var in clause if abs(var) in vars_in_color
+                    ]
+                    var_to_flip = random.choice(vars_in_clause_and_color)
+                else:
+                    break_counts = []
+                    # This is now different: now we are iterating over
+                    # all of the variables of the color for the greedy move
+                    # and flipping that which has the least break val :)
+
+                    for var in vars_in_color:  
+                        assignment[var] = not assignment[var] # Flip the var
+                        unsatisfied_after_flip = len(get_unsatisfied_clauses(clauses, assignment))
+                        break_counts.append((unsatisfied_after_flip, var)) # Append result
+                        assignment[var] = not assignment[var] # Undo the flip
+
+                    # Select the variable with the least break value
+                    min_break = min(break_counts, key=lambda x: x[0])
+                    vars_with_min_break = [var for break_count, var in break_counts if break_count == min_break[0]]
+                    var_to_flip = random.choice(vars_with_min_break)
+
+                flip_variable(assignment, var_to_flip)
+
+    return "FAIL"
 
 def main():
     
@@ -169,7 +186,6 @@ def main():
 
     number_of_colors = len(set(colors.values()))
     print("GraphColoring found "+ str(number_of_colors) +" colors")
-    
 
     # Running WalkSAT
     start_colorwalksat_process_time = time.perf_counter()
@@ -179,9 +195,9 @@ def main():
 
     if result != "FAIL":
         SAT = 1
-        print(time_colorwalksat, time_color, SAT)
+        print(time_colorwalksat, time_color, result[1], result[2]) # Return tries and flips
     else:
-        print("No satisfying assignment found within the given limits.")
+        print(0,0,0,0) #No satisfying assignment found within the given limits.
 
 if __name__ == "__main__":
     main()

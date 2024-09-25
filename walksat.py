@@ -39,15 +39,15 @@ def walkSAT(clauses, max_tries, max_flips, p):
     def flip_variable(assignment, var):
         assignment[var] = not assignment[var]
 
-    for _ in range(max_tries):
+    for _Tries in range(max_tries):
         variables = list(get_variables(clauses))
         assignment = {var: random.choice([True, False]) for var in variables}
         
-        for _ in range(max_flips):
+        for _Flips in range(max_flips):
 
             unsatisfied = get_unsatisfied_clauses(clauses, assignment)
             if not unsatisfied:
-                return assignment  # Found a satisfying assignment
+                return assignment, _Tries, _Flips  # Found a satisfying assignment
             
             clause = random.choice(unsatisfied)
             if random.random() < p:
@@ -61,7 +61,6 @@ def walkSAT(clauses, max_tries, max_flips, p):
                     break_counts.append((len(get_unsatisfied_clauses(clauses, assignment)), abs(var)))
                     assignment[abs(var)] = not assignment[abs(var)]  # Undo the flip
                 
-                print(break_counts)
                 min_break = min(break_counts, key=lambda x: x[0])
                 vars_with_min_break = [var for break_count, var in break_counts if break_count == min_break[0]]
                 var_to_flip = random.choice(vars_with_min_break)
@@ -94,17 +93,12 @@ def main():
     start_walksat_time = time.perf_counter()
     result = walkSAT(clauses, max_tries, max_flips, probability)
     end_walksat_time = time.perf_counter()
-    print(clauses)
     time_walksat = end_walksat_time - start_walksat_time
 
     if result != "FAIL":
-        print("SAT:")
-        for var in sorted(result):
-            print(f"Variable {var} : {result[var]}")
+        print(time_walksat, result[1], result[2])
     else:
-        print("No satisfying assignment found within the given limits.")
-
-    print(f"WalkSAT completed in {time_walksat:.4f} seconds.")
+        print(0,0,0) # No satisfying assignment found within the given limits
 
 if __name__ == "__main__":
     main()
