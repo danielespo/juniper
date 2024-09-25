@@ -9,6 +9,15 @@ from itertools import combinations
 #   -> if it's getting stuck you might as well pause it, try that?
 #   A: No need, works fine with George suggestion
 
+# Notes from Sep 25 2024
+# - Currently benchmarking A2g / WSAT ; need to benchmark A1 to cmpr.
+# - Using uf50 , the smallest set of rand benchmarks I have; maybe wiser to
+# - Benchmark using the same CNF a large amount of times to get statistics?
+# - Well, the script is already running, so might as well look at results.db 
+# - And see wtf the output was
+# - Focusing on FPGA WSAT km10 implementation now
+# - Cheers, Dan
+
 """
 Approach #A2 with George/Dima suggested change: 
 

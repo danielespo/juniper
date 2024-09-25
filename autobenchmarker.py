@@ -116,8 +116,7 @@ def benchmark(cnf_folder_path, walksat_path, database_path, p_values):
             tasks.append((cnf_file, cnf_file_path, p, walksat_path, max_tries, max_flips, database_path))
 
     # Determine number of processes to use
-    # Am capping to 60% of CPUs but clearly this is already overwhelming
-    # Keeping it to 30% or so.
+    # Am capping to 60% of CPUs :)
     num_cpus = os.cpu_count()
     num_processes = max(1, int(num_cpus * 0.6))
     print(f"Using {num_processes} processes.")
