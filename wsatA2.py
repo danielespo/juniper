@@ -185,7 +185,7 @@ def main():
     time_color = end_color_time - start_color_time
 
     number_of_colors = len(set(colors.values()))
-    print("GraphColoring found "+ str(number_of_colors) +" colors")
+    #print("GraphColoring found "+ str(number_of_colors) +" colors") # NEEDS to be a Log file now!
 
     # Running WalkSAT
     start_colorwalksat_process_time = time.perf_counter()
@@ -197,7 +197,7 @@ def main():
         SAT = 1
         print(time_colorwalksat, time_color, result[1], result[2]) # Return tries and flips
     else:
-        print(0,0,0,0) #No satisfying assignment found within the given limits.
+        print(0,0,0,0) # No satisfying assignment found within the given limits
 
 if __name__ == "__main__":
     main()
