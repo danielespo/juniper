@@ -14,12 +14,12 @@ from itertools import combinations
 # - Using uf50 , the smallest set of rand benchmarks I have; maybe wiser to
 # - Benchmark using the same CNF a large amount of times to get statistics?
 # - Well, the script is already running, so might as well look at results.db 
-# - And see wtf the output was
+# - And see what the output was in terms of statistics
 # - Focusing on FPGA WSAT km10 implementation now
 # - Cheers, Dan
 
 """
-Approach #A2 with George/Dima suggested change: 
+Approach #A2 with George/Dima suggested changes: 
 
 1) Inside "for v in c" loop (i.e., iterate over different colors)
 2) Choose cc clauses from C (i.e., cc UNSAT clauses, each with one variable of v color)
