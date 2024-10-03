@@ -18,6 +18,9 @@ from itertools import combinations
 # - Focusing on FPGA WSAT km10 implementation now
 # - Cheers, Dan
 
+# Notes Oct 3
+# This is no longer "A2" this is now Algorithm B
+
 """
 Approach #A2 with George/Dima suggested changes: 
 
@@ -108,7 +111,8 @@ def ColorWalkSAT(clauses, colors, max_tries, max_loops, p):
             color_vars.setdefault(color, []).append(var)
         else:
             raise ValueError("Not all variables have a color, did NetworkX fail?")
-
+    print(len(color_vars))
+    
     for _tries in range(max_tries):
         variables = list(get_variables(clauses))
         assignment = {var: random.choice([True, False]) for var in variables}
@@ -120,6 +124,7 @@ def ColorWalkSAT(clauses, colors, max_tries, max_loops, p):
                 return assignment, _tries, _loops 
 
             # Iterate over colors
+            
             for color in color_vars:
                 # the kanazawa alternative here is taking data from buffer
                 unsatisfied = get_unsatisfied_clauses(clauses, assignment) 

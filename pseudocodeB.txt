@@ -1,0 +1,40 @@
+Algorithm B
+Input:
+- A CNF formula F
+- Parameters: max_tries ∈ N, max_loops ∈ N, p ∈ [0, 1]
+
+Output:
+- A satisfying assignment for F, or FAIL
+
+Begin
+1. Color Assignment
+	a. Construct graph G where each node represents a variable in F.
+	b. For each clause in F, add edges between all pairs of variables within the clause.
+	c. GreedyColoring(G) to assign a color to each variable.
+	d. Organize variables into color classes based on their assigned colors.
+
+2. Search for satisfying assignment:
+	a. Repeat for each try from 1 to max_tries:
+    	i. Initialize a random truth assignment σ for all variables in F.
+   	 
+    	ii. Repeat for each loop from 1 to max_loops:
+        	- If σ satisfies F, terminate and return σ.
+       	 
+        	- Identify the set of unsatisfied clauses under σ.
+       	 
+        	- For each color class C in the color assignment:
+            	1. Extract clauses from the unsatisfied set that include at least one variable from C.
+            	2. If no such clauses exist, proceed to the next color class.
+            	3. Randomly select a clause C' from the extracted clauses.
+           	 
+            	4. With probability p:
+                	a. Randomly flip the variable from C' that belongs to color class C.
+            	5. Else with probability 1-p:
+                	a. For each variable in F belonging to color class C, compute its break-count.
+                	b. Select the variable with the minimum break-count.
+           	 
+            	6. Flip the truth value of the selected variable in σ.
+           	 
+	b. If no satisfying assignment is found after max_tries, return FAIL.
+
+End
