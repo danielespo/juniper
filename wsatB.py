@@ -2,27 +2,13 @@ import random
 import argparse
 import networkx as nx
 import time
-import sys
 from itertools import combinations
 
-# Notes from yesterday:
-#   -> if it's getting stuck you might as well pause it, try that?
-#   A: No need, works fine with George suggestion
-
-# Notes from Sep 25 2024
-# - Currently benchmarking A2g / WSAT ; need to benchmark A1 to cmpr.
-# - Using uf50 , the smallest set of rand benchmarks I have; maybe wiser to
-# - Benchmark using the same CNF a large amount of times to get statistics?
-# - Well, the script is already running, so might as well look at results.db 
-# - And see what the output was in terms of statistics
-# - Focusing on FPGA WSAT km10 implementation now
-# - Cheers, Dan
-
-# Notes Oct 3
-# This is no longer "A2" this is now Algorithm B
+# Oct 3
+# File renamed to wsatB.py
 
 """
-Approach #A2 with George/Dima suggested changes: 
+Approach #B with George/Dima suggested changes: 
 
 1) Inside "for v in c" loop (i.e., iterate over different colors)
 2) Choose cc clauses from C (i.e., cc UNSAT clauses, each with one variable of v color)
@@ -33,7 +19,6 @@ say set cc_candidates_to_flip
 
 
 Commentary:
-
 The good thing about the color picking is that it's more variables
 Which is also its con, in the regular SKC Walksat code we really only care about
 3 or so variables if considering 3SAT problems. Of course, more options could also
@@ -197,9 +182,6 @@ def main():
     colors = GenerateColors(clauses)
     end_color_time = time.perf_counter()
     time_color = end_color_time - start_color_time
-
-    number_of_colors = len(set(colors.values()))
-    #print("GraphColoring found "+ str(number_of_colors) +" colors") # NEEDS to be a Log file now!
 
     # Running WalkSAT
     start_colorwalksat_process_time = time.perf_counter()
