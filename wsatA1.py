@@ -2,7 +2,7 @@ import random
 import argparse
 import networkx as nx
 from itertools import combinations
-
+import time
 # Helper functions as provided
 def read_dimacs(filename):
     clauses = []
@@ -58,13 +58,10 @@ def GenerateColors(clauses):
     colors = nx.coloring.greedy_color(G, strategy='largest_first')
     return colors
 
-def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
-    variables = list(get_variables(clauses))
 
-    color_vars = {}
-    for var in variables:
-        color = colors[var]
-        color_vars.setdefault(color, []).append(var)
+def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
+    flips = 0
+    variables = list(get_variables(clauses))
 
     for _try in range(max_tries):
         # Initialize a random assignment
@@ -73,9 +70,9 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
         for _loop in range(max_loops):
             unsat_clauses = get_unsatisfied_clauses(clauses, assignment)
             if not unsat_clauses:
-                return assignment  # Success
+                return assignment, _try, _loop, flips # Success
 
-            # Step 1: Choose cc UNSAT clauses (here we use all unsatisfied clauses)
+            # Step 1: Choose cc UNSAT clauses (here all unsatisfied clauses)
             cc = unsat_clauses
 
             # Step 2: Determine cc_candidates_to_flip
@@ -101,14 +98,12 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
             for x, break_count, color in cc_candidates_to_flip:
                 color_to_candidates.setdefault(color, []).append((x, break_count))
 
-            # Choose a color based on desired strategy
-            # For example, choose the color with the largest number of variables in cc_candidates_to_flip
+            # Choose the color with the largest number of variables in cc_candidates_to_flip
             selected_color = max(color_to_candidates.keys(), key=lambda c: len(color_to_candidates[c]))
 
             candidates_in_color = color_to_candidates[selected_color]
 
-            # Select variables to flip from the chosen color
-            # Let's pick variables with minimum break-count
+            # Select variables to flip from the chosen color with minimum break-count
             min_break_count = min(break_count for x, break_count in candidates_in_color)
             vars_with_min_break = [x for x, bc in candidates_in_color if bc == min_break_count]
 
@@ -121,11 +116,12 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
 
             # Flip the chosen variable
             flip_variable(assignment, var_to_flip)
+            flips += 1
 
     return "FAIL"
 
 def main():
-    parser = argparse.ArgumentParser(description='Algorithm A1 SAT Solver.')
+    parser = argparse.ArgumentParser(description='Algorithm A1 WSAT Solver.')
     parser.add_argument('-cnf', help='Path to SAT problem in .cnf format', required=True)
     parser.add_argument('-p', type=float, help='Probability float between 0 and 1', required=True)
     parser.add_argument('--max_tries', type=int, default=100, help='Maximum number of tries')
@@ -137,26 +133,27 @@ def main():
     max_tries = args.max_tries
     max_loops = args.max_loops
 
-    # Read the CNF file
     try:
         num_vars, clauses = read_dimacs(filepath)
     except Exception as e:
         print(f"Error reading CNF file: {e}")
         raise ValueError
-
-    # Generate colors using the provided GenerateColors function
+    
+    start_color_time = time.perf_counter()
     colors = GenerateColors(clauses)
+    end_color_time = time.perf_counter()
+    time_color = end_color_time - start_color_time
 
-    # Run Algorithm A1
+    start_colorwalksat_process_time = time.perf_counter()
     result = AlgorithmA1(clauses, colors, max_tries, max_loops, probability)
+    end_colorwalksat_process_time = time.perf_counter()
+    time_colorwalksat = end_colorwalksat_process_time - start_colorwalksat_process_time
 
     if result != "FAIL":
-        print("Satisfying assignment found:")
-        for var in sorted(result.keys()):
-            val = assignment_value = 1 if result[var] else 0
-            print(f"Variable {var} = {assignment_value}")
+        SAT = 1
+        print(time_colorwalksat, time_color, result[1], result[2], result[3]) # Return tries and flips
     else:
-        print("No satisfying assignment found within the given limits.")
+        print(0,0,0,0,0) # No satisfying assignment found within the given limits
 
 if __name__ == "__main__":
     main()

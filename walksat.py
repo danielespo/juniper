@@ -26,6 +26,7 @@ def read_dimacs(filename):
 
 # Regular WalkSAT with no frills
 def walkSAT(clauses, max_tries, max_flips, p):
+    flips = 0
     def evaluate_clause(clause, assignment):
         return any((var > 0 and assignment.get(abs(var), False)) or 
                    (var < 0 and not assignment.get(abs(var), False)) for var in clause)
@@ -47,7 +48,7 @@ def walkSAT(clauses, max_tries, max_flips, p):
 
             unsatisfied = get_unsatisfied_clauses(clauses, assignment)
             if not unsatisfied:
-                return assignment, _Tries, _Flips  # Found a satisfying assignment
+                return assignment, _Tries, _Flips, flips  # Found a satisfying assignment
             
             clause = random.choice(unsatisfied)
             if random.random() < p:
@@ -66,6 +67,7 @@ def walkSAT(clauses, max_tries, max_flips, p):
                 var_to_flip = random.choice(vars_with_min_break)
             
             flip_variable(assignment, var_to_flip)
+            flips += 1
 
     return "FAIL"
 
@@ -96,9 +98,9 @@ def main():
     time_walksat = end_walksat_time - start_walksat_time
 
     if result != "FAIL":
-        print(time_walksat, result[1], result[2])
+        print(time_walksat, result[1], result[2], result[3])
     else:
-        print(0,0,0) # No satisfying assignment found within the given limits
+        print(0,0,0,0) # No satisfying assignment found within the given limits
 
 if __name__ == "__main__":
     main()

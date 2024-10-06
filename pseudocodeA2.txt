@@ -1,4 +1,4 @@
-Algorithm A1 (F)
+Algorithm A2 (F)
 Input : A CNF formula F
 Parameters : Integers max-loops, max-tries; noise parameter p ∈ [0, 1]
 Output : A satisfying assignment for F , or FAIL
@@ -10,36 +10,31 @@ K ← the set of literals
 g ← Greedy-Color(G, K) // a dictionary of literals and their assigned colors
 clr ← the set of unique colors in g
 
-
-// Local Search
 for i ← 1 to max-tries do
 σ ← a randomly generated truth assignment for F
 
-for j ← 1 to max-loops do 
+for j ← 1 to max-loops do
 if σ satisfies F then return σ // success
 
-F <- all unsatisfied clauses under σ
+for k in clr do
+C ← unsatisfied clauses in F with at least one variable of color = k
 
-// Parallel Processing across Colors
-for each k in clr do
-f ← clauses in F with at least one variable of the current color k
-if f empty then continue // no unsat clauses for current color
-
-C ← an unsatisfied clause of f chosen at random
-if ∃ variable x ∈ C with break-count = 0 then
+if ∃ variable x ∈ C with break-count = 0 & color = k then
 v ← x // freebie move
 
 else
-
 With probability p: // random walk move
-v ← a variable in C chosen at random
+v ← a variable in C of color = k
 
 With probability 1 − p: // greedy move
-v ← a variable in C with the smallest break-count
-
-C' ← candidate clauses with v in C with color k and smallest break-count
-v ← variable from candidate clauses to flip
+v ← a variable in C of color = k with the smallest break-count
 Flip v in σ
 
 return FAIL // no satisfying assignment found
-end Walksat-Color 
+end A2 
+
+algorithm Greedy-Color(G, K);
+begin
+for v := v_1 to v_n do
+give vertex v the smallest possible color;
+end Greedy-Color 

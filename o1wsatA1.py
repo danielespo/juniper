@@ -3,7 +3,11 @@ import argparse
 import networkx as nx
 from itertools import combinations
 import time
-import concurrent.futures  # For parallelization
+import concurrent.futures  # Added for parallelization
+
+# This is entirely AI generated code except for the helper functions from before.
+# Done as an experiment to see how O1 Preview from OpenAI does
+# when given a novel problem to solve in algorithms.
 
 # Helper functions as provided
 def read_dimacs(filename):
@@ -64,12 +68,12 @@ def GenerateColors(clauses):
 def compute_break_count(x, clauses, assignment):
     """
     Computes the break count for a single variable.
-
+    
     Parameters:
     - x (int): The variable to flip.
     - clauses (list): The list of clauses in the CNF.
     - assignment (dict): The current variable assignments.
-
+    
     Returns:
     - tuple: (variable, break_count)
     """
@@ -80,10 +84,9 @@ def compute_break_count(x, clauses, assignment):
     num_new_unsat = sum(not evaluate_clause(c, local_assignment) for c in clauses)
     return (x, num_new_unsat)
 
-def AlgorithmA2(clauses, colors, max_tries, max_loops, p):
+def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
     flips = 0
     variables = list(get_variables(clauses))
-    color_set = set(colors.values())
 
     # Initialize the ProcessPoolExecutor once
     with concurrent.futures.ProcessPoolExecutor() as executor:
@@ -96,73 +99,71 @@ def AlgorithmA2(clauses, colors, max_tries, max_loops, p):
                 if not unsat_clauses:
                     return assignment, _try, _loop, flips  # Success
 
-                # Iterate over each color
-                for current_color in color_set:
-                    # Step 2: Choose cc clauses from C that contain at least one variable of current_color
-                    cc = [
-                        clause for clause in unsat_clauses
-                        if any(colors[abs(var)] == current_color for var in clause)
-                    ]
+                cc = unsat_clauses
 
-                    if not cc:
-                        continue  # No unsatisfied clauses with this color
+                # Collect all unique variables from unsatisfied clauses
+                variables_to_process = set()
+                for clause in cc:
+                    variables_in_clause = [abs(var) for var in clause]
+                    variables_to_process.update(variables_in_clause)
 
-                    # Collect all unique variables of current_color from these clauses
-                    variables_to_process = set()
-                    for clause in cc:
-                        vars_in_clause = [abs(var) for var in clause if colors[abs(var)] == current_color]
-                        variables_to_process.update(vars_in_clause)
+                # Submit all break count computations in parallel
+                futures = {
+                    executor.submit(compute_break_count, x, clauses, assignment): x
+                    for x in variables_to_process
+                }
 
-                    if not variables_to_process:
-                        continue  # No variables of current_color to process
+                cc_candidates_to_flip = []
+                for future in concurrent.futures.as_completed(futures):
+                    try:
+                        x, break_count = future.result()
+                        cc_candidates_to_flip.append((x, break_count, colors[x]))
+                    except Exception as e:
+                        print(f"Error computing break count for variable {futures[future]}: {e}")
 
-                    # Submit all break count computations in parallel
-                    futures = {
-                        executor.submit(compute_break_count, x, clauses, assignment): x
-                        for x in variables_to_process
-                    }
+                if not cc_candidates_to_flip:
+                    continue  # No candidates to flip
 
-                    cc_candidates_to_flip = []
-                    for future in concurrent.futures.as_completed(futures):
-                        try:
-                            x, break_count = future.result()
-                            cc_candidates_to_flip.append((x, break_count, colors[x]))
-                        except Exception as e:
-                            print(f"Error computing break count for variable {futures[future]}: {e}")
+                # Step 3: Choose subset of uncorrelated variables to flip
+                # Group candidates by color
+                color_to_candidates = {}
+                for x, break_count, color in cc_candidates_to_flip:
+                    color_to_candidates.setdefault(color, []).append((x, break_count))
 
-                    if not cc_candidates_to_flip:
-                        continue  # No candidates to flip
+                # Choose the color with the largest number of variables in cc_candidates_to_flip
+                selected_color = max(
+                    color_to_candidates.keys(),
+                    key=lambda c: len(color_to_candidates[c]),
+                    default=None
+                )
 
-                    # Step 3: Since all candidates are of current_color, no need to filter by color again
-                    # Select variables to flip from the candidates with minimum break-count
-                    min_break_count = min(break_count for _, break_count, _ in cc_candidates_to_flip)
-                    vars_with_min_break = [x for x, bc, _ in cc_candidates_to_flip if bc == min_break_count]
+                if selected_color is None:
+                    continue  # No color selected
 
-                    if not vars_with_min_break:
-                        continue  # No variables to flip
+                candidates_in_color = color_to_candidates[selected_color]
 
-                    if random.random() < p:
-                        # Random walk move: flip a random variable from the candidates
-                        var_to_flip = random.choice(vars_with_min_break)
-                    else:
-                        # Greedy move: flip the variable with the smallest break-count
-                        var_to_flip = random.choice(vars_with_min_break)
+                # Select variables to flip from the chosen color with minimum break-count
+                min_break_count = min(break_count for _, break_count in candidates_in_color)
+                vars_with_min_break = [x for x, bc in candidates_in_color if bc == min_break_count]
 
-                    # Flip the chosen variable
-                    flip_variable(assignment, var_to_flip)
-                    flips += 1
+                if not vars_with_min_break:
+                    continue  # No variables to flip
 
-                    # Break after flipping a variable for the current color to proceed to the next loop iteration
-                    break
-
+                if random.random() < p:
+                    # Random walk move: flip a random variable from the candidates
+                    var_to_flip = random.choice(vars_with_min_break)
                 else:
-                    # If no color led to a flip, continue to the next loop iteration
-                    continue
+                    # Greedy move: flip the variable with the smallest break-count
+                    var_to_flip = random.choice(vars_with_min_break)
 
-        return "FAIL"
+                # Flip the chosen variable
+                flip_variable(assignment, var_to_flip)
+                flips += 1
+
+    return "FAIL"
 
 def main():
-    parser = argparse.ArgumentParser(description='Algorithm A2 SAT Solver.')
+    parser = argparse.ArgumentParser(description='Algorithm A1 SAT Solver.')
     parser.add_argument('-cnf', help='Path to SAT problem in .cnf format', required=True)
     parser.add_argument('-p', type=float, help='Probability float between 0 and 1', required=True)
     parser.add_argument('--max_tries', type=int, default=100, help='Maximum number of tries')
@@ -186,7 +187,7 @@ def main():
     time_color = end_color_time - start_color_time
 
     start_colorwalksat_process_time = time.perf_counter()
-    result = AlgorithmA2(clauses, colors, max_tries, max_loops, probability)
+    result = AlgorithmA1(clauses, colors, max_tries, max_loops, probability)
     end_colorwalksat_process_time = time.perf_counter()
     time_colorwalksat = end_colorwalksat_process_time - start_colorwalksat_process_time
 

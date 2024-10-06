@@ -3,9 +3,8 @@ import argparse
 import networkx as nx
 from itertools import combinations
 import time
-import concurrent.futures  # For parallelization
+import concurrent.futures 
 
-# Helper functions as provided
 def read_dimacs(filename):
     clauses = []
     with open(filename, 'r') as file:
@@ -60,7 +59,6 @@ def GenerateColors(clauses):
     colors = nx.coloring.greedy_color(G, strategy='largest_first')
     return colors
 
-# New helper function for parallel computation
 def compute_break_count(x, clauses, assignment):
     """
     Computes the break count for a single variable.
@@ -79,6 +77,12 @@ def compute_break_count(x, clauses, assignment):
     # Compute the number of clauses that are unsatisfied after the flip
     num_new_unsat = sum(not evaluate_clause(c, local_assignment) for c in clauses)
     return (x, num_new_unsat)
+
+# Steps:
+# 1) Iterate over different colors
+# 2) Choose cc clauses from C (i.e., cc UNSAT clauses, each with one variable of v color)
+# 3) Follow the same algorithm as in WalkSAT to determine cc candidate variables to flip, say set cc_candidates_to_flip
+# 4) In cc_candidates_to_flip, pick only variables of v color to flip
 
 def AlgorithmA2(clauses, colors, max_tries, max_loops, p):
     flips = 0
@@ -116,7 +120,7 @@ def AlgorithmA2(clauses, colors, max_tries, max_loops, p):
                     if not variables_to_process:
                         continue  # No variables of current_color to process
 
-                    # Submit all break count computations in parallel
+                    # All break count computations in parallel
                     futures = {
                         executor.submit(compute_break_count, x, clauses, assignment): x
                         for x in variables_to_process
@@ -152,17 +156,18 @@ def AlgorithmA2(clauses, colors, max_tries, max_loops, p):
                     flip_variable(assignment, var_to_flip)
                     flips += 1
 
-                    # Break after flipping a variable for the current color to proceed to the next loop iteration
+                    # Break after flipping a variable for the current color 
+                    # to go to the next loop iteration
                     break
 
                 else:
-                    # If no color led to a flip, continue to the next loop iteration
+                    # If no color led to a flip, continue to next loop iteration
                     continue
 
         return "FAIL"
 
 def main():
-    parser = argparse.ArgumentParser(description='Algorithm A2 SAT Solver.')
+    parser = argparse.ArgumentParser(description='Algorithm A2 WSAT Solver.')
     parser.add_argument('-cnf', help='Path to SAT problem in .cnf format', required=True)
     parser.add_argument('-p', type=float, help='Probability float between 0 and 1', required=True)
     parser.add_argument('--max_tries', type=int, default=100, help='Maximum number of tries')

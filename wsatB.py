@@ -4,9 +4,6 @@ import networkx as nx
 import time
 from itertools import combinations
 
-# Oct 3
-# File renamed to wsatB.py
-
 """
 Approach #B with George/Dima suggested changes: 
 
@@ -90,13 +87,13 @@ def GenerateColors(clauses):
 def ColorWalkSAT(clauses, colors, max_tries, max_loops, p):
     color_vars = {}
     variables = list(get_variables(clauses))
+    flips = 0
     for var in variables:
         color = colors.get(var, None)
         if color is not None:
             color_vars.setdefault(color, []).append(var)
         else:
             raise ValueError("Not all variables have a color, did NetworkX fail?")
-    print(len(color_vars))
     
     for _tries in range(max_tries):
         variables = list(get_variables(clauses))
@@ -106,7 +103,7 @@ def ColorWalkSAT(clauses, colors, max_tries, max_loops, p):
             unsatisfied = get_unsatisfied_clauses(clauses, assignment)
             
             if not unsatisfied: # found a satisfying assignment, return all
-                return assignment, _tries, _loops 
+                return assignment, _tries, _loops, flips
 
             # Iterate over colors
             
@@ -152,13 +149,14 @@ def ColorWalkSAT(clauses, colors, max_tries, max_loops, p):
                     var_to_flip = random.choice(vars_with_min_break)
 
                 flip_variable(assignment, var_to_flip)
+                flips += 1
 
     return "FAIL"
 
 def main():
     
     # Parse user commands
-    parser = argparse.ArgumentParser(description='ColoringWalksat SAT Solver.')
+    parser = argparse.ArgumentParser(description='Algorithm B WSAT Solver.')
     parser.add_argument('-cnf', help='Path to SAT problem in .cnf format', required=True)
     parser.add_argument('-p', type=float, help='Probability float between 0 and 1', required=True)
     parser.add_argument('--max_tries', type=int, default=100, help='Maximum number of tries')
@@ -191,9 +189,9 @@ def main():
 
     if result != "FAIL":
         SAT = 1
-        print(time_colorwalksat, time_color, result[1], result[2]) # Return tries and flips
+        print(time_colorwalksat, time_color, result[1], result[2], result[3]) # Return tries and flips
     else:
-        print(0,0,0,0) # No satisfying assignment found within the given limits
+        print(0,0,0,0,0) # No satisfying assignment found within the given limits
 
 if __name__ == "__main__":
     main()
