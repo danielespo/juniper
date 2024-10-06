@@ -191,7 +191,7 @@ def benchmark(cnf_folder_path, walksat_path, database_path, p_values):
 
 if __name__ == "__main__":
 
-    cnf_folder_path = "/home/dae/SatExperiments/juniper/uf50suiteSATLIB"
+    cnf_folder_path = "/home/dae/SatExperiments/juniper/TestFolderCNF"
     walksat_path = "/home/dae/SatExperiments/juniper"
     database_path = "/home/dae/SatExperiments/juniper/FinalResults.db"
     p_values = [0.1, 0.3, 0.5, 0.7, 0.9]
