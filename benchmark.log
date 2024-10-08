@@ -1,0 +1,56 @@
+2024-10-06 13:18:56,892 [INFO] Database initialized at /home/dae/SatExperiments/juniper/FinalResults.db.
+2024-10-06 13:18:56,892 [INFO] Found 1 CNF files in /home/dae/SatExperiments/juniper/TestFolderCNF.
+2024-10-06 13:18:56,892 [INFO] Total benchmarking tasks to process: 20.
+2024-10-06 13:18:56,898 [INFO] Using 38 worker processes.
+2024-10-06 13:18:56,899 [INFO] Database writer started.
+2024-10-06 13:18:56,927 [INFO] Processed walksat for abitbigger.cnf with p=0.1.
+2024-10-06 13:18:56,930 [INFO] Processed walksat for abitbigger.cnf with p=0.3.
+2024-10-06 13:18:56,930 [INFO] Processed walksat for abitbigger.cnf with p=0.7.
+2024-10-06 13:18:56,931 [INFO] Processed walksat for abitbigger.cnf with p=0.9.
+2024-10-06 13:18:56,931 [INFO] Processed walksat for abitbigger.cnf with p=0.5.
+2024-10-06 13:18:57,046 [INFO] Processed wsatA2 for abitbigger.cnf with p=0.3.
+2024-10-06 13:18:57,124 [INFO] Processed wsatA2 for abitbigger.cnf with p=0.1.
+2024-10-06 13:18:57,126 [INFO] Processed wsatA2 for abitbigger.cnf with p=0.5.
+2024-10-06 13:18:57,231 [INFO] Processed wsatA1 for abitbigger.cnf with p=0.5.
+2024-10-06 13:18:57,234 [INFO] Processed wsatA1 for abitbigger.cnf with p=0.1.
+2024-10-06 13:18:57,340 [INFO] Processed wsatB for abitbigger.cnf with p=0.5.
+2024-10-06 13:18:57,343 [INFO] Processed wsatB for abitbigger.cnf with p=0.1.
+2024-10-06 13:18:58,324 [INFO] Processed wsatA1 for abitbigger.cnf with p=0.3.
+2024-10-06 13:18:58,424 [INFO] Processed wsatB for abitbigger.cnf with p=0.3.
+2024-10-06 13:19:20,888 [INFO] Database initialized at /home/dae/SatExperiments/juniper/FinalResults.db.
+2024-10-06 13:19:20,888 [INFO] Found 12 CNF files in /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper.
+2024-10-06 13:19:20,888 [INFO] Total benchmarking tasks to process: 240.
+2024-10-06 13:19:20,894 [INFO] Using 38 worker processes.
+2024-10-06 13:19:20,895 [INFO] Database writer started.
+2024-10-06 13:19:20,969 [INFO] Processed walksat for uf500105.cnf with p=0.5.
+2024-10-06 13:19:20,972 [INFO] Processed walksat for uf500101.cnf with p=0.7.
+2024-10-06 13:19:20,978 [INFO] Processed walksat for uf500101.cnf with p=0.5.
+2024-10-06 13:19:21,001 [INFO] Processed walksat for uf500109.cnf with p=0.5.
+2024-10-06 13:19:21,078 [INFO] Processed walksat for uf500105.cnf with p=0.3.
+2024-10-06 13:19:21,127 [INFO] Processed walksat for uf500112.cnf with p=0.5.
+2024-10-06 13:19:21,149 [INFO] Processed walksat for uf500100.cnf with p=0.3.
+2024-10-06 13:19:21,151 [INFO] Processed walksat for uf500109.cnf with p=0.9.
+2024-10-06 13:19:21,182 [INFO] Processed walksat for uf500100.cnf with p=0.9.
+2024-10-06 13:19:21,217 [INFO] Processed walksat for uf500109.cnf with p=0.7.
+2024-10-06 13:19:21,242 [INFO] Processed walksat for uf500105.cnf with p=0.7.
+2024-10-06 13:19:21,254 [INFO] Processed walksat for uf500102.cnf with p=0.7.
+2024-10-06 13:19:21,294 [INFO] Processed walksat for uf500102.cnf with p=0.9.
+2024-10-06 13:19:21,339 [INFO] Processed walksat for uf500109.cnf with p=0.1.
+2024-10-06 13:19:21,477 [INFO] Processed walksat for uf500101.cnf with p=0.1.
+2024-10-06 13:19:21,530 [INFO] Processed walksat for uf500105.cnf with p=0.9.
+2024-10-06 13:19:21,587 [INFO] Processed walksat for uf500112.cnf with p=0.7.
+2024-10-06 13:19:21,650 [INFO] Processed walksat for uf500109.cnf with p=0.3.
+2024-10-06 13:19:21,664 [INFO] Processed walksat for uf5001000.cnf with p=0.3.
+2024-10-06 13:19:22,026 [INFO] Processed walksat for uf500112.cnf with p=0.9.
+2024-10-06 13:19:22,029 [INFO] Processed walksat for uf500101.cnf with p=0.3.
+2024-10-06 13:19:22,170 [INFO] Processed walksat for uf5001000.cnf with p=0.9.
+2024-10-06 13:19:22,208 [INFO] Processed walksat for uf500102.cnf with p=0.5.
+2024-10-06 13:19:22,274 [INFO] Processed walksat for uf500100.cnf with p=0.7.
+2024-10-06 13:19:22,333 [INFO] Processed walksat for uf500102.cnf with p=0.3.
+2024-10-06 13:19:22,750 [INFO] Processed walksat for uf5001000.cnf with p=0.7.
+2024-10-06 13:19:23,087 [INFO] Processed walksat for uf5001000.cnf with p=0.5.
+2024-10-06 13:19:23,952 [INFO] Processed walksat for uf500105.cnf with p=0.1.
+2024-10-06 13:19:24,555 [INFO] Processed walksat for uf500101.cnf with p=0.9.
+2024-10-06 13:19:24,676 [INFO] Processed walksat for uf500100.cnf with p=0.5.
+2024-10-06 13:19:25,386 [INFO] Processed walksat for uf500112.cnf with p=0.1.
+2024-10-06 13:19:26,988 [INFO] Processed walksat for uf500112.cnf with p=0.3.
