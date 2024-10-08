@@ -1,0 +1,3 @@
+[submodule "refactoring/refactoring/microwalksat"]
+	path = refactoring/refactoring/microwalksat
+	url = https://github.com/danielespo/microwalksat.git
