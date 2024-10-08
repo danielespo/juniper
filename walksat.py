@@ -98,9 +98,10 @@ def main():
     time_walksat = end_walksat_time - start_walksat_time
 
     if result != "FAIL":
-        print(time_walksat, result[1], result[2], result[3])
+        # assignment, _Tries, _Flips, flips
+        print(time_walksat, result[1], result[2], result[3], 0)
     else:
-        print(0,0,0,0) # No satisfying assignment found within the given limits
+        print(0,0,0,0,0) # No satisfying assignment found within the given limits
 
 if __name__ == "__main__":
     main()

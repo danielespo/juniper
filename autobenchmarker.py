@@ -14,18 +14,17 @@ logging.basicConfig(
     level=logging.INFO,  # Set to DEBUG for more detailed logs
     format='%(asctime)s [%(levelname)s] %(message)s',
     handlers=[
-        logging.FileHandler("BenchmarkingLog.log"),  # Log file
-        # Removed StreamHandler to prevent logging to stdout
+        logging.FileHandler("Subset.log"),  # Log file
     ]
 )
 
 def init_database(database_path):
-    """Initialize the SQLite database and create the FinalResults table if it doesn't exist."""
+    """Initialize the SQLite database and create the SubsetResults table if it doesn't exist."""
     try:
         conn = sqlite3.connect(database_path)
         cursor = conn.cursor()
         cursor.execute('''
-            CREATE TABLE IF NOT EXISTS FinalResults (
+            CREATE TABLE IF NOT EXISTS SubsetResults (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 filename TEXT,
                 algorithm TEXT,
@@ -97,14 +96,14 @@ def worker(task_queue, result_queue, walksat_path, max_tries, max_flips):
         try:
             task = task_queue.get_nowait()
         except Empty:
-            break  # No more tasks
+            break  # Done
 
         cnf_file, cnf_file_path, p = task
         algorithms = {
-            'walksat': {'script': 'walksat.py', 'expected_parts': 4, 'additional_arg': '--max_flips'},
-            'wsatA2': {'script': 'wsatA2.py', 'expected_parts': 4, 'additional_arg': '--max_loops'},
-            'wsatA1': {'script': 'wsatA1.py', 'expected_parts': 4, 'additional_arg': '--max_loops'},
-            'wsatB': {'script': 'wsatB.py', 'expected_parts': 4, 'additional_arg': '--max_loops'}
+            'walksat': {'script': 'walksat.py', 'expected_parts': 5, 'additional_arg': '--max_flips'},
+            'wsatA2': {'script': 'wsatA2.py', 'expected_parts': 5, 'additional_arg': '--max_loops'},
+            'wsatA1': {'script': 'wsatA1.py', 'expected_parts': 5, 'additional_arg': '--max_loops'},
+            'wsatB': {'script': 'wsatB.py', 'expected_parts': 5, 'additional_arg': '--max_loops'}
         }
 
         for algo, details in algorithms.items():
@@ -127,8 +126,8 @@ def worker(task_queue, result_queue, walksat_path, max_tries, max_flips):
                 time_main = float(parts[0])
                 additional_time = float(parts[1]) if algo != 'walksat' else None
                 tries = int(parts[2])
-                flips = int(parts[3])
-                actual_flips = flips  # Adjust if actual_flips is different
+                flips = int(parts[3]) # logged differently than actual_flips
+                actual_flips = int(parts[4]) # not = flips ... (this is the iteration count)
 
                 # Prepare the result tuple
                 result = (
@@ -173,7 +172,7 @@ def database_writer(database_path, result_queue, total_tasks):
             try:
                 result = result_queue.get(timeout=5)  # Wait for a result
                 cursor.execute('''
-                    INSERT INTO FinalResults (
+                    INSERT INTO SubsetResults (
                         filename, algorithm, p, time, additional_time,
                         max_tries, max_flips, tries, flips, actual_flips
                     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -271,8 +270,8 @@ if __name__ == "__main__":
     # Define paths and parameters
     cnf_folder_path = "/home/dae/SatExperiments/juniper/BenchmarkSubsetPaper"
     walksat_path = "/home/dae/SatExperiments/juniper"
-    database_path = "/home/dae/SatExperiments/juniper/FinalResults.db"
-    p_values = [0.1, 0.3, 0.5, 0.7, 0.9]
+    database_path = "/home/dae/SatExperiments/juniper/SubsetResults.db"
+    p_values = [0.5]
 
     # Validate paths
     if not os.path.isdir(cnf_folder_path):
