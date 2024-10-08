@@ -22,7 +22,6 @@
 // Usage: 
 // ./A1 -cnf path_to_cnf_file.cnf -colors colors.txt -p 0.5 --max_tries 100 --max_loops 1000
 
-
 bool read_dimacs(const std::string& filename, int& num_vars, std::vector<std::vector<int>>& clauses) {
     std::ifstream infile(filename);
     if (!infile) {
@@ -131,6 +130,15 @@ std::tuple<std::unordered_map<int, bool>, int, int, int> AlgorithmA1(
     std::uniform_real_distribution<> dis(0.0, 1.0);
     std::uniform_int_distribution<> bool_dis(0, 1);
 
+    // Build variable to clauses mapping
+    std::unordered_map<int, std::vector<int>> variable_to_clauses;
+    for (size_t clause_idx = 0; clause_idx < clauses.size(); ++clause_idx) {
+        const auto& clause = clauses[clause_idx];
+        for (int var : clause) {
+            variable_to_clauses[std::abs(var)].push_back(clause_idx);
+        }
+    }
+
     for (int _try = 0; _try < max_tries; ++_try) {
         // Initialize random assignment
         std::unordered_map<int, bool> assignment;
@@ -138,35 +146,55 @@ std::tuple<std::unordered_map<int, bool>, int, int, int> AlgorithmA1(
             assignment[var] = bool_dis(gen);
         }
 
+        // Initialize clause satisfaction status
+        std::vector<bool> clause_satisfied(clauses.size());
+        for (size_t i = 0; i < clauses.size(); ++i) {
+            clause_satisfied[i] = evaluate_clause(clauses[i], assignment);
+        }
+
         for (int _loop = 0; _loop < max_loops; ++_loop) {
-            auto unsat_clauses = get_unsatisfied_clauses(clauses, assignment);
-            if (unsat_clauses.empty()) {
+            // Get unsatisfied clauses
+            std::vector<int> unsat_clause_indices;
+            for (size_t i = 0; i < clauses.size(); ++i) {
+                if (!clause_satisfied[i]) {
+                    unsat_clause_indices.push_back(i);
+                }
+            }
+
+            if (unsat_clause_indices.empty()) {
                 return std::make_tuple(assignment, _try, _loop, flips); // Success
             }
 
-            // Step 1: Choose cc UNSAT clauses (here all unsatisfied clauses)
-            const auto& cc = unsat_clauses;
+            // Step 1: Choose unsatisfied clauses (cc)
+            const auto& cc = unsat_clause_indices;
 
-            // Step 2: Determine cc_candidates_to_flip
+            // Step 2: Determine candidates to flip
             std::vector<std::tuple<int, int, int>> cc_candidates_to_flip;
-            for (const auto& clause : cc) {
-                std::vector<int> variables_in_clause;
-                for (int var : clause) {
-                    variables_in_clause.push_back(std::abs(var));
-                }
-                // Compute break-counts for variables in clause
-                for (int x : variables_in_clause) {
+
+            for (int clause_idx : cc) {
+                const auto& clause = clauses[clause_idx];
+                for (int lit : clause) {
+                    int x = std::abs(lit);
+                    int color = colors.at(x);
+
                     // Compute break-count for x
+                    int break_count = 0;
+
+                    // Flip x temporarily
                     flip_variable(assignment, x);
-                    int num_new_unsat = 0;
-                    for (const auto& c : clauses) {
-                        if (!evaluate_clause(c, assignment)) {
-                            num_new_unsat++;
+
+                    // For each clause containing x
+                    for (int c_idx : variable_to_clauses[x]) {
+                        if (clause_satisfied[c_idx]) {
+                            if (!evaluate_clause(clauses[c_idx], assignment)) {
+                                break_count++;
+                            }
                         }
                     }
-                    flip_variable(assignment, x); // Flip back
-                    int break_count = num_new_unsat;
-                    int color = colors.at(x);
+
+                    // Flip x back
+                    flip_variable(assignment, x);
+
                     cc_candidates_to_flip.push_back(std::make_tuple(x, break_count, color));
                 }
             }
@@ -181,7 +209,7 @@ std::tuple<std::unordered_map<int, bool>, int, int, int> AlgorithmA1(
                 color_to_candidates[color].emplace_back(x, break_count);
             }
 
-            // Choose the color with the largest number of variables in cc_candidates_to_flip
+            // Choose the color with the largest number of variables
             int selected_color = -1;
             size_t max_size = 0;
             for (const auto& kv : color_to_candidates) {
@@ -193,7 +221,7 @@ std::tuple<std::unordered_map<int, bool>, int, int, int> AlgorithmA1(
 
             auto& candidates_in_color = color_to_candidates[selected_color];
 
-            // Select variables to flip from the chosen color with minimum break-count
+            // Select variables to flip with minimum break-count
             int min_break_count = std::numeric_limits<int>::max();
             for (const auto& item : candidates_in_color) {
                 int break_count = item.second;
@@ -209,22 +237,31 @@ std::tuple<std::unordered_map<int, bool>, int, int, int> AlgorithmA1(
                 }
             }
 
+            // Decide whether to make a random or greedy move
+            int var_to_flip;
             if (dis(gen) < p) {
-                // Random walk move: flip a random variable from the candidates
+                // Random walk move
                 std::uniform_int_distribution<> idx_dis(0, vars_with_min_break.size() - 1);
                 int idx = idx_dis(gen);
-                int var_to_flip = vars_with_min_break[idx];
-                flip_variable(assignment, var_to_flip);
+                var_to_flip = vars_with_min_break[idx];
             } else {
-                // Greedy move: flip the variable with the smallest break-count
+                // Greedy move
                 std::uniform_int_distribution<> idx_dis(0, vars_with_min_break.size() - 1);
                 int idx = idx_dis(gen);
-                int var_to_flip = vars_with_min_break[idx];
-                flip_variable(assignment, var_to_flip);
+                var_to_flip = vars_with_min_break[idx];
             }
+
+            // Flip the variable and update clause satisfaction status
+            flip_variable(assignment, var_to_flip);
             flips++;
+
+            // Update clause satisfaction status
+            for (int c_idx : variable_to_clauses[var_to_flip]) {
+                clause_satisfied[c_idx] = evaluate_clause(clauses[c_idx], assignment);
+            }
         }
     }
+
     // Return failure
     return std::make_tuple(std::unordered_map<int, bool>(), -1, -1, flips);
 }
