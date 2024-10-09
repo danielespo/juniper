@@ -12,17 +12,21 @@
 #include <chrono>
 #include <cstdlib>
 #include <cmath>
+#include <tuple>
+#include <future>
+#include <limits>
 
-// NOTE: Changeme
+// Daniel Espinosa, Strukov Group, UC Santa Barbara 2024
+// A2 Algorithm
+// Refactored to C++
+// Algorithmically equivalent to wsatA2.py
+// Much faster in wall clock time, this one is also multithreaded.
 
-// Why c++ instead of c:
-// if this works well, I can port the cpp code to Vitis and generate a naive 
-// gate count by adding pragmas etc.
-// en.cppreference.com
-
-// g++ -std=c++11 -O2 -o A1 A1.cc
-// Usage: 
-// ./A1 -cnf path_to_cnf_file.cnf -colors colors.txt -p 0.5 --max_tries 100 --max_loops 1000
+// Compile:
+// g++ -std=c++11 -O2 -o A2 A2.cc -pthread
+// Use: 
+// python colorandtest.py -cnf path_to_cnf_file.cnf -out colors.txt
+// ./A2 -cnf path_to_cnf_file.cnf -colors colors.txt -p 0.5 --max_tries 100 --max_loops 1000
 
 bool read_dimacs(const std::string& filename, int& num_vars, std::vector<std::vector<int>>& clauses) {
     std::ifstream infile(filename);
@@ -114,9 +118,14 @@ void flip_variable(std::unordered_map<int, bool>& assignment, int var) {
     assignment[var] = !assignment[var];
 }
 
-// Main algorithm (A1)
+// Main algorithm (A2)
+// Steps:
+// 1) Iterate over different colors
+// 2) Choose cc clauses from C (i.e., cc UNSAT clauses, each with one variable of v color)
+// 3) Follow the same algorithm as in WalkSAT to determine cc candidate variables to flip, say set cc_candidates_to_flip
+// 4) In cc_candidates_to_flip, pick only variables of v color to flip
 
-std::tuple<std::unordered_map<int, bool>, int, int, int> AlgorithmA1(
+std::tuple<std::unordered_map<int, bool>, int, int, int> AlgorithmA2(
     const std::vector<std::vector<int>>& clauses,
     const std::unordered_map<int, int>& colors,
     int max_tries,
@@ -128,9 +137,16 @@ std::tuple<std::unordered_map<int, bool>, int, int, int> AlgorithmA1(
     for (const auto& var : get_variables(clauses)) {
         variables_vec.push_back(var);
     }
+    // Seedless rand
     std::mt19937 gen(std::random_device{}());
     std::uniform_real_distribution<> dis(0.0, 1.0);
     std::uniform_int_distribution<> bool_dis(0, 1);
+
+    // Get the set of colors
+    std::unordered_set<int> color_set; //always return a non-const type
+    for (const auto& kv : colors) {
+        color_set.insert(kv.second);
+    } 
 
     // Build variable to clauses mapping
     std::unordered_map<int, std::vector<int>> variable_to_clauses;
@@ -167,99 +183,141 @@ std::tuple<std::unordered_map<int, bool>, int, int, int> AlgorithmA1(
                 return std::make_tuple(assignment, _try, _loop, flips); // Success
             }
 
-            // Step 1: Choose unsatisfied clauses (cc)
-            const auto& cc = unsat_clause_indices;
-
-            // Step 2: Determine candidates to flip
-            std::vector<std::tuple<int, int, int>> cc_candidates_to_flip;
-
-            for (int clause_idx : cc) {
-                const auto& clause = clauses[clause_idx];
-                for (int lit : clause) {
-                    int x = std::abs(lit);
-                    int color = colors.at(x);
-
-                    // Compute break-count for x
-                    int break_count = 0;
-
-                    // Flip x temporarily
-                    flip_variable(assignment, x);
-
-                    // For each clause containing x
-                    for (int c_idx : variable_to_clauses[x]) {
-                        if (clause_satisfied[c_idx]) {
-                            if (!evaluate_clause(clauses[c_idx], assignment)) {
-                                break_count++;
-                            }
+            // Step 1: Iterate over different colors
+            // A1: const auto& cc = unsat_clause_indices;
+            
+            bool variable_flipped = false;
+            
+            // Iterate over each color
+            for (int current_color : color_set) {
+                // Step 2: Choose unsatisfied clauses that contain at least one variable of current_color
+                std::vector<int> cc; // Indices of clauses
+                for (int clause_idx : unsat_clause_indices) {
+                    const auto& clause = clauses[clause_idx];
+                    for (int var : clause) {
+                        if (colors.at(std::abs(var)) == current_color) {
+                            cc.push_back(clause_idx);
+                            break;
                         }
                     }
-
-                    // Flip x back
-                    flip_variable(assignment, x);
-
-                    cc_candidates_to_flip.push_back(std::make_tuple(x, break_count, color));
                 }
-            }
 
-            // Step 3: Choose subset of uncorrelated variables to flip
-            // Group candidates by color
-            std::unordered_map<int, std::vector<std::pair<int, int>>> color_to_candidates;
-            for (const auto& item : cc_candidates_to_flip) {
-                int x = std::get<0>(item);
-                int break_count = std::get<1>(item);
-                int color = std::get<2>(item);
-                color_to_candidates[color].emplace_back(x, break_count);
-            }
-
-            // Choose the color with the largest number of variables
-            int selected_color = -1;
-            size_t max_size = 0;
-            for (const auto& kv : color_to_candidates) {
-                if (kv.second.size() > max_size) {
-                    max_size = kv.second.size();
-                    selected_color = kv.first;
+                if (cc.empty()) {
+                    continue; // No unsatisfied clauses with this color
                 }
-            }
 
-            auto& candidates_in_color = color_to_candidates[selected_color];
-
-            // Select variables to flip with minimum break-count
-            int min_break_count = std::numeric_limits<int>::max();
-            for (const auto& item : candidates_in_color) {
-                int break_count = item.second;
-                if (break_count < min_break_count) {
-                    min_break_count = break_count;
+                // Collect all unique variables of current_color from these clauses
+                std::unordered_set<int> variables_to_process;
+                for (int clause_idx : cc) {
+                    const auto& clause = clauses[clause_idx];
+                    for (int var : clause) {
+                        int var_abs = std::abs(var);
+                        if (colors.at(var_abs) == current_color) {
+                            variables_to_process.insert(var_abs);
+                        }
+                    }
                 }
-            }
 
-            std::vector<int> vars_with_min_break;
-            for (const auto& item : candidates_in_color) {
-                if (item.second == min_break_count) {
-                    vars_with_min_break.push_back(item.first);
+                if (variables_to_process.empty()) {
+                    continue; // No variables of current_color to process
                 }
+
+                // Compute break counts for variables_to_process in parallel
+                // https://tamerlan.dev/introduction-to-pthreads/
+                std::vector<std::future<std::pair<int, int>>> futures;
+                for (int x : variables_to_process) {
+                    // Compute the break counts in parallel lazily when we need them
+                    futures.push_back(std::async(std::launch::async, [&, x]() {
+                        int break_count = 0;
+
+                        // Flip x temporarily
+                        flip_variable(assignment, x);
+
+                        // Compute break count
+                        for (int c_idx : variable_to_clauses[x]) {
+                            if (clause_satisfied[c_idx]) {
+                                if (!evaluate_clause(clauses[c_idx], assignment)) {
+                                    break_count++;
+                                }
+                            }
+                        }
+
+                        // Flip x back
+                        flip_variable(assignment, x);
+
+                        return std::make_pair(x, break_count);
+                    }));
+                }
+
+                std::vector<std::tuple<int, int, int>> cc_candidates_to_flip;
+
+                for (auto& future : futures) {
+                    try {
+                        auto result = future.get();
+                        int x = result.first;
+                        int break_count = result.second;
+                        cc_candidates_to_flip.emplace_back(x, break_count, current_color);
+                    } catch (const std::exception& e) {
+                        std::cerr << "Error computing break count: " << e.what() << std::endl;
+                        continue;
+                    }
+                }
+
+                if (cc_candidates_to_flip.empty()) {
+                    continue; // No candidates to flip
+                }
+
+                // Select variables to flip from the candidates with minimum break-count
+                int min_break_count = std::numeric_limits<int>::max();
+                for (const auto& item : cc_candidates_to_flip) {
+                    int break_count = std::get<1>(item);
+                    if (break_count < min_break_count) {
+                        min_break_count = break_count;
+                    }
+                }
+
+                std::vector<int> vars_with_min_break;
+                for (const auto& item : cc_candidates_to_flip) {
+                    if (std::get<1>(item) == min_break_count) {
+                        vars_with_min_break.push_back(std::get<0>(item));
+                    }
+                }
+
+                if (vars_with_min_break.empty()) {
+                    continue; // No variables to flip
+                }
+
+                int var_to_flip;
+                if (dis(gen) < p) {
+                    // Random walk move: flip a random variable from the candidates
+                    std::uniform_int_distribution<> idx_dis(0, vars_with_min_break.size() - 1);
+                    int idx = idx_dis(gen);
+                    var_to_flip = vars_with_min_break[idx];
+                } else {
+                    // Greedy move: flip the variable with the smallest break-count
+                    std::uniform_int_distribution<> idx_dis(0, vars_with_min_break.size() - 1);
+                    int idx = idx_dis(gen);
+                    var_to_flip = vars_with_min_break[idx];
+                }
+
+                // Flip the variable and update clause satisfaction status
+                flip_variable(assignment, var_to_flip);
+                flips++;
+
+                // Update clause satisfaction status
+                for (int c_idx : variable_to_clauses[var_to_flip]) {
+                    clause_satisfied[c_idx] = evaluate_clause(clauses[c_idx], assignment);
+                }
+
+                variable_flipped = true;
+
+                // Break after flipping a variable for the current color to go to the next loop iteration
+                break;
             }
 
-            // Decide whether to make a random or greedy move
-            int var_to_flip;
-            if (dis(gen) < p) {
-                // Random walk move
-                std::uniform_int_distribution<> idx_dis(0, vars_with_min_break.size() - 1);
-                int idx = idx_dis(gen);
-                var_to_flip = vars_with_min_break[idx];
-            } else {
-                // Greedy move
-                std::uniform_int_distribution<> idx_dis(0, vars_with_min_break.size() - 1);
-                int idx = idx_dis(gen);
-                var_to_flip = vars_with_min_break[idx];
-            }
-
-            // Flip the variable and update clause satisfaction status
-            flip_variable(assignment, var_to_flip);
-            flips++;
-
-            // Update clause satisfaction status
-            for (int c_idx : variable_to_clauses[var_to_flip]) {
-                clause_satisfied[c_idx] = evaluate_clause(clauses[c_idx], assignment);
+            if (!variable_flipped) {
+                // If no color led to a flip, continue to next loop iteration
+                continue;
             }
         }
     }
@@ -272,7 +330,7 @@ int main(int argc, char* argv[]) {
     // Parse command line arguments
     std::string filepath;
     std::string colors_file;
-    double probability = 0.0;
+    double probability = 0.5;
     int max_tries = 100;
     int max_loops = 1000;
 
@@ -315,7 +373,7 @@ int main(int argc, char* argv[]) {
     }
 
     auto start_algo_time = std::chrono::high_resolution_clock::now();
-    auto result = AlgorithmA1(clauses, colors, max_tries, max_loops, probability);
+    auto result = AlgorithmA2(clauses, colors, max_tries, max_loops, probability);
     auto end_algo_time = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> time_algo = end_algo_time - start_algo_time;
 

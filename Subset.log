@@ -1,0 +1,15 @@
+2024-10-08 10:51:39,577 [INFO] Database initialized at /home/dae/SatExperiments/juniper/SubsetResults.db.
+2024-10-08 10:51:39,577 [INFO] Found 3 CNF files in /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper.
+2024-10-08 10:51:39,577 [INFO] Total benchmarking tasks to process: 12.
+2024-10-08 10:51:39,583 [INFO] Using 38 worker processes.
+2024-10-08 10:51:39,584 [INFO] Database writer started.
+2024-10-08 10:51:39,629 [INFO] Processed walksat for uf500101.cnf with p=0.5.
+2024-10-08 10:51:40,016 [INFO] Processed walksat for uf500100.cnf with p=0.5.
+2024-10-08 10:51:40,966 [INFO] Processed walksat for uf50012.cnf with p=0.5.
+2024-10-08 10:52:22,349 [INFO] Database initialized at /home/dae/SatExperiments/juniper/SubsetResults.db.
+2024-10-08 10:52:22,350 [INFO] Found 1 CNF files in /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper.
+2024-10-08 10:52:22,350 [INFO] Total benchmarking tasks to process: 4.
+2024-10-08 10:52:22,355 [INFO] Using 38 worker processes.
+2024-10-08 10:52:22,357 [INFO] Database writer started.
+2024-10-08 10:52:22,505 [INFO] Processed walksat for uf50012.cnf with p=0.5.
+2024-10-08 17:24:14,729 [INFO] Processed wsatA2 for uf50012.cnf with p=0.5.

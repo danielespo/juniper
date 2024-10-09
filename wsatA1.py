@@ -58,6 +58,11 @@ def GenerateColors(clauses):
     colors = nx.coloring.greedy_color(G, strategy='largest_first')
     return colors
 
+# Steps:
+# 1) Gather up unsatisfied clauses
+# 2) Follow the same algorithm as in WalkSAT to determine cc candidate variables to flip, say set cc_candidates_to_flip
+# 3) Random flip a given v, or 
+# 4) From candidate clauses with v in C with color k and smallest break-count, pick only variables of v color to flip
 
 def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
     flips = 0
@@ -72,7 +77,6 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
             if not unsat_clauses:
                 return assignment, _try, _loop, flips # Success
 
-            # Step 1: Choose cc UNSAT clauses (here all unsatisfied clauses)
             cc = unsat_clauses
 
             # Step 2: Determine cc_candidates_to_flip

@@ -90,6 +90,7 @@ def AlgorithmA2(clauses, colors, max_tries, max_loops, p):
     color_set = set(colors.values())
 
     # Initialize the ProcessPoolExecutor once
+    # Why? Run async processes for different tries
     with concurrent.futures.ProcessPoolExecutor() as executor:
         for _try in range(max_tries):
             # Initialize a random assignment
