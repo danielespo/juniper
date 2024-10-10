@@ -64,12 +64,25 @@ def GenerateColors(clauses):
 # After speaking with Dima I realized this needs to change slightly in order to better
 # make sense.
 
-
 # Need to add a candidate list of variables to flip which is fed from the candidate clauses list
 
-
-
 # Steps:
+
+# 1) Random assignment
+# 2) Gather UNSAT clauses
+# 3) From the UNSAT clauses, pick a number say 3 clauses at random. These 3 are the same number of colors.
+# 4) For a clause, either pick a variable at random to pick 
+# 5) Or, from the clause, pick the variable with the least break value
+# 6) Gather all the picked variables into a list, this is the candidate list of variables. 
+# 7) Now, heuristically, you can pick variables from the same color and flip them because they are uncorrelated 
+# 8) 3 Different heuristics Dima came up with:
+# - Flip variables of the color represented with the largest number of variables
+# - Randomly
+# - Randomly pick variavbles of a color to flip
+# 9) Additionally, near convergence, would be good to try and turn the heuristics off and go back to WalkSAT/SKC. 
+# 10) END 
+
+
 # 1) Gather up unsatisfied clauses
 # 2) Follow the same algorithm as in WalkSAT to determine cc candidate variables to flip, say set cc_candidates_to_flip
 # 3) Random flip a given v, or 
