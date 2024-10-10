@@ -3,7 +3,7 @@ import argparse
 import networkx as nx
 from itertools import combinations
 import time
-# Helper functions as provided
+
 def read_dimacs(filename):
     clauses = []
     with open(filename, 'r') as file:
@@ -57,6 +57,17 @@ def GenerateColors(clauses):
     # Greedy coloring , returns dictionary of unique colors (0 to n) for each node
     colors = nx.coloring.greedy_color(G, strategy='largest_first')
     return colors
+
+
+# Update Oct 10 2024
+
+# After speaking with Dima I realized this needs to change slightly in order to better
+# make sense.
+
+
+# Need to add a candidate list of variables to flip which is fed from the candidate clauses list
+
+
 
 # Steps:
 # 1) Gather up unsatisfied clauses
