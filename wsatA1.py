@@ -121,9 +121,18 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
                         break_count = num_new_unsat
                         cc_candidates_to_flip.append((x, break_count, colors[x]))
 
-            # Step 3: Choose subset of uncorrelated variables to flip
+            # 4) Gather all the picked variables into a list, this is the candidate list of variables. 
+            # This is what cc_candidates_to_flip is.
+
+            # 5) Now, heuristically, you can pick variables from the same color and flip them because they are uncorrelated 
+            # 3 Different heuristics Dima came up with:
+            # - Flip variables of the color represented with the largest number of variables
+            # - Randomly
+            # - Randomly pick variavbles of a color to flip
+
+
             # Group candidates by color
-            color_to_candidates = {}
+            color_to_candidates = {} # Now a dict with vars, color of var; this could've been precomputed
             for x, break_count, color in cc_candidates_to_flip:
                 color_to_candidates.setdefault(color, []).append((x, break_count))
 
@@ -131,6 +140,12 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
             selected_color = max(color_to_candidates.keys(), key=lambda c: len(color_to_candidates[c]))
 
             candidates_in_color = color_to_candidates[selected_color]
+
+            # Now, we can just flip the variables of that color
+
+            # OR we can flip randomly from the list
+
+            # OR we can pick a random different color to flip from
 
             # Select variables to flip from the chosen color with minimum break-count
             min_break_count = min(break_count for x, break_count in candidates_in_color)
