@@ -2,6 +2,7 @@ import random
 import argparse
 import networkx as nx
 from itertools import combinations
+import numpy as np
 import time
 
 def read_dimacs(filename):
@@ -59,6 +60,12 @@ def GenerateColors(clauses):
     return colors
 
 
+# Update Oct 11 2024
+# Get plots of these algorithms on benchmarks that Tinish has already done
+# Show my walksat is equivalent to his walksat.
+# Write documentation for the summer fpga project so that other undergrads can pick it up
+# Look into grants
+
 # Update Oct 10 2024
 # After speaking with Dima I realized this needs to change
 # Adding a candidate list of variables to flip which is fed 
@@ -109,6 +116,15 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
 
             # 3) From the UNSAT clauses, pick candidate clauses up to n_number_colors 
             random_samples_count = len(colors.keys()) # Should be int, check
+
+            # Sample code is buggy, fix
+            # sample larger than pop ?..
+
+            print(random_samples_count)
+            # 50 is larger than the number of UNSAT
+
+            if random_samples_count > len(unsat_clauses):
+                random_samples_count = len(unsat_clauses)
             cc = random.sample(unsat_clauses, int(random_samples_count))
             cc_candidates_to_flip = []
 
@@ -117,11 +133,12 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
 
                 # Pick a random variable of the clause for a candidate variable 
                 if random.random() < p:
-                    temp_var = random.choice(variables_in_clause)
-                    cc_candidates_to_flip.append(temp_var)
+                    x = random.choice(variables_in_clause)
+                    cc_candidates_to_flip.append((x, colors[x]))
 
                 # Or pick variable with least break-count
                 else:
+                    break_count = []
                     for x in variables_in_clause:
                         # Break-count is the number of clauses that become unsatisfied when flipping x
                         flip_variable(assignment, x)
@@ -129,19 +146,29 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
                             not evaluate_clause(c, assignment) for c in clauses if evaluate_clause(c, assignment)
                         )
                         flip_variable(assignment, x)
-                        break_count = num_new_unsat
-                        cc_candidates_to_flip.append((x, break_count, colors[x]))
+                        break_count.append(num_new_unsat)
+                    
+
+                    # Change this spaghetti to actually mean
+                    # Hey, pick the smallest break value.
+                    a = np.array(break_count) 
+                    index = np.where(a == a.min())
+                    if len(index) > 1:
+                        index = index[0]
+                    print(index)
+                    x = variables_in_clause[index[0]]
+                    cc_candidates_to_flip.append((x, colors[x]))
 
             # 4) Gather all the picked variables into the candidate list of variables. 
             color_to_candidates = {}
-            for x, break_count, color in cc_candidates_to_flip:
-                color_to_candidates.setdefault(color, []).append((x, break_count))
+            for x, color in cc_candidates_to_flip:
+                color_to_candidates.setdefault(color, []).append((x))
 
 
             # 5) Heuristically pick variables to flip. 
 
             # 5a) Flip variables of the color represented with the largest number of variables
-            if heuristic_mode = 0:
+            if heuristic_mode == 0:
                 selected_color = max(color_to_candidates.keys(), key=lambda c: len(color_to_candidates[c]))
                 candidates_in_color = color_to_candidates[selected_color]
 
@@ -150,13 +177,13 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
                     flips += 1
 
             # 5b) Randomly pick a variable from candidate variables to flip and flip it
-            if heuristic_mode = 1:
+            if heuristic_mode == 1:
                 var_to_flip = random.choice(cc_candidates_to_flip)
                 flip_variable(assignment, var_to_flip)
                 flips += 1
 
             # 5c) Randomly pick a color, flip all variables of that color
-            if heuristic_mode = 2:
+            if heuristic_mode == 2:
                 selected_color = random.choice(color_to_candidates.keys())
                 candidates_in_color = color_to_candidates[selected_color]
 
@@ -165,7 +192,7 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
                     flips += 1
 
             # 5d) Always pick the first variable in candidate variables to flip and flip it
-            if heuristic_mode = 3:
+            if heuristic_mode == 3:
                 var_to_flip = cc_candidates_to_flip[0]
                 flip_variable(assignment, var_to_flip)
                 flips += 1
