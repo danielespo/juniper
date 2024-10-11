@@ -107,26 +107,23 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
             if not unsat_clauses:
                 return assignment, _try, _loop, flips # Success
 
-            random_samples_count = len(colors) #should be int
-            cc = random.sample(unsat_clauses, int(random_samples_count)) # random list as long as colors
-
-            # 3) From the UNSAT clauses, pick a number, say 3 clauses at random. 
-            # Where 3 here is the number of colors.
+            # 3) From the UNSAT clauses, pick integer n_number_colors clauses 
+            random_samples_count = len(colors) # Should be int
+            cc = random.sample(unsat_clauses, int(random_samples_count)) # Random list as long as colors
             cc_candidates_to_flip = []
+
             for clause in cc:
                 variables_in_clause = [abs(var) for var in clause]
 
-                # Pick either a random variable of the clause or 
+                # Pick a random variable of the clause or 
                 if random.random() < p:
                     temp_var = random.choice(variables_in_clause)
                     cc_candidates_to_flip.append(temp_var)
 
-                # Compute break-counts for variables in clause
+                # Pick variable with least break-count
                 else:
                     for x in variables_in_clause:
-                        # Compute break-count for x
                         # Break-count is the number of clauses that become unsatisfied when flipping x
-                        # Since we don't have variable-to-clauses mapping, we can approximate it
                         flip_variable(assignment, x)
                         num_new_unsat = sum(
                             not evaluate_clause(c, assignment) for c in clauses if evaluate_clause(c, assignment)
@@ -136,27 +133,32 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
                         cc_candidates_to_flip.append((x, break_count, colors[x]))
 
             # 4) Gather all the picked variables into a list, this is the candidate list of variables. 
-            # This is what cc_candidates_to_flip is.
 
-            # Group candidates by color
-            color_to_candidates = {} # Now a dict with vars, color of var; this could've been precomputed
+            color_to_candidates = {}
             for x, break_count, color in cc_candidates_to_flip:
                 color_to_candidates.setdefault(color, []).append((x, break_count))
 
-            # Choose the color with the largest number of variables in cc_candidates_to_flip
-            selected_color = max(color_to_candidates.keys(), key=lambda c: len(color_to_candidates[c]))
 
-            candidates_in_color = color_to_candidates[selected_color]
+            # 5) Now, heuristically, you can pick variables from the same color and flip them because they are uncorrelated 
 
-            # Now, we can just flip the variables of that color
+            # 5a) Flip variables of the color represented with the largest number of variables
+            if heuristic_mode = 0:
+                selected_color = max(color_to_candidates.keys(), key=lambda c: len(color_to_candidates[c]))
+                candidates_in_color = color_to_candidates[selected_color]
 
-            # OR we can flip randomly from the list
+                for i in vars_with_min_break:
+                    flip_variable(assignment, var_to_flip)
+                    flips += 1
 
-            # OR we can pick a random different color to flip from
+            # 5b) Randomly 
+            if heuristic_mode = 1:
+                var_to_flip = random.choice(cc_candidates_to_flip)
+                flip_variable(assignment, var_to_flip)
+                flips += 1
 
-            # Select variables to flip from the chosen color with minimum break-count
-            min_break_count = min(break_count for x, break_count in candidates_in_color)
-            vars_with_min_break = [x for x, bc in candidates_in_color if bc == min_break_count]
+
+            # 5c) Randomly pick a color, flip all variables of that color
+
 
             if random.random() < p:
                 # Random walk move: flip a random variable from the candidates
@@ -208,3 +210,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# Unused code, just in case:
+# 
+# Select variables to flip from the chosen color with minimum break-count
+#min_break_count = min(break_count for x, break_count in candidates_in_color)
+#vars_with_min_break = [x for x, bc in candidates_in_color if bc == min_break_count]
