@@ -61,7 +61,8 @@ def GenerateColors(clauses):
 
 # Update Oct 10 2024
 # After speaking with Dima I realized this needs to change
-# Adding a candidate list of variables to flip which is fed from the candidate clauses list
+# Adding a candidate list of variables to flip which is fed 
+# from the candidate clauses list
 
 # Steps:
 
@@ -72,14 +73,27 @@ def GenerateColors(clauses):
 # 3b) Or, from the clause, pick the variable with the least break value
 # 4) Gather all the picked variables into a list, this is the candidate list of variables. 
 # 5) Now, heuristically, you can pick variables from the same color and flip them because they are uncorrelated 
-# 6) 3 Different heuristics Dima came up with:
-# - Flip variables of the color represented with the largest number of variables
-# - Randomly
-# - Randomly pick variavbles of a color to flip
-# 7) Additionally, near convergence, would be good to try and turn the heuristics off and go back to WalkSAT/SKC. 
+# 5a) Flip variables of the color represented with the largest number of variables
+# 5b) Randomly
+# 5c) Randomly pick variavbles of a color to flip
+# 6) Additionally, near convergence turn the heuristics off and go back to WalkSAT/SKC. 
 # 8) END 
 
-def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
+def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
+    """    
+    clauses: array of clauses from read_cnf() 
+    colors: dictionary of color memberships from GenerateColors()
+    max_tries: integer of max restarts for algorithm
+    max_loops: integer of iterations of algorithm for a given try
+    p: probability of greedy vs random selection
+    heuristic_mode: 
+        0 = greedy in colors from candidate variables to flip
+        1 = random from candidate variables to flip
+        2 = pick a random color from candidate variables to flip
+        3 = always pick first candidate variable in candidate variables to flip
+        4 = always pick last candidate variable in candidate variables to flip
+    """
+
     flips = 0
     variables = list(get_variables(clauses))
 
@@ -96,8 +110,8 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
             random_samples_count = len(colors) #should be int
             cc = random.sample(unsat_clauses, int(random_samples_count)) # random list as long as colors
 
-            # 3) From the UNSAT clauses, pick a number say 3 clauses at random. 
-            # These 3 are the same number of colors.
+            # 3) From the UNSAT clauses, pick a number, say 3 clauses at random. 
+            # Where 3 here is the number of colors.
             cc_candidates_to_flip = []
             for clause in cc:
                 variables_in_clause = [abs(var) for var in clause]
@@ -123,13 +137,6 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
 
             # 4) Gather all the picked variables into a list, this is the candidate list of variables. 
             # This is what cc_candidates_to_flip is.
-
-            # 5) Now, heuristically, you can pick variables from the same color and flip them because they are uncorrelated 
-            # 3 Different heuristics Dima came up with:
-            # - Flip variables of the color represented with the largest number of variables
-            # - Randomly
-            # - Randomly pick variavbles of a color to flip
-
 
             # Group candidates by color
             color_to_candidates = {} # Now a dict with vars, color of var; this could've been precomputed
