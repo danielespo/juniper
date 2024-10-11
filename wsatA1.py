@@ -60,65 +60,66 @@ def GenerateColors(clauses):
 
 
 # Update Oct 10 2024
-
-# After speaking with Dima I realized this needs to change slightly in order to better
-# make sense.
-
-# Need to add a candidate list of variables to flip which is fed from the candidate clauses list
+# After speaking with Dima I realized this needs to change
+# Adding a candidate list of variables to flip which is fed from the candidate clauses list
 
 # Steps:
 
 # 1) Random assignment
 # 2) Gather UNSAT clauses
 # 3) From the UNSAT clauses, pick a number say 3 clauses at random. These 3 are the same number of colors.
-# 4) For a clause, either pick a variable at random to pick 
-# 5) Or, from the clause, pick the variable with the least break value
-# 6) Gather all the picked variables into a list, this is the candidate list of variables. 
-# 7) Now, heuristically, you can pick variables from the same color and flip them because they are uncorrelated 
-# 8) 3 Different heuristics Dima came up with:
+# 3a) For a clause, either pick a variable at random to pick 
+# 3b) Or, from the clause, pick the variable with the least break value
+# 4) Gather all the picked variables into a list, this is the candidate list of variables. 
+# 5) Now, heuristically, you can pick variables from the same color and flip them because they are uncorrelated 
+# 6) 3 Different heuristics Dima came up with:
 # - Flip variables of the color represented with the largest number of variables
 # - Randomly
 # - Randomly pick variavbles of a color to flip
-# 9) Additionally, near convergence, would be good to try and turn the heuristics off and go back to WalkSAT/SKC. 
-# 10) END 
-
-
-# 1) Gather up unsatisfied clauses
-# 2) Follow the same algorithm as in WalkSAT to determine cc candidate variables to flip, say set cc_candidates_to_flip
-# 3) Random flip a given v, or 
-# 4) From candidate clauses with v in C with color k and smallest break-count, pick only variables of v color to flip
+# 7) Additionally, near convergence, would be good to try and turn the heuristics off and go back to WalkSAT/SKC. 
+# 8) END 
 
 def AlgorithmA1(clauses, colors, max_tries, max_loops, p):
     flips = 0
     variables = list(get_variables(clauses))
 
     for _try in range(max_tries):
-        # Initialize a random assignment
+        # 1) Random assignment
         assignment = {var: random.choice([True, False]) for var in variables}
 
         for _loop in range(max_loops):
+            # 2) Gather UNSAT clauses
             unsat_clauses = get_unsatisfied_clauses(clauses, assignment)
             if not unsat_clauses:
                 return assignment, _try, _loop, flips # Success
 
-            cc = unsat_clauses
+            random_samples_count = len(colors) #should be int
+            cc = random.sample(unsat_clauses, int(random_samples_count)) # random list as long as colors
 
-            # Step 2: Determine cc_candidates_to_flip
+            # 3) From the UNSAT clauses, pick a number say 3 clauses at random. 
+            # These 3 are the same number of colors.
             cc_candidates_to_flip = []
             for clause in cc:
                 variables_in_clause = [abs(var) for var in clause]
+
+                # Pick either a random variable of the clause or 
+                if random.random() < p:
+                    temp_var = random.choice(variables_in_clause)
+                    cc_candidates_to_flip.append(temp_var)
+
                 # Compute break-counts for variables in clause
-                for x in variables_in_clause:
-                    # Compute break-count for x
-                    # Break-count is the number of clauses that become unsatisfied when flipping x
-                    # Since we don't have variable-to-clauses mapping, we can approximate it
-                    flip_variable(assignment, x)
-                    num_new_unsat = sum(
-                        not evaluate_clause(c, assignment) for c in clauses if evaluate_clause(c, assignment)
-                    )
-                    flip_variable(assignment, x)  # Flip back
-                    break_count = num_new_unsat
-                    cc_candidates_to_flip.append((x, break_count, colors[x]))
+                else:
+                    for x in variables_in_clause:
+                        # Compute break-count for x
+                        # Break-count is the number of clauses that become unsatisfied when flipping x
+                        # Since we don't have variable-to-clauses mapping, we can approximate it
+                        flip_variable(assignment, x)
+                        num_new_unsat = sum(
+                            not evaluate_clause(c, assignment) for c in clauses if evaluate_clause(c, assignment)
+                        )
+                        flip_variable(assignment, x)  # Flip back
+                        break_count = num_new_unsat
+                        cc_candidates_to_flip.append((x, break_count, colors[x]))
 
             # Step 3: Choose subset of uncorrelated variables to flip
             # Group candidates by color

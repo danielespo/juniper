@@ -13,3 +13,6 @@
 2024-10-08 10:52:22,357 [INFO] Database writer started.
 2024-10-08 10:52:22,505 [INFO] Processed walksat for uf50012.cnf with p=0.5.
 2024-10-08 17:24:14,729 [INFO] Processed wsatA2 for uf50012.cnf with p=0.5.
+2024-10-11 11:05:18,495 [INFO] Processed wsatA1 for uf50012.cnf with p=0.5.
+2024-10-11 11:05:18,526 [ERROR] Command 'python /home/dae/SatExperiments/juniper/wsatB.py -cnf /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/uf50012.cnf -p 0.5 --max_tries 500 --max_loops 50000' failed with return code 2.
+2024-10-11 11:05:18,526 [ERROR] Execution failed for wsatB on uf50012.cnf with p=0.5.
