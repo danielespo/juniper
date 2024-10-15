@@ -115,19 +115,14 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
                 return assignment, _try, _loop, flips # Success
 
             # 3) From the UNSAT clauses, pick candidate clauses up to n_number_colors 
-            random_samples_count = len(colors.keys()) # Should be int, check
+            random_samples_count = len(colors.keys())
 
-            # Sample code is buggy, fix
-            # sample larger than pop ?..
+            # Ensure we don't sample more clauses than there are UNSAT clauses
+            # this was the previous bug.
+            random_samples_count = min(random_samples_count, len(unsat_clauses))
 
-            print(random_samples_count)
-            # 50 is larger than the number of UNSAT
-
-            if random_samples_count > len(unsat_clauses):
-                random_samples_count = len(unsat_clauses)
-            cc = random.sample(unsat_clauses, int(random_samples_count))
+            cc = random.sample(unsat_clauses, random_samples_count)
             cc_candidates_to_flip = []
-
             for clause in cc:
                 variables_in_clause = [abs(var) for var in clause]
 
@@ -148,16 +143,15 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
                         flip_variable(assignment, x)
                         break_count.append(num_new_unsat)
                     
+                    # Find indices with least break count
+                    min_break = min(break_count)
+                    indices = [i for i, count in enumerate(break_count) if count == min_break]
 
-                    # Change this spaghetti to actually mean
-                    # Hey, pick the smallest break value.
-                    a = np.array(break_count) 
-                    index = np.where(a == a.min())
-                    if len(index) > 1:
-                        index = index[0]
-                    print(index)
-                    x = variables_in_clause[index[0]]
+                    # Pick one index at random if tied, else always picks least
+                    idx = random.choice(indices)
+                    x = variables_in_clause[idx]
                     cc_candidates_to_flip.append((x, colors[x]))
+
 
             # 4) Gather all the picked variables into the candidate list of variables. 
             color_to_candidates = {}
