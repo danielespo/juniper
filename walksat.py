@@ -71,6 +71,12 @@ def walkSAT(clauses, max_tries, max_flips, p):
 
     return "FAIL"
 
+# NOTE:
+# Modify this to include the following to compare to Tinish:
+# Average Number of Flips:  1.5
+# Average Probability of Success:  1.0
+# Standard deviation of flips:  0.806225774829855
+
 def main():
     parser = argparse.ArgumentParser(description='WalkSAT Solver (regular).')
     parser.add_argument('-cnf', type=str,help='Path to SAT problem in .cnf format', required=True)
