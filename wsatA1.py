@@ -4,7 +4,10 @@ import networkx as nx
 from itertools import combinations
 import numpy as np
 import time
-
+# python wsatA1.py -cnf problem.cnf -p 0.5 > full_output.txt
+# grep "Execution Time" full_output.txt > timing.txt
+# cat timing.txt etc.
+# also check out Bidirectional-CAM-Algorithms and copy into wsatTinish.py
 def read_dimacs(filename):
     clauses = []
     with open(filename, 'r') as file:
