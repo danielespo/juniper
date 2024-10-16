@@ -75,7 +75,6 @@ def main():
     for _ in range(10):
 
         result = wk.walkSAT(clauses, max_tries, max_flips, probability)
-        print(result)
         walksat_result.append(result)
     
     avg_flips, prob_s, std_flips, tts_99 = get_stats(walksat_result, max_flips)
