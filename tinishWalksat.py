@@ -8,8 +8,13 @@ import itertools
 import argparse #added argument parsing
 
 # Copyright Tinish Bhattacharya, 2024
-# Used with permission, Daniel Espinosa Gonzalez 2024
 # UCSB Strukov Lab
+# Used with permission, Daniel Espinosa Gonzalez 2024
+
+# Modified the parser to be directory-agnostic
+# parser assumes cnf files have standard header as 0th row
+# use the parser in wsatA1.py if you would prefer one which
+# does not mind how much text there is :)
 
 def sat_eval(var_val,clause_mat):
     
