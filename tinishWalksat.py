@@ -345,41 +345,5 @@ def main():
     print("Average Probability of Success: ",prob_s)
     print("Standard deviation of flips: ",std_flips)
 
-
-    # # Adding parser so I can run this as a CLI app
-    # parser = argparse.ArgumentParser(description='Algorithm A1 WSAT Solver.')
-    # parser.add_argument('-cnf', help='Path to SAT problem in .cnf format', required=True)
-    # parser.add_argument('-p', type=float, help='Probability float between 0 and 1', required=True)
-    # parser.add_argument('--max_tries', type=int, default=100, help='Maximum number of tries')
-    # parser.add_argument('--max_loops', type=int, default=1000, help='Maximum number of loops per try')
-    # args = parser.parse_args()
-
-    # filepath = args.cnf
-    # probability = args.p
-    # max_tries = args.max_tries
-    # max_loops = args.max_loops
-
-    # try:
-    #     num_vars, clauses = read_dimacs(filepath)
-    # except Exception as e:
-    #     print(f"Error reading CNF file: {e}")
-    #     raise ValueError
-    
-    # start_color_time = time.perf_counter()
-    # colors = GenerateColors(clauses)
-    # end_color_time = time.perf_counter()
-    # time_color = end_color_time - start_color_time
-
-    # start_colorwalksat_process_time = time.perf_counter()
-    # result = AlgorithmA1(clauses, colors, max_tries, max_loops, probability, 0)
-    # end_colorwalksat_process_time = time.perf_counter()
-    # time_colorwalksat = end_colorwalksat_process_time - start_colorwalksat_process_time
-
-    # if result != "FAIL":
-    #     SAT = 1
-    #     print(time_colorwalksat, time_color, result[1], result[2], result[3]) # Return tries and flips
-    # else:
-    #     print(0,0,0,0,0) # No satisfying assignment found within the given limits
-
 if __name__ == "__main__":
     main()
