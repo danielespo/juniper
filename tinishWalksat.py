@@ -307,7 +307,7 @@ def get_kSATprob(file_addr="/home/dae/SatExperiments/juniper/TestFolderCNF/abitb
     """
     # File address, change back to be able to run through dirs
     #file_addr = './SATLIB_Data/'+dir_name+'/'+instance_name+'.cnf'
-    file_addr = "/home/dae/SatExperiments/juniper/TestFolderCNF/abitbigger.cnf"
+    file_addr = "/home/dae/SatExperiments/juniper/uf50suiteSATLIB/uf50016.cnf"
 
     with open(file_addr) as f:
         lines = f.readlines()

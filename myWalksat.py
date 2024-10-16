@@ -1,5 +1,7 @@
 import math
 import walksat as wk
+import wsatA1 as a1
+import tinishWalksat as tw
 import numpy as np
 
 # Copyright Daniel Espinosa Gonzalez, Tinish Bhattacharya
@@ -58,7 +60,7 @@ def get_stats(walksat_result, max_flips):
 
 def main():
 
-    filepath = "/home/dae/SatExperiments/juniper/TestFolderCNF/abitbigger.cnf"
+    filepath = "/home/dae/SatExperiments/juniper/uf50suiteSATLIB/uf50016.cnf"
 
     # These options are the same as tinishWalksat.py
     max_tries = 10 #same as tinish
@@ -72,10 +74,41 @@ def main():
         return
     
     walksat_result = []
-    for _ in range(10):
 
-        result = wk.walkSAT(clauses, max_tries, max_flips, probability)
-        walksat_result.append(result)
+    # "walksat", "coloringA1_heuristic0"
+    # then change the heuristic number 0-3
+    # heuristic_mode: 
+    # 0 = greedy in colors from candidate variables to flip
+    # 1 = random from candidate variables to flip
+    # 2 = pick a random color from candidate variables to flip
+    # 3 = always pick first candidate variable in candidate variables to flip
+    
+    mode = "coloringA1_heuristic0"
+
+    for _ in range(10):
+        if mode == "walksat":
+            result = wk.walkSAT(clauses, max_tries, max_flips, probability)
+            walksat_result.append(result)
+        if mode == "coloringA1_heuristic0":
+            colors = a1.GenerateColors(clauses)
+            max_loops = math.floor(max_flips / len(colors))
+            result = a1.AlgorithmA1(clauses, colors, max_tries, max_loops, probability, 0)
+            walksat_result.append(result)
+        if mode == "coloringA1_heuristic1":
+            colors = a1.GenerateColors(clauses)
+            max_loops = math.floor(max_flips / len(colors))
+            result = a1.AlgorithmA1(clauses, colors, max_tries, max_loops, probability, 1)
+            walksat_result.append(result)
+        if mode == "coloringA1_heuristic2":
+            colors = a1.GenerateColors(clauses)
+            max_loops = math.floor(max_flips / len(colors))
+            result = a1.AlgorithmA1(clauses, colors, max_tries, max_loops, probability, 2)
+            walksat_result.append(result)
+        if mode == "coloringA1_heuristic3":
+            colors = a1.GenerateColors(clauses)
+            max_loops = math.floor(max_flips / len(colors))
+            result = a1.AlgorithmA1(clauses, colors, max_tries, max_loops, probability, 3)
+            walksat_result.append(result)
     
     avg_flips, prob_s, std_flips, tts_99 = get_stats(walksat_result, max_flips)
 
