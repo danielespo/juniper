@@ -60,6 +60,83 @@ def get_stats(walksat_result, max_flips):
 
     return avg_flips, prob_s, std_flips, tts_99
 
+
+def API(filepath, max_tries, max_flips, probability, mode):
+
+    #filepath = "/home/dae/SatExperiments/juniper/uf50suiteSATLIB/uf5001.cnf"
+    #"/home/dae/SatExperiments/juniper/uf50suiteSATLIB/uf5001.cnf"
+
+    # These options are the same as tinishWalksat.py
+    #max_tries = 10 #same as tinish
+    #max_flips = 100000
+    #probability = 0.5
+
+    try:
+        num_vars, clauses = wk.read_dimacs(filepath)
+    except Exception as e:
+        print(f"Error reading CNF file: {e}")
+        return
+    
+    walksat_result = []
+
+    # "walksat", "coloringA1_heuristic0"
+    # then change the heuristic number 0-3
+    # heuristic_mode: 
+    # 0 = greedy in colors from candidate variables to flip
+    # 1 = random from candidate variables to flip
+    # 2 = pick a random color from candidate variables to flip
+    # 3 = always pick first candidate variable in candidate variables to flip
+
+    # mode = "coloringA1_heuristic0"
+
+    walksat_result = []
+
+    with Pool(processes=10) as pool:
+        result_objects = []
+
+        if mode == "walksat":
+            for _ in range(10):
+                res = pool.apply_async(wk.walkSAT, args=(clauses, max_tries, max_flips, probability))
+                result_objects.append(res)
+
+        elif mode == "coloringA1_heuristic0":
+            colors = a1.GenerateColors(clauses)
+            max_loops = math.floor(max_flips / len(colors))
+            for _ in range(10):
+                res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 0))
+                result_objects.append(res)
+
+        elif mode == "coloringA1_heuristic1":
+            colors = a1.GenerateColors(clauses)
+            max_loops = math.floor(max_flips / len(colors))
+            for _ in range(10):
+                res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 1))
+                result_objects.append(res)
+
+        elif mode == "coloringA1_heuristic2":
+            colors = a1.GenerateColors(clauses)
+            max_loops = math.floor(max_flips / len(colors))
+            for _ in range(10):
+                res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 2))
+                result_objects.append(res)
+
+        elif mode == "coloringA1_heuristic3":
+            colors = a1.GenerateColors(clauses)
+            max_loops = math.floor(max_flips / len(colors))
+            for _ in range(10):
+                res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 3))
+                result_objects.append(res)
+
+        for res in result_objects:
+            walksat_result.append(res.get())
+    pool.close()
+    pool.join()
+    
+    avg_flips, prob_s, std_flips, tts_99 = get_stats(walksat_result, max_flips)
+
+    return avg_flips , prob_s, std_flips, tts_99
+
+
 def main():
 
     filepath = "/home/dae/SatExperiments/juniper/uf50suiteSATLIB/uf5001.cnf"
@@ -128,7 +205,8 @@ def main():
 
         for res in result_objects:
             walksat_result.append(res.get())
-
+    pool.close()
+    pool.join()
     avg_flips, prob_s, std_flips, tts_99 = get_stats(walksat_result, max_flips)
 
     print("Average Number of Flips: ",avg_flips)
