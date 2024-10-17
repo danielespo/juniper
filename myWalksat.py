@@ -18,7 +18,10 @@ def get_stats(walksat_result, max_flips):
         if res != "FAIL":
             # if not a fail then a success
             assignment, _Tries, _Flips, flips = res
-            # if stops working then make _Flips in flips_list ..
+            # Flips here has to be flips and not _flips because
+            # _flips is actually _loops in wsatA1 and does not correspond
+            # to actual flips per the algorithm. In walksat.py the flips
+            # variable is duplicated for this reason.
             flips_list.append(flips)
             success_flags.append(1)
         else:
