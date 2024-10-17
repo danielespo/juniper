@@ -92,12 +92,8 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
         3 = always pick first candidate variable in candidate variables to flip
     """
     flips = 0
-    variables = np.array(sorted(get_variables(clauses)))    # Sorted list of variables
-    num_vars = variables[-1] # Variables are numbered from 1 to N
-
-    # Map variable indices to array positions
-    var_index_map = {var: idx for idx, var in enumerate(variables)}
-    index_var_map = {idx: var for idx, var in enumerate(variables)}
+    variables = np.array(sorted(get_variables(clauses))) # Sorted list of variables
+    num_vars = variables[-1] # 1-based indexing
 
     color_array = np.zeros(num_vars + 1, dtype=int)  # 1 based indexing
     for var, color in colors.items():
@@ -243,129 +239,110 @@ if __name__ == "__main__":
 # Original A1 (raw python)
 # I had to change this because it was unbelievably slow without using numpy
 # - Daniel
-# def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
-#     """    
-#     clauses: array of clauses from read_cnf() 
-#     colors: dictionary of color memberships from GenerateColors()
-#     max_tries: integer of max restarts for algorithm
-#     max_loops: integer of iterations of algorithm for a given try
-#     p: probability of greedy vs random selection
-#     heuristic_mode: 
-#         0 = greedy in colors from candidate variables to flip
-#         1 = random from candidate variables to flip
-#         2 = pick a random color from candidate variables to flip
-#         3 = always pick first candidate variable in candidate variables to flip
-#     """
+def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
+    """    
+    clauses: array of clauses from read_cnf() 
+    colors: dictionary of color memberships from GenerateColors()
+    max_tries: integer of max restarts for algorithm
+    max_loops: integer of iterations of algorithm for a given try
+    p: probability of greedy vs random selection
+    heuristic_mode: 
+        0 = greedy in colors from candidate variables to flip
+        1 = random from candidate variables to flip
+        2 = pick a random color from candidate variables to flip
+        3 = always pick first candidate variable in candidate variables to flip
+    """
 
-#     flips = 0
-#     variables = np.array(sorted(get_variables(clauses)))
-#     num_vars = variables[-1] 
-
-#     # hash maps to make this faster
-#     var_index_map = {var: idx for idx, var in enumerate(variables)}
-#     index_var_map = {idx: var for idx, var in enumerate(variables)}
-
-#     clause_array = []
-#     clause_lengths = []
-#     for clause in clauses:
-#         clause_array.append(np.array(clause))
-#         clause_lengths.append(len(clause))
+    flips = 0
+    variables = np.array(sorted(get_variables(clauses)))
+    num_vars = variables[-1] 
     
-#     clause_array = np.array(clause_array, dtype=object)
-#     clause_lengths = np.array(clause_lengths)
+    for _try in range(max_tries):
+        # 1) Random assignment
+        assignment = {var: random.choice([True, False]) for var in variables}
 
-#     color_array = np.zeros(num_vars + 1, dtype=int)  # +1 because variable indices start from 1
-#     for var, color in colors.items():
-#         color_array[var] = color
-    
-#     unique_colors = np.unique(color_array[color_array > 0])
-    
-#     for _try in range(max_tries):
-#         # 1) Random assignment
-#         assignment = {var: random.choice([True, False]) for var in variables}
+        for _loop in range(max_loops):
+            # 2) Gather UNSAT clauses
+            unsat_clauses = get_unsatisfied_clauses(clauses, assignment)
+            if not unsat_clauses:
+                return assignment, _try, _loop, flips # Success
 
-#         for _loop in range(max_loops):
-#             # 2) Gather UNSAT clauses
-#             unsat_clauses = get_unsatisfied_clauses(clauses, assignment)
-#             if not unsat_clauses:
-#                 return assignment, _try, _loop, flips # Success
+            # 3) From the UNSAT clauses, pick candidate clauses up to n_number_colors 
+            random_samples_count = len(colors.keys())
 
-#             # 3) From the UNSAT clauses, pick candidate clauses up to n_number_colors 
-#             random_samples_count = len(colors.keys())
+            # Ensure we don't sample more clauses than there are UNSAT clauses
+            # this was the previous bug.
+            random_samples_count = min(random_samples_count, len(unsat_clauses))
 
-#             # Ensure we don't sample more clauses than there are UNSAT clauses
-#             # this was the previous bug.
-#             random_samples_count = min(random_samples_count, len(unsat_clauses))
+            cc = random.sample(unsat_clauses, random_samples_count)
+            cc_candidates_to_flip = []
+            for clause in cc:
+                variables_in_clause = [abs(var) for var in clause]
 
-#             cc = random.sample(unsat_clauses, random_samples_count)
-#             cc_candidates_to_flip = []
-#             for clause in cc:
-#                 variables_in_clause = [abs(var) for var in clause]
+                # Pick a random variable of the clause for a candidate variable 
+                if random.random() < p:
+                    x = random.choice(variables_in_clause)
+                    cc_candidates_to_flip.append((x, colors[x]))
 
-#                 # Pick a random variable of the clause for a candidate variable 
-#                 if random.random() < p:
-#                     x = random.choice(variables_in_clause)
-#                     cc_candidates_to_flip.append((x, colors[x]))
-
-#                 # Or pick variable with least break-count
-#                 else:
-#                     break_count = []
-#                     for x in variables_in_clause:
-#                         # Break-count is the number of clauses that become unsatisfied when flipping x
-#                         flip_variable(assignment, x)
-#                         num_new_unsat = sum(
-#                             not evaluate_clause(c, assignment) for c in clauses if evaluate_clause(c, assignment)
-#                         )
-#                         flip_variable(assignment, x)
-#                         break_count.append(num_new_unsat)
+                # Or pick variable with least break-count
+                else:
+                    break_count = []
+                    for x in variables_in_clause:
+                        # Break-count is the number of clauses that become unsatisfied when flipping x
+                        flip_variable(assignment, x)
+                        num_new_unsat = sum(
+                            not evaluate_clause(c, assignment) for c in clauses if evaluate_clause(c, assignment)
+                        )
+                        flip_variable(assignment, x)
+                        break_count.append(num_new_unsat)
                     
-#                     # Find indices with least break count
-#                     min_break = min(break_count)
-#                     indices = [i for i, count in enumerate(break_count) if count == min_break]
+                    # Find indices with least break count
+                    min_break = min(break_count)
+                    indices = [i for i, count in enumerate(break_count) if count == min_break]
 
-#                     # Pick one index at random if tied, else always picks least
-#                     idx = random.choice(indices)
-#                     x = variables_in_clause[idx]
-#                     cc_candidates_to_flip.append((x, colors[x]))
-
-
-#             # 4) Gather all the picked variables into the candidate list of variables. 
-#             color_to_candidates = {}
-#             for x, color in cc_candidates_to_flip:
-#                 color_to_candidates.setdefault(color, []).append((x))
+                    # Pick one index at random if tied, else always picks least
+                    idx = random.choice(indices)
+                    x = variables_in_clause[idx]
+                    cc_candidates_to_flip.append((x, colors[x]))
 
 
-#             # 5) Heuristically pick variables to flip. 
-
-#             # 5a) Flip variables of the color represented with the largest number of variables
-#             if heuristic_mode == 0:
-#                 selected_color = max(color_to_candidates.keys(), key=lambda c: len(color_to_candidates[c]))
-#                 candidates_in_color = color_to_candidates[selected_color]
-
-#                 for i in candidates_in_color:
-#                     flip_variable(assignment, i)
-#                     flips += 1
-
-#             # 5b) Randomly pick a variable from candidate variables to flip and flip it
-#             elif heuristic_mode == 1:
-#                 var_to_flip = random.choice(cc_candidates_to_flip)[0]  # Extract variable x
-#                 flip_variable(assignment, var_to_flip)
-#                 flips += 1
-
-#             # 5c) Randomly pick a color, flip all variables of that color
-#             elif heuristic_mode == 2:
-#                 selected_color = random.choice(list(color_to_candidates.keys()))
-#                 candidates_in_color = color_to_candidates[selected_color]
-
-#                 for i in candidates_in_color:
-#                     flip_variable(assignment, i)
-#                     flips += 1
+            # 4) Gather all the picked variables into the candidate list of variables. 
+            color_to_candidates = {}
+            for x, color in cc_candidates_to_flip:
+                color_to_candidates.setdefault(color, []).append((x))
 
 
-#             # 5d) Always pick the first variable in candidate variables to flip and flip it
-#             elif heuristic_mode == 3:
-#                 var_to_flip = cc_candidates_to_flip[0][0]  # Extract variable x
-#                 flip_variable(assignment, var_to_flip)
-#                 flips += 1
+            # 5) Heuristically pick variables to flip. 
 
-#     return "FAIL"
+            # 5a) Flip variables of the color represented with the largest number of variables
+            if heuristic_mode == 0:
+                selected_color = max(color_to_candidates.keys(), key=lambda c: len(color_to_candidates[c]))
+                candidates_in_color = color_to_candidates[selected_color]
+
+                for i in candidates_in_color:
+                    flip_variable(assignment, i)
+                    flips += 1
+
+            # 5b) Randomly pick a variable from candidate variables to flip and flip it
+            elif heuristic_mode == 1:
+                var_to_flip = random.choice(cc_candidates_to_flip)[0]  # Extract variable x
+                flip_variable(assignment, var_to_flip)
+                flips += 1
+
+            # 5c) Randomly pick a color, flip all variables of that color
+            elif heuristic_mode == 2:
+                selected_color = random.choice(list(color_to_candidates.keys()))
+                candidates_in_color = color_to_candidates[selected_color]
+
+                for i in candidates_in_color:
+                    flip_variable(assignment, i)
+                    flips += 1
+
+
+            # 5d) Always pick the first variable in candidate variables to flip and flip it
+            elif heuristic_mode == 3:
+                var_to_flip = cc_candidates_to_flip[0][0]  # Extract variable x
+                flip_variable(assignment, var_to_flip)
+                flips += 1
+
+    return "FAIL"
