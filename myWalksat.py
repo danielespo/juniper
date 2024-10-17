@@ -86,7 +86,7 @@ def main():
     # 2 = pick a random color from candidate variables to flip
     # 3 = always pick first candidate variable in candidate variables to flip
 
-    mode = "coloringA1_heuristic1"
+    mode = "coloringA1_heuristic0"
 
     walksat_result = []
 

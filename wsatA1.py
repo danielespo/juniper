@@ -75,7 +75,7 @@ def GenerateColors(clauses):
 # 5b) Randomly
 # 5c) Randomly pick variavbles of a color to flip
 # 5d) Only pick the first candidate variable
-# 6) Additionally, near convergence turn the heuristics off and go back to WalkSAT/SKC. 
+# 6) Additionally, near convergence turn the heuristics off and go back to WalkSAT+SKC.  NOTE: not implemented yet
 # 8) END 
 
 def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
