@@ -3,6 +3,7 @@ import walksat as wk
 import wsatA1 as a1
 import tinishWalksat as tw
 import numpy as np
+from multiprocessing import Pool
 
 # Copyright Daniel Espinosa Gonzalez, Tinish Bhattacharya
 # October 2024
@@ -85,34 +86,49 @@ def main():
     # 2 = pick a random color from candidate variables to flip
     # 3 = always pick first candidate variable in candidate variables to flip
 
-    mode = "walksat"
+    mode = "coloringA1_heuristic1"
 
-    for _ in range(10):
+    walksat_result = []
+
+    with Pool(processes=10) as pool:
+        result_objects = []
+
         if mode == "walksat":
-            result = wk.walkSAT(clauses, max_tries, max_flips, probability)
-            walksat_result.append(result)
+            for _ in range(10):
+                res = pool.apply_async(wk.walkSAT, args=(clauses, max_tries, max_flips, probability))
+                result_objects.append(res)
+
         elif mode == "coloringA1_heuristic0":
             colors = a1.GenerateColors(clauses)
             max_loops = math.floor(max_flips / len(colors))
-            result = a1.AlgorithmA1(clauses, colors, max_tries, max_loops, probability, 0)
-            # result = [assignment, _try, _loop, flips]
-            walksat_result.append(result)
+            for _ in range(10):
+                res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 0))
+                result_objects.append(res)
+
         elif mode == "coloringA1_heuristic1":
             colors = a1.GenerateColors(clauses)
             max_loops = math.floor(max_flips / len(colors))
-            result = a1.AlgorithmA1(clauses, colors, max_tries, max_loops, probability, 1)
-            walksat_result.append(result)
+            for _ in range(10):
+                res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 1))
+                result_objects.append(res)
+
         elif mode == "coloringA1_heuristic2":
             colors = a1.GenerateColors(clauses)
             max_loops = math.floor(max_flips / len(colors))
-            result = a1.AlgorithmA1(clauses, colors, max_tries, max_loops, probability, 2)
-            walksat_result.append(result)
+            for _ in range(10):
+                res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 2))
+                result_objects.append(res)
+
         elif mode == "coloringA1_heuristic3":
             colors = a1.GenerateColors(clauses)
             max_loops = math.floor(max_flips / len(colors))
-            result = a1.AlgorithmA1(clauses, colors, max_tries, max_loops, probability, 3)
-            walksat_result.append(result)
-    
+            for _ in range(10):
+                res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 3))
+                result_objects.append(res)
+
+        for res in result_objects:
+            walksat_result.append(res.get())
+
     avg_flips, prob_s, std_flips, tts_99 = get_stats(walksat_result, max_flips)
 
     print("Average Number of Flips: ",avg_flips)

@@ -4,10 +4,11 @@ import networkx as nx
 from itertools import combinations
 import numpy as np
 import time
+
 # python wsatA1.py -cnf problem.cnf -p 0.5 > full_output.txt
 # grep "Execution Time" full_output.txt > timing.txt
-# cat timing.txt etc.
-# also check out Bidirectional-CAM-Algorithms and copy into wsatTinish.py
+# vim timing.txt
+
 def read_dimacs(filename):
     clauses = []
     with open(filename, 'r') as file:
@@ -58,24 +59,11 @@ def GenerateColors(clauses):
         for var1, var2 in combinations(vars_in_clause, 2):
             G.add_edge(var1, var2)
 
-    # Greedy coloring , returns dictionary of unique colors (0 to n) for each node
+    # Greedy coloring , return dictionary of unique colors (0 to n) for each node
     colors = nx.coloring.greedy_color(G, strategy='largest_first')
     return colors
 
-
-# Update Oct 11 2024
-# Get plots of these algorithms on benchmarks that Tinish has already done
-# Show my walksat is equivalent to his walksat.
-# Write documentation for the summer fpga project so that other undergrads can pick it up
-# Look into grants
-
-# Update Oct 10 2024
-# After speaking with Dima I realized this needs to change
-# Adding a candidate list of variables to flip which is fed 
-# from the candidate clauses list
-
-# Steps:
-
+# Algorithm A1 Steps:
 # 1) Random assignment
 # 2) Gather UNSAT clauses
 # 3) From the UNSAT clauses, pick a number say 3 clauses at random. These 3 are the same number of colors.
@@ -104,14 +92,14 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
         3 = always pick first candidate variable in candidate variables to flip
     """
     flips = 0
-    variables = np.array(sorted(get_variables(clauses)))  # Sorted list of variables
-    num_vars = variables[-1]  # Assuming variables are numbered from 1 to N
+    variables = np.array(sorted(get_variables(clauses)))    # Sorted list of variables
+    num_vars = variables[-1] # Variables are numbered from 1 to N
 
-    # Map variable indices to array positions (1-based indexing)
+    # Map variable indices to array positions
     var_index_map = {var: idx for idx, var in enumerate(variables)}
     index_var_map = {idx: var for idx, var in enumerate(variables)}
 
-    color_array = np.zeros(num_vars + 1, dtype=int)  # +1 because variable indices start from 1
+    color_array = np.zeros(num_vars + 1, dtype=int)  # 1 based indexing
     for var, color in colors.items():
         color_array[var] = color
 
@@ -120,7 +108,7 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
 
     for _try in range(max_tries):
         # 1) Random assignment
-        assignment = np.random.choice([True, False], size=num_vars + 1)  # Index 0 unused
+        assignment = np.random.choice([True, False], size=num_vars + 1)  # 1 based indexing
 
         for _loop in range(max_loops):
             # 2) Gather UNSAT clauses
@@ -154,7 +142,7 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
                     # Compute break counts for variables in the clause
                     break_counts = []
                     for x in variables_in_clause:
-                        # Flip variable x
+                        # Flip variable
                         assignment[x] = ~assignment[x]
 
                         # Evaluate the number of clauses that become unsatisfied
@@ -169,11 +157,10 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
                                 num_new_unsat += 1
 
                         break_counts.append(num_new_unsat)
-
-                        # Flip variable x back
+                        # Flip variable back
                         assignment[x] = ~assignment[x]
 
-                    # Find variables with minimal break count
+                    # Find variables with least break count
                     min_break = np.min(break_counts)
                     min_indices = np.where(break_counts == min_break)[0]
                     idx_min = np.random.choice(min_indices)
@@ -185,26 +172,26 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
             for x, color in cc_candidates_to_flip:
                 color_to_candidates.setdefault(color, []).append(x)
 
-            # 5) Heuristically pick variables to flip
+            # 5) Heuristically pick which variables to flip:
             if heuristic_mode == 0:
-                # Flip variables of the color with the largest number of variables
+                # 5a) Flip variables of the color with the largest number of variables
                 selected_color = max(color_to_candidates.keys(), key=lambda c: len(color_to_candidates[c]))
                 candidates_in_color = color_to_candidates[selected_color]
                 assignment[candidates_in_color] = ~assignment[candidates_in_color]
                 flips += len(candidates_in_color)
             elif heuristic_mode == 1:
-                # Randomly pick a variable from candidate variables to flip
+                # 5b) Randomly pick a variable from candidate variables to flip
                 var_to_flip = np.random.choice([x for x, _ in cc_candidates_to_flip])
                 assignment[var_to_flip] = ~assignment[var_to_flip]
                 flips += 1
             elif heuristic_mode == 2:
-                # Randomly pick a color, flip all variables of that color
+                # 5c) Randomly pick a color, flip all variables of that color
                 selected_color = np.random.choice(list(color_to_candidates.keys()))
                 candidates_in_color = color_to_candidates[selected_color]
                 assignment[candidates_in_color] = ~assignment[candidates_in_color]
                 flips += len(candidates_in_color)
             elif heuristic_mode == 3:
-                # Always pick the first candidate variable to flip
+                # 5d) Always pick the first candidate variable to flip
                 var_to_flip = cc_candidates_to_flip[0][0]
                 assignment[var_to_flip] = ~assignment[var_to_flip]
                 flips += 1
@@ -217,13 +204,14 @@ def main():
     parser.add_argument('-p', type=float, help='Probability float between 0 and 1', required=True)
     parser.add_argument('--max_tries', type=int, default=100, help='Maximum number of tries')
     parser.add_argument('--max_loops', type=int, default=1000, help='Maximum number of loops per try')
+    parser.add_argument('--heuristic', type=int, default=0, help='Heuristic mode: 0 = greedy in colors, 1 = random, 2 = random color, 3 = always first cc_var')
     args = parser.parse_args()
 
     filepath = args.cnf
     probability = args.p
     max_tries = args.max_tries
     max_loops = args.max_loops
-
+    heuristic = args.heuristic
     try:
         num_vars, clauses = read_dimacs(filepath)
     except Exception as e:
@@ -236,7 +224,7 @@ def main():
     time_color = end_color_time - start_color_time
 
     start_colorwalksat_process_time = time.perf_counter()
-    result = AlgorithmA1(clauses, colors, max_tries, max_loops, probability, 0)
+    result = AlgorithmA1(clauses, colors, max_tries, max_loops, probability, heuristic)
     end_colorwalksat_process_time = time.perf_counter()
     time_colorwalksat = end_colorwalksat_process_time - start_colorwalksat_process_time
 
@@ -252,7 +240,9 @@ def main():
 if __name__ == "__main__":
     main()
 
-# Original A1 before optimizing for numpy
+# Original A1 (raw python)
+# I had to change this because it was unbelievably slow without using numpy
+# - Daniel
 # def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
 #     """    
 #     clauses: array of clauses from read_cnf() 
