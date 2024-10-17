@@ -4,6 +4,10 @@ import myWalksat as mw
 import multiprocessing
 from multiprocessing import Process, Queue
 
+# Copyright Daniel Espinosa Gonzalez
+# October 2024
+# UCSB Strukov Lab
+
 def process_algorithm(filename, filepath, mode, max_tries, max_flips, probability, result_queue):
     try:
         avg_flips, prob_s, std_flips, tts_99 = mw.API(
