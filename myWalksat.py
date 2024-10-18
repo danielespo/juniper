@@ -137,6 +137,9 @@ def API(filepath, max_tries, max_flips, probability, mode):
     
     avg_flips, prob_s, std_flips, tts_99 = get_stats(walksat_result, max_flips)
 
+    # NOTE: Return also the avg_iterations , the specific number of iterations (loops)
+    # And then replot.
+
     return avg_flips , prob_s, std_flips, tts_99
 
 
