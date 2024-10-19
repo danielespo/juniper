@@ -1,4 +1,4 @@
-Algorithm A1 (F)
+Algorithm A1 (F) NOTE NEEDS TO CHANGE TO NEW ONE.
 Input : A CNF formula F
 Parameters : Integers max-loops, max-tries; noise parameter p ∈ [0, 1]
 Output : A satisfying assignment for F , or FAIL

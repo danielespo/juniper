@@ -29,6 +29,9 @@ def main():
         print(f"Directory {directory} does not exist.")
         return
 
+    # I sprint wrote this rather fast, a better implementation keeps a log of
+    # which files finished etc. I will add that functionality soon.
+    
     db_file = "BenchmarkSubset.db"
     modes = ["walksat", "coloringA1_heuristic0", "coloringA1_heuristic1",
              "coloringA1_heuristic2", "coloringA1_heuristic3"]

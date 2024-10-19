@@ -140,6 +140,13 @@ def API(filepath, max_tries, max_flips, probability, mode):
     # NOTE: Return also the avg_iterations , the specific number of iterations (loops)
     # And then replot.
 
+    # Output of a1: assignment[1:], _try, _loop, flips
+    # hence; need to mod API to also return avg_loop
+
+    # also, need to return the data from this in a cumulative density 
+    # function of the probability (i.e increment the number of flips)
+    # easiest way to do that: make a new script. I will get to it in a minute.
+
     return avg_flips , prob_s, std_flips, tts_99
 
 
