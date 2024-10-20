@@ -9,8 +9,11 @@ import logging
 # October 2024
 # UCSB Strukov Lab
 
-# Print logs to console too :)
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    filename='myBenchmarkerSubsetIterations.log',
+    level=logging.INFO,                
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 def process_algorithm(filename, filepath, mode, max_tries, max_flips, probability, result_queue):
     try:
