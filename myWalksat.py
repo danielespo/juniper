@@ -44,8 +44,8 @@ def get_stats(walksat_result, max_flips):
     walksat_result_arr = np.column_stack((flips_array, loops_list, tries_list, success_array))
 
     prob_s = np.mean(success_array)
-    success_ind = np.where(walksat_result_arr[:, 1] == 1)[0]
-
+    
+    success_ind = np.where(success_array == 1)[0]
     # Average number of flips over successful runs
     if len(success_ind) > 0:
         avg_flips = np.mean(walksat_result_arr[success_ind, 0])
@@ -161,22 +161,28 @@ def API(filepath, max_tries, max_flips, probability, mode):
     
     avg_flips, prob_s, std_flips, tts_99, avg_loops, std_loops, avg_tries, std_tries = get_stats(walksat_result, max_flips)
 
-    # NOTE: Return also the avg_iterations , the specific number of iterations (loops)
-    # And then replot.
+    # Now returns also the avg_iterations (loops) and avg_tries
 
     # Output of a1: assignment[1:], _try, _loop, flips
-    # hence; need to mod API to also return avg_loop
-
-    # also, need to return the data from this in a cumulative density 
-    # function of the probability (i.e increment the number of flips)
-    # easiest way to do that: make a new script. I will get to it in a minute.
-
     return avg_flips, prob_s, std_flips, tts_99, avg_loops, std_loops, avg_tries, std_tries
 
 
+def API_CNF(filepath, max_tries, max_flips, probability, mode):
+    """
+    API to return the CNF for a given problem and a given algorithm, by iteratively increasing
+    the number of flips allowed until a certain probability of convergence guaranteed
+
+    Ex. 20% success probability with 100 flips
+    40% success probablity with 500 flips
+    100% success probability with 2000 flips
+
+    etc.
+    """
+    return
+
 def main():
 
-    filepath = "/home/dae/SatExperiments/juniper/uf50suiteSATLIB/uf5001.cnf"
+    filepath = "/home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/uf5002.cnf"
     #"/home/dae/SatExperiments/juniper/uf50suiteSATLIB/uf5001.cnf"
 
     # These options are the same as tinishWalksat.py
@@ -200,7 +206,7 @@ def main():
     # 2 = pick a random color from candidate variables to flip
     # 3 = always pick first candidate variable in candidate variables to flip
 
-    mode = "coloringA1_heuristic0"
+    mode = "coloringA1_heuristic2"
 
     walksat_result = []
 
@@ -212,28 +218,28 @@ def main():
                 res = pool.apply_async(wk.walkSAT, args=(clauses, max_tries, max_flips, probability))
                 result_objects.append(res)
 
-        elif mode == "coloringA1_heuristic0":
+        elif mode == "coloringA1_heuristic0": # Pick candidate variables to flip with most color representation
             colors = a1.GenerateColors(clauses)
             max_loops = math.floor(max_flips / len(colors))
             for _ in range(10):
                 res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 0))
                 result_objects.append(res)
 
-        elif mode == "coloringA1_heuristic1":
+        elif mode == "coloringA1_heuristic1": # Randomly pick a variable from the candidate variables to flip
             colors = a1.GenerateColors(clauses)
             max_loops = math.floor(max_flips / len(colors))
             for _ in range(10):
                 res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 1))
                 result_objects.append(res)
 
-        elif mode == "coloringA1_heuristic2":
+        elif mode == "coloringA1_heuristic2": # Randomly pick a color from candidate variables to flip, flip all candidate variables of that color
             colors = a1.GenerateColors(clauses)
             max_loops = math.floor(max_flips / len(colors))
             for _ in range(10):
                 res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 2))
                 result_objects.append(res)
 
-        elif mode == "coloringA1_heuristic3":
+        elif mode == "coloringA1_heuristic3": # Always pick the first candidate variable and flip it
             colors = a1.GenerateColors(clauses)
             max_loops = math.floor(max_flips / len(colors))
             for _ in range(10):
@@ -249,7 +255,11 @@ def main():
     print("Average Number of Flips: ",avg_flips)
     print("Average Probability of Success: ",prob_s)
     print("Standard deviation of flips: ",std_flips)
-    #print("TTS99: ",tts_99)
+    print("TTS99: ", tts_99)
+    print("Average Number of Iterations: ", avg_loops)
+    print("Standard deviation of Iterations: ",std_loops)
+    print("Average Number of Tries: ", avg_tries)
+    print("Standard deviation of Tries: ",std_tries)
 
 if __name__ == "__main__":
     main()

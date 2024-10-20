@@ -101,7 +101,7 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
 
     # Get the number of unique colors
     unique_colors = np.unique(color_array[color_array > 0])
-    print(unique_colors)
+    
     for _try in range(max_tries):
         # 1) Random assignment
         assignment = np.random.choice([True, False], size=num_vars + 1)  # 1 based indexing
