@@ -32,7 +32,8 @@ def main():
     # I sprint wrote this rather fast, a better implementation keeps a log of
     # which files finished etc. I will add that functionality soon.
     
-    db_file = "BenchmarkSubset.db"
+    # Old: BenchmarkSubset // now iterations included (extra stats)
+    db_file = "BenchmarkSubsetIterations.db"
     modes = ["walksat", "coloringA1_heuristic0", "coloringA1_heuristic1",
              "coloringA1_heuristic2", "coloringA1_heuristic3"]
     max_tries = 10
@@ -52,14 +53,18 @@ def main():
     cursor = conn.cursor()
 
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS BenchmarkSubset (
+        CREATE TABLE IF NOT EXISTS BenchmarkSubsetIterations (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             filename TEXT,
             algorithmname TEXT,
             avg_flips REAL,
             prob_s REAL,
             std_flips REAL,
-            tts_99 REAL
+            tts_99 REAL,
+            avg_loops REAL,
+            std_loops REAL,
+            avg_tries REAL,
+            std_tries REAL
         )
     ''')
     conn.commit()
@@ -91,13 +96,13 @@ def main():
         # Insert results into the database
         for result in results:
             cursor.execute('''
-                INSERT INTO BenchmarkSubset (filename, algorithmname, avg_flips, prob_s, std_flips, tts_99)
-                VALUES (?, ?, ?, ?, ?, ?)
+                INSERT INTO BenchmarkSubsetIterations (filename, algorithmname, avg_flips, prob_s, std_flips, tts_99, avg_loops, std_loops, avg_tries, std_tries)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', result)
             conn.commit()
 
     conn.close()
-    print("Processing complete. Results stored in BenchmarkSubset.db.")
+    print("Processing complete. Results stored in BenchmarkSubsetIterations.db.")
 
 if __name__ == "__main__":
     main()
