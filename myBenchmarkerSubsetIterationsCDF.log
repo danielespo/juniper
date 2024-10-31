@@ -1,0 +1,270 @@
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,997 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,998 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,998 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,998 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,998 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,998 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,998 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,998 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,998 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,998 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:54,998 - INFO - Starting processing for directory: /home/dae/SatExperiments/juniper/BenchmarkSubsetPaper/
+2024-10-28 13:52:55,001 - INFO - Table BenchmarkSubsetIterationsCDF created or already exists.
+2024-10-28 13:52:55,001 - INFO - Starting batch with 4 files
+2024-10-28 13:52:55,003 - INFO - Starting process for file uf50012.cnf with mode walksat
+2024-10-28 13:52:55,004 - INFO - Starting process for file uf50012.cnf with mode coloringA1_heuristic0
+2024-10-28 13:52:55,006 - INFO - Starting process for file uf50012.cnf with mode coloringA1_heuristic1
+2024-10-28 13:52:55,007 - INFO - Starting process for file uf50012.cnf with mode coloringA1_heuristic2
+2024-10-28 13:52:56,197 - INFO - Successfully processed uf50012.cnf with mode walksat
+2024-10-28 13:53:14,251 - INFO - Successfully processed uf50012.cnf with mode coloringA1_heuristic0
+2024-10-28 13:53:17,559 - INFO - Successfully processed uf50012.cnf with mode coloringA1_heuristic2
+2024-10-28 13:53:33,631 - INFO - Successfully processed uf50012.cnf with mode coloringA1_heuristic1
+2024-10-28 13:53:33,638 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:53:33,639 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:53:33,641 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:53:33,643 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:53:33,643 - INFO - Starting batch with 4 files
+2024-10-28 13:53:33,643 - INFO - Starting process for file uf50012.cnf with mode coloringA1_heuristic3
+2024-10-28 13:53:33,645 - INFO - Starting process for file uf5001.cnf with mode walksat
+2024-10-28 13:53:33,646 - INFO - Starting process for file uf5001.cnf with mode coloringA1_heuristic0
+2024-10-28 13:53:33,648 - INFO - Starting process for file uf5001.cnf with mode coloringA1_heuristic1
+2024-10-28 13:53:35,793 - INFO - Successfully processed uf5001.cnf with mode walksat
+2024-10-28 13:53:50,309 - INFO - Successfully processed uf5001.cnf with mode coloringA1_heuristic1
+2024-10-28 13:53:55,883 - INFO - Successfully processed uf5001.cnf with mode coloringA1_heuristic0
+2024-10-28 13:54:13,499 - INFO - Successfully processed uf50012.cnf with mode coloringA1_heuristic3
+2024-10-28 13:54:13,505 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:54:13,506 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:54:13,507 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:54:13,508 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:54:13,508 - INFO - Starting batch with 4 files
+2024-10-28 13:54:13,509 - INFO - Starting process for file uf5001.cnf with mode coloringA1_heuristic2
+2024-10-28 13:54:13,510 - INFO - Starting process for file uf5001.cnf with mode coloringA1_heuristic3
+2024-10-28 13:54:13,512 - INFO - Starting process for file uf500200.cnf with mode walksat
+2024-10-28 13:54:13,513 - INFO - Starting process for file uf500200.cnf with mode coloringA1_heuristic0
+2024-10-28 13:54:13,893 - INFO - Successfully processed uf500200.cnf with mode walksat
+2024-10-28 13:54:24,098 - INFO - Successfully processed uf500200.cnf with mode coloringA1_heuristic0
+2024-10-28 13:54:30,380 - INFO - Successfully processed uf5001.cnf with mode coloringA1_heuristic2
+2024-10-28 13:54:35,508 - INFO - Successfully processed uf5001.cnf with mode coloringA1_heuristic3
+2024-10-28 13:54:35,513 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:54:35,514 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:54:35,515 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:54:35,516 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:54:35,516 - INFO - Starting batch with 4 files
+2024-10-28 13:54:35,517 - INFO - Starting process for file uf500200.cnf with mode coloringA1_heuristic1
+2024-10-28 13:54:35,519 - INFO - Starting process for file uf500200.cnf with mode coloringA1_heuristic2
+2024-10-28 13:54:35,520 - INFO - Starting process for file uf500200.cnf with mode coloringA1_heuristic3
+2024-10-28 13:54:35,521 - INFO - Starting process for file uf5002.cnf with mode walksat
+2024-10-28 13:54:41,154 - INFO - Successfully processed uf5002.cnf with mode walksat
+2024-10-28 13:54:46,427 - INFO - Successfully processed uf500200.cnf with mode coloringA1_heuristic2
+2024-10-28 13:54:46,626 - INFO - Successfully processed uf500200.cnf with mode coloringA1_heuristic1
+2024-10-28 13:55:05,428 - INFO - Successfully processed uf500200.cnf with mode coloringA1_heuristic3
+2024-10-28 13:55:05,433 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:05,434 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:05,436 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:05,437 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:05,437 - INFO - Starting batch with 4 files
+2024-10-28 13:55:05,437 - INFO - Starting process for file uf5002.cnf with mode coloringA1_heuristic0
+2024-10-28 13:55:05,439 - INFO - Starting process for file uf5002.cnf with mode coloringA1_heuristic1
+2024-10-28 13:55:05,440 - INFO - Starting process for file uf5002.cnf with mode coloringA1_heuristic2
+2024-10-28 13:55:05,441 - INFO - Starting process for file uf5002.cnf with mode coloringA1_heuristic3
+2024-10-28 13:55:30,678 - INFO - Successfully processed uf5002.cnf with mode coloringA1_heuristic0
+2024-10-28 13:55:35,724 - INFO - Successfully processed uf5002.cnf with mode coloringA1_heuristic1
+2024-10-28 13:55:36,842 - INFO - Successfully processed uf5002.cnf with mode coloringA1_heuristic3
+2024-10-28 13:55:39,733 - INFO - Successfully processed uf5002.cnf with mode coloringA1_heuristic2
+2024-10-28 13:55:39,739 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:39,740 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:39,742 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:39,743 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:39,743 - INFO - Starting batch with 4 files
+2024-10-28 13:55:39,743 - INFO - Starting process for file uf5003.cnf with mode walksat
+2024-10-28 13:55:39,745 - INFO - Starting process for file uf5003.cnf with mode coloringA1_heuristic0
+2024-10-28 13:55:39,747 - INFO - Starting process for file uf5003.cnf with mode coloringA1_heuristic1
+2024-10-28 13:55:39,748 - INFO - Starting process for file uf5003.cnf with mode coloringA1_heuristic2
+2024-10-28 13:55:39,908 - INFO - Successfully processed uf5003.cnf with mode walksat
+2024-10-28 13:55:44,371 - INFO - Successfully processed uf5003.cnf with mode coloringA1_heuristic0
+2024-10-28 13:55:45,175 - INFO - Successfully processed uf5003.cnf with mode coloringA1_heuristic1
+2024-10-28 13:55:45,561 - INFO - Successfully processed uf5003.cnf with mode coloringA1_heuristic2
+2024-10-28 13:55:45,566 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:45,568 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:45,569 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:45,570 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:55:45,570 - INFO - Starting batch with 4 files
+2024-10-28 13:55:45,571 - INFO - Starting process for file uf5003.cnf with mode coloringA1_heuristic3
+2024-10-28 13:55:45,574 - INFO - Starting process for file uf5004.cnf with mode walksat
+2024-10-28 13:55:45,575 - INFO - Starting process for file uf5004.cnf with mode coloringA1_heuristic0
+2024-10-28 13:55:45,577 - INFO - Starting process for file uf5004.cnf with mode coloringA1_heuristic1
+2024-10-28 13:55:47,227 - INFO - Successfully processed uf5004.cnf with mode walksat
+2024-10-28 13:55:51,111 - INFO - Successfully processed uf5003.cnf with mode coloringA1_heuristic3
+2024-10-28 13:56:13,333 - INFO - Successfully processed uf5004.cnf with mode coloringA1_heuristic0
+2024-10-28 13:56:19,186 - INFO - Successfully processed uf5004.cnf with mode coloringA1_heuristic1
+2024-10-28 13:56:19,191 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:56:19,192 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:56:19,194 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:56:19,195 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:56:19,195 - INFO - Starting batch with 4 files
+2024-10-28 13:56:19,195 - INFO - Starting process for file uf5004.cnf with mode coloringA1_heuristic2
+2024-10-28 13:56:19,197 - INFO - Starting process for file uf5004.cnf with mode coloringA1_heuristic3
+2024-10-28 13:56:19,198 - INFO - Starting process for file uf5006.cnf with mode walksat
+2024-10-28 13:56:19,199 - INFO - Starting process for file uf5006.cnf with mode coloringA1_heuristic0
+2024-10-28 13:56:28,113 - INFO - Successfully processed uf5006.cnf with mode walksat
+2024-10-28 13:56:41,233 - INFO - Successfully processed uf5004.cnf with mode coloringA1_heuristic2
+2024-10-28 13:56:45,104 - INFO - Successfully processed uf5006.cnf with mode coloringA1_heuristic0
+2024-10-28 13:56:53,910 - INFO - Successfully processed uf5004.cnf with mode coloringA1_heuristic3
+2024-10-28 13:56:53,917 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:56:53,919 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:56:53,920 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:56:53,921 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:56:53,921 - INFO - Starting batch with 4 files
+2024-10-28 13:56:53,922 - INFO - Starting process for file uf5006.cnf with mode coloringA1_heuristic1
+2024-10-28 13:56:53,925 - INFO - Starting process for file uf5006.cnf with mode coloringA1_heuristic2
+2024-10-28 13:56:53,926 - INFO - Starting process for file uf5006.cnf with mode coloringA1_heuristic3
+2024-10-28 13:56:53,928 - INFO - Starting process for file uf50017.cnf with mode walksat
+2024-10-28 13:56:54,966 - INFO - Successfully processed uf50017.cnf with mode walksat
+2024-10-28 13:57:27,449 - INFO - Successfully processed uf5006.cnf with mode coloringA1_heuristic1
+2024-10-28 13:57:27,801 - INFO - Successfully processed uf5006.cnf with mode coloringA1_heuristic3
+2024-10-28 13:57:29,639 - INFO - Successfully processed uf5006.cnf with mode coloringA1_heuristic2
+2024-10-28 13:57:29,645 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:57:29,647 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:57:29,648 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:57:29,649 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:57:29,650 - INFO - Starting batch with 4 files
+2024-10-28 13:57:29,650 - INFO - Starting process for file uf50017.cnf with mode coloringA1_heuristic0
+2024-10-28 13:57:29,653 - INFO - Starting process for file uf50017.cnf with mode coloringA1_heuristic1
+2024-10-28 13:57:29,654 - INFO - Starting process for file uf50017.cnf with mode coloringA1_heuristic2
+2024-10-28 13:57:29,656 - INFO - Starting process for file uf50017.cnf with mode coloringA1_heuristic3
+2024-10-28 13:57:41,263 - INFO - Successfully processed uf50017.cnf with mode coloringA1_heuristic2
+2024-10-28 13:57:41,277 - INFO - Successfully processed uf50017.cnf with mode coloringA1_heuristic1
+2024-10-28 13:57:53,424 - INFO - Successfully processed uf50017.cnf with mode coloringA1_heuristic3
+2024-10-28 13:57:56,056 - INFO - Successfully processed uf50017.cnf with mode coloringA1_heuristic0
+2024-10-28 13:57:56,061 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:57:56,063 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:57:56,064 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:57:56,065 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:57:56,065 - INFO - Starting batch with 4 files
+2024-10-28 13:57:56,066 - INFO - Starting process for file uf50010.cnf with mode walksat
+2024-10-28 13:57:56,067 - INFO - Starting process for file uf50010.cnf with mode coloringA1_heuristic0
+2024-10-28 13:57:56,068 - INFO - Starting process for file uf50010.cnf with mode coloringA1_heuristic1
+2024-10-28 13:57:56,070 - INFO - Starting process for file uf50010.cnf with mode coloringA1_heuristic2
+2024-10-28 13:57:57,588 - INFO - Successfully processed uf50010.cnf with mode walksat
+2024-10-28 13:58:06,737 - INFO - Successfully processed uf50010.cnf with mode coloringA1_heuristic2
+2024-10-28 13:58:10,617 - INFO - Successfully processed uf50010.cnf with mode coloringA1_heuristic1
+2024-10-28 13:58:18,078 - INFO - Successfully processed uf50010.cnf with mode coloringA1_heuristic0
+2024-10-28 13:58:18,082 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:18,084 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:18,085 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:18,086 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:18,087 - INFO - Starting batch with 4 files
+2024-10-28 13:58:18,087 - INFO - Starting process for file uf50010.cnf with mode coloringA1_heuristic3
+2024-10-28 13:58:18,088 - INFO - Starting process for file uf50016.cnf with mode walksat
+2024-10-28 13:58:18,090 - INFO - Starting process for file uf50016.cnf with mode coloringA1_heuristic0
+2024-10-28 13:58:18,091 - INFO - Starting process for file uf50016.cnf with mode coloringA1_heuristic1
+2024-10-28 13:58:18,680 - INFO - Successfully processed uf50016.cnf with mode walksat
+2024-10-28 13:58:26,969 - INFO - Successfully processed uf50010.cnf with mode coloringA1_heuristic3
+2024-10-28 13:58:30,350 - INFO - Successfully processed uf50016.cnf with mode coloringA1_heuristic0
+2024-10-28 13:58:31,075 - INFO - Successfully processed uf50016.cnf with mode coloringA1_heuristic1
+2024-10-28 13:58:31,080 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:31,081 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:31,083 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:31,084 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:31,084 - INFO - Starting batch with 4 files
+2024-10-28 13:58:31,084 - INFO - Starting process for file uf50016.cnf with mode coloringA1_heuristic2
+2024-10-28 13:58:31,086 - INFO - Starting process for file uf50016.cnf with mode coloringA1_heuristic3
+2024-10-28 13:58:31,088 - INFO - Starting process for file uf50029.cnf with mode walksat
+2024-10-28 13:58:31,089 - INFO - Starting process for file uf50029.cnf with mode coloringA1_heuristic0
+2024-10-28 13:58:31,590 - INFO - Successfully processed uf50029.cnf with mode walksat
+2024-10-28 13:58:36,976 - INFO - Successfully processed uf50016.cnf with mode coloringA1_heuristic2
+2024-10-28 13:58:41,474 - INFO - Successfully processed uf50016.cnf with mode coloringA1_heuristic3
+2024-10-28 13:58:50,650 - INFO - Successfully processed uf50029.cnf with mode coloringA1_heuristic0
+2024-10-28 13:58:50,657 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:50,659 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:50,660 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:50,661 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:58:50,661 - INFO - Starting batch with 4 files
+2024-10-28 13:58:50,662 - INFO - Starting process for file uf50029.cnf with mode coloringA1_heuristic1
+2024-10-28 13:58:50,665 - INFO - Starting process for file uf50029.cnf with mode coloringA1_heuristic2
+2024-10-28 13:58:50,666 - INFO - Starting process for file uf50029.cnf with mode coloringA1_heuristic3
+2024-10-28 13:58:50,668 - INFO - Starting process for file uf500103.cnf with mode walksat
+2024-10-28 13:58:50,981 - INFO - Successfully processed uf500103.cnf with mode walksat
+2024-10-28 13:59:02,425 - INFO - Successfully processed uf50029.cnf with mode coloringA1_heuristic1
+2024-10-28 13:59:04,372 - INFO - Successfully processed uf50029.cnf with mode coloringA1_heuristic2
+2024-10-28 13:59:08,613 - INFO - Successfully processed uf50029.cnf with mode coloringA1_heuristic3
+2024-10-28 13:59:08,619 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:08,621 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:08,622 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:08,623 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:08,623 - INFO - Starting batch with 4 files
+2024-10-28 13:59:08,624 - INFO - Starting process for file uf500103.cnf with mode coloringA1_heuristic0
+2024-10-28 13:59:08,625 - INFO - Starting process for file uf500103.cnf with mode coloringA1_heuristic1
+2024-10-28 13:59:08,626 - INFO - Starting process for file uf500103.cnf with mode coloringA1_heuristic2
+2024-10-28 13:59:08,628 - INFO - Starting process for file uf500103.cnf with mode coloringA1_heuristic3
+2024-10-28 13:59:10,843 - INFO - Successfully processed uf500103.cnf with mode coloringA1_heuristic3
+2024-10-28 13:59:11,167 - INFO - Successfully processed uf500103.cnf with mode coloringA1_heuristic0
+2024-10-28 13:59:13,448 - INFO - Successfully processed uf500103.cnf with mode coloringA1_heuristic1
+2024-10-28 13:59:15,939 - INFO - Successfully processed uf500103.cnf with mode coloringA1_heuristic2
+2024-10-28 13:59:15,945 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:15,946 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:15,947 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:15,949 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:15,949 - INFO - Starting batch with 4 files
+2024-10-28 13:59:15,949 - INFO - Starting process for file uf500104.cnf with mode walksat
+2024-10-28 13:59:15,951 - INFO - Starting process for file uf500104.cnf with mode coloringA1_heuristic0
+2024-10-28 13:59:15,952 - INFO - Starting process for file uf500104.cnf with mode coloringA1_heuristic1
+2024-10-28 13:59:15,954 - INFO - Starting process for file uf500104.cnf with mode coloringA1_heuristic2
+2024-10-28 13:59:17,261 - INFO - Successfully processed uf500104.cnf with mode walksat
+2024-10-28 13:59:33,689 - INFO - Successfully processed uf500104.cnf with mode coloringA1_heuristic2
+2024-10-28 13:59:34,651 - INFO - Successfully processed uf500104.cnf with mode coloringA1_heuristic1
+2024-10-28 13:59:38,981 - INFO - Successfully processed uf500104.cnf with mode coloringA1_heuristic0
+2024-10-28 13:59:38,987 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:38,988 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:38,990 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:38,991 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:38,991 - INFO - Starting batch with 4 files
+2024-10-28 13:59:38,991 - INFO - Starting process for file uf500104.cnf with mode coloringA1_heuristic3
+2024-10-28 13:59:38,993 - INFO - Starting process for file uf500105.cnf with mode walksat
+2024-10-28 13:59:38,994 - INFO - Starting process for file uf500105.cnf with mode coloringA1_heuristic0
+2024-10-28 13:59:38,995 - INFO - Starting process for file uf500105.cnf with mode coloringA1_heuristic1
+2024-10-28 13:59:41,627 - INFO - Successfully processed uf500105.cnf with mode walksat
+2024-10-28 13:59:52,642 - INFO - Successfully processed uf500105.cnf with mode coloringA1_heuristic1
+2024-10-28 13:59:53,907 - INFO - Successfully processed uf500104.cnf with mode coloringA1_heuristic3
+2024-10-28 13:59:55,900 - INFO - Successfully processed uf500105.cnf with mode coloringA1_heuristic0
+2024-10-28 13:59:55,908 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:55,909 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:55,911 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:55,912 - INFO - Batch processed and results inserted into the database.
+2024-10-28 13:59:55,912 - INFO - Starting batch with 4 files
+2024-10-28 13:59:55,912 - INFO - Starting process for file uf500105.cnf with mode coloringA1_heuristic2
+2024-10-28 13:59:55,914 - INFO - Starting process for file uf500105.cnf with mode coloringA1_heuristic3
+2024-10-28 13:59:55,915 - INFO - Starting process for file uf500106.cnf with mode walksat
+2024-10-28 13:59:55,916 - INFO - Starting process for file uf500106.cnf with mode coloringA1_heuristic0
+2024-10-28 13:59:57,567 - INFO - Successfully processed uf500106.cnf with mode walksat
+2024-10-28 14:00:06,667 - INFO - Successfully processed uf500105.cnf with mode coloringA1_heuristic3
+2024-10-28 14:00:18,206 - INFO - Successfully processed uf500106.cnf with mode coloringA1_heuristic0
+2024-10-28 14:00:21,454 - INFO - Successfully processed uf500105.cnf with mode coloringA1_heuristic2
+2024-10-28 14:00:21,460 - INFO - Batch processed and results inserted into the database.
+2024-10-28 14:00:21,461 - INFO - Batch processed and results inserted into the database.
+2024-10-28 14:00:21,462 - INFO - Batch processed and results inserted into the database.
+2024-10-28 14:00:21,465 - INFO - Batch processed and results inserted into the database.
+2024-10-28 14:00:21,465 - INFO - Starting batch with 3 files
+2024-10-28 14:00:21,465 - INFO - Starting process for file uf500106.cnf with mode coloringA1_heuristic1
+2024-10-28 14:00:21,467 - INFO - Starting process for file uf500106.cnf with mode coloringA1_heuristic2
+2024-10-28 14:00:21,469 - INFO - Starting process for file uf500106.cnf with mode coloringA1_heuristic3
+2024-10-28 14:00:27,846 - INFO - Successfully processed uf500106.cnf with mode coloringA1_heuristic2
+2024-10-28 14:00:47,430 - INFO - Successfully processed uf500106.cnf with mode coloringA1_heuristic1
+2024-10-28 14:00:50,889 - INFO - Successfully processed uf500106.cnf with mode coloringA1_heuristic3
+2024-10-28 14:00:50,894 - INFO - Batch processed and results inserted into the database.
+2024-10-28 14:00:50,895 - INFO - Batch processed and results inserted into the database.
+2024-10-28 14:00:50,896 - INFO - Batch processed and results inserted into the database.
+2024-10-28 14:00:50,896 - INFO - Processing complete. Database connection closed. Results in BenchmarkSubsetIterationsCDF.db
