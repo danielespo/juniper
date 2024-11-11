@@ -78,6 +78,11 @@ def GenerateColors(clauses):
 # 6) Additionally, near convergence turn the heuristics off and go back to WalkSAT+SKC.  NOTE: not implemented yet
 # 8) END 
 
+
+# 11/11/2024
+# Ok I see the problem: this "max_loops" idea of running multiple loops per iteration
+# is what is causing the hiccup
+# I removed it and used the default terminology and structure of walksat
 def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
     """    
     clauses: array of clauses from read_cnf() 
@@ -106,6 +111,13 @@ def AlgorithmA1(clauses, colors, max_tries, max_loops, p, heuristic_mode=0):
         # 1) Random assignment
         assignment = np.random.choice([True, False], size=num_vars + 1)  # 1 based indexing
         # Changed it to a vectorized version instead of hash maps to make faster tts
+
+        # 11/11/2024 2:32pm
+        # Loops != Tries
+        # In regular walksat, we report tries, the general idea here was to
+        # increase the parallelism of the algorithm by splitting uncorrelated flips
+        # but by adding this "loops" parameter, I underreport the number of tries
+        # since there are many loops that occur under a given 'try'.
 
         for _loop in range(max_loops):
             # 2) Gather UNSAT clauses
