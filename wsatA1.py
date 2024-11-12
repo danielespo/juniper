@@ -49,7 +49,7 @@ def flip_variable(assignment, var):
 
 def GenerateColors(clauses):
     variables = set(abs(literal) for clause in clauses for literal in clause)
-   
+    print(variables)
     G = nx.Graph()
     G.add_nodes_from(variables)  # Variable adjacency graph
 
@@ -61,6 +61,7 @@ def GenerateColors(clauses):
 
     # Greedy coloring , return dictionary of unique colors (0 to n) for each node
     colors = nx.coloring.greedy_color(G, strategy='largest_first')
+    print(colors)
     return colors
 
 # Algorithm A1 Steps:
