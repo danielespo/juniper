@@ -220,6 +220,11 @@ def main():
 
         elif mode == "coloringA1_heuristic0": # Pick candidate variables to flip with most color representation
             colors = a1.GenerateColors(clauses)
+
+            # 11/11/2024 2:36pm
+            # The initial idea in adding loops to the algorithm
+            # was to limit the number of heuristic iterations by the number of colors
+            # say, there are 10 colors in the preprocessing graph, and we have 
             max_loops = math.floor(max_flips / len(colors))
             for _ in range(10):
                 res = pool.apply_async(a1.AlgorithmA1, args=(clauses, colors, max_tries, max_loops, probability, 0))
