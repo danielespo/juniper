@@ -1,0 +1,47 @@
+Algorithm A2 (F)
+
+//WIP 
+Input : A CNF formula F, a graph coloring color-variable assignment G 
+Parameters : Integers max-flips, max-tries; noise parameter p ∈ [0, 1]
+Output : A satisfying assignment for F , or FAIL
+
+begin
+// Color Assignment
+G ← a graph of the literals in F with edges between literals that appear together in a clause
+K ← the set of literals
+g ← Greedy-Color(G, K) // a dictionary of literals and their assigned colors
+clr ← the set of unique colors in g
+
+
+// Walksat
+for i ← 1 to max-tries do
+	σ ← a randomly generated truth assignment for F
+
+	for j ← 1 to max-flips do 
+	if σ satisfies F then return σ // success
+
+	F <- all unsatisfied clauses under σ
+
+	// Parallel Processing across Colors
+	for each k in clr do
+f ← clauses in F with at least one variable of the current color k
+if f empty then continue // no unsat clauses for current color
+
+C ← an unsatisfied clause of f chosen at random
+if ∃ variable x ∈ C with break-count = 0 then
+v ← x // freebie move
+
+else
+
+With probability p: // random walk move
+v ← a variable in C chosen at random
+
+With probability 1 − p: // greedy move
+v ← a variable in C with the smallest break-count
+
+C' ← candidate clauses with v in C with color k and smallest break-count
+v ← variable from candidate clauses to flip
+Flip v in σ
+
+return FAIL // no satisfying assignment found
+end Walksat-Color 
