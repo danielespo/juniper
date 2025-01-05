@@ -1,0 +1,9002 @@
+[
+  {
+    "problem_name": "uf5001.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1106.3115577889448,
+    "MR": 1156.5628140703518
+  },
+  {
+    "problem_name": "uf5002.cnf",
+    "successes": 114,
+    "max_tries": 200,
+    "success_rate": 0.57,
+    "p_hat": 0.57,
+    "avg_flips": 2983.0087719298244,
+    "MR": 10526.868421052633
+  },
+  {
+    "problem_name": "uf5003.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 261.06,
+    "MR": 261.06
+  },
+  {
+    "problem_name": "uf5004.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1494.969543147208,
+    "MR": 1647.253807106599
+  },
+  {
+    "problem_name": "uf5005.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 85.35,
+    "MR": 85.35
+  },
+  {
+    "problem_name": "uf5006.cnf",
+    "successes": 137,
+    "max_tries": 200,
+    "success_rate": 0.685,
+    "p_hat": 0.685,
+    "avg_flips": 3368.92700729927,
+    "MR": 7967.46715328467
+  },
+  {
+    "problem_name": "uf5007.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 464.595,
+    "MR": 464.595
+  },
+  {
+    "problem_name": "uf5008.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 2084.2383419689118,
+    "MR": 2446.932642487047
+  },
+  {
+    "problem_name": "uf5009.cnf",
+    "successes": 152,
+    "max_tries": 200,
+    "success_rate": 0.76,
+    "p_hat": 0.76,
+    "avg_flips": 2175.3223684210525,
+    "MR": 5333.2171052631575
+  },
+  {
+    "problem_name": "uf50010.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1436.5,
+    "MR": 1640.5816326530614
+  },
+  {
+    "problem_name": "uf50011.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1238.79,
+    "MR": 1238.79
+  },
+  {
+    "problem_name": "uf50012.cnf",
+    "successes": 155,
+    "max_tries": 200,
+    "success_rate": 0.775,
+    "p_hat": 0.775,
+    "avg_flips": 2228.0709677419354,
+    "MR": 5131.296774193548
+  },
+  {
+    "problem_name": "uf50013.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 661.1105527638191,
+    "MR": 711.3618090452262
+  },
+  {
+    "problem_name": "uf50014.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 766.935,
+    "MR": 766.935
+  },
+  {
+    "problem_name": "uf50015.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 297.435,
+    "MR": 297.435
+  },
+  {
+    "problem_name": "uf50016.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 589.0,
+    "MR": 589.0
+  },
+  {
+    "problem_name": "uf50017.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1166.265,
+    "MR": 1166.265
+  },
+  {
+    "problem_name": "uf50018.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 394.345,
+    "MR": 394.345
+  },
+  {
+    "problem_name": "uf50019.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1862.9396984924624,
+    "MR": 1913.1909547738694
+  },
+  {
+    "problem_name": "uf50020.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 442.82,
+    "MR": 442.82
+  },
+  {
+    "problem_name": "uf50021.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 601.905,
+    "MR": 601.905
+  },
+  {
+    "problem_name": "uf50022.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 2297.515625,
+    "MR": 2714.182291666667
+  },
+  {
+    "problem_name": "uf50023.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 668.595,
+    "MR": 668.595
+  },
+  {
+    "problem_name": "uf50024.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 2202.497382198953,
+    "MR": 2673.7015706806287
+  },
+  {
+    "problem_name": "uf50025.cnf",
+    "successes": 94,
+    "max_tries": 200,
+    "success_rate": 0.47,
+    "p_hat": 0.47,
+    "avg_flips": 2652.308510638298,
+    "MR": 13928.90425531915
+  },
+  {
+    "problem_name": "uf50026.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 2036.580310880829,
+    "MR": 2399.274611398964
+  },
+  {
+    "problem_name": "uf50027.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 313.825,
+    "MR": 313.825
+  },
+  {
+    "problem_name": "uf50028.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1739.3214285714287,
+    "MR": 1943.40306122449
+  },
+  {
+    "problem_name": "uf50029.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1272.955,
+    "MR": 1272.955
+  },
+  {
+    "problem_name": "uf50030.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1614.9646464646464,
+    "MR": 1715.9747474747476
+  },
+  {
+    "problem_name": "uf50031.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 715.325,
+    "MR": 715.325
+  },
+  {
+    "problem_name": "uf50032.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 418.935,
+    "MR": 418.935
+  },
+  {
+    "problem_name": "uf50033.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 729.17,
+    "MR": 729.17
+  },
+  {
+    "problem_name": "uf50034.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 341.44,
+    "MR": 341.44
+  },
+  {
+    "problem_name": "uf50035.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 492.86,
+    "MR": 492.86
+  },
+  {
+    "problem_name": "uf50036.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1558.8832487309644,
+    "MR": 1711.1675126903554
+  },
+  {
+    "problem_name": "uf50037.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 724.075,
+    "MR": 724.075
+  },
+  {
+    "problem_name": "uf50038.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 1894.7486631016043,
+    "MR": 2589.935828877005
+  },
+  {
+    "problem_name": "uf50039.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 208.025,
+    "MR": 208.025
+  },
+  {
+    "problem_name": "uf50040.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 230.23,
+    "MR": 230.23
+  },
+  {
+    "problem_name": "uf50041.cnf",
+    "successes": 126,
+    "max_tries": 200,
+    "success_rate": 0.63,
+    "p_hat": 0.63,
+    "avg_flips": 3528.809523809524,
+    "MR": 9401.825396825398
+  },
+  {
+    "problem_name": "uf50042.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1654.3181818181818,
+    "MR": 1755.328282828283
+  },
+  {
+    "problem_name": "uf50043.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 481.42,
+    "MR": 481.42
+  },
+  {
+    "problem_name": "uf50044.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 716.64,
+    "MR": 716.64
+  },
+  {
+    "problem_name": "uf50045.cnf",
+    "successes": 176,
+    "max_tries": 200,
+    "success_rate": 0.88,
+    "p_hat": 0.88,
+    "avg_flips": 1980.7954545454545,
+    "MR": 3344.431818181818
+  },
+  {
+    "problem_name": "uf50046.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 330.305,
+    "MR": 330.305
+  },
+  {
+    "problem_name": "uf50047.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1077.1522842639595,
+    "MR": 1229.4365482233504
+  },
+  {
+    "problem_name": "uf50048.cnf",
+    "successes": 189,
+    "max_tries": 200,
+    "success_rate": 0.945,
+    "p_hat": 0.945,
+    "avg_flips": 2012.2962962962963,
+    "MR": 2594.306878306879
+  },
+  {
+    "problem_name": "uf50049.cnf",
+    "successes": 178,
+    "max_tries": 200,
+    "success_rate": 0.89,
+    "p_hat": 0.89,
+    "avg_flips": 2800.8314606741574,
+    "MR": 4036.7865168539324
+  },
+  {
+    "problem_name": "uf50050.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1654.475,
+    "MR": 1654.475
+  },
+  {
+    "problem_name": "uf50051.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 245.43,
+    "MR": 245.43
+  },
+  {
+    "problem_name": "uf50052.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 442.665,
+    "MR": 442.665
+  },
+  {
+    "problem_name": "uf50053.cnf",
+    "successes": 142,
+    "max_tries": 200,
+    "success_rate": 0.71,
+    "p_hat": 0.71,
+    "avg_flips": 3895.105633802817,
+    "MR": 7979.612676056338
+  },
+  {
+    "problem_name": "uf50054.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 660.06,
+    "MR": 660.06
+  },
+  {
+    "problem_name": "uf50055.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 559.9,
+    "MR": 559.9
+  },
+  {
+    "problem_name": "uf50056.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 380.31,
+    "MR": 380.31
+  },
+  {
+    "problem_name": "uf50057.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1178.3,
+    "MR": 1178.3
+  },
+  {
+    "problem_name": "uf50058.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 484.03,
+    "MR": 484.03
+  },
+  {
+    "problem_name": "uf50059.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 1582.4973262032086,
+    "MR": 2277.684491978609
+  },
+  {
+    "problem_name": "uf50060.cnf",
+    "successes": 106,
+    "max_tries": 200,
+    "success_rate": 0.53,
+    "p_hat": 0.53,
+    "avg_flips": 1988.0471698113208,
+    "MR": 10855.971698113208
+  },
+  {
+    "problem_name": "uf50061.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1546.05,
+    "MR": 1546.05
+  },
+  {
+    "problem_name": "uf50062.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 236.81,
+    "MR": 236.81
+  },
+  {
+    "problem_name": "uf50063.cnf",
+    "successes": 153,
+    "max_tries": 200,
+    "success_rate": 0.765,
+    "p_hat": 0.765,
+    "avg_flips": 1835.5228758169935,
+    "MR": 4907.418300653594
+  },
+  {
+    "problem_name": "uf50064.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 416.505,
+    "MR": 416.505
+  },
+  {
+    "problem_name": "uf50065.cnf",
+    "successes": 178,
+    "max_tries": 200,
+    "success_rate": 0.89,
+    "p_hat": 0.89,
+    "avg_flips": 1284.1516853932585,
+    "MR": 2520.1067415730336
+  },
+  {
+    "problem_name": "uf50066.cnf",
+    "successes": 153,
+    "max_tries": 200,
+    "success_rate": 0.765,
+    "p_hat": 0.765,
+    "avg_flips": 2372.1307189542486,
+    "MR": 5444.026143790849
+  },
+  {
+    "problem_name": "uf50067.cnf",
+    "successes": 162,
+    "max_tries": 200,
+    "success_rate": 0.81,
+    "p_hat": 0.81,
+    "avg_flips": 2908.5,
+    "MR": 5254.1790123456785
+  },
+  {
+    "problem_name": "uf50068.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 420.68,
+    "MR": 420.68
+  },
+  {
+    "problem_name": "uf50069.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1179.515,
+    "MR": 1179.515
+  },
+  {
+    "problem_name": "uf50070.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1518.286432160804,
+    "MR": 1568.537688442211
+  },
+  {
+    "problem_name": "uf50071.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 565.459595959596,
+    "MR": 666.4696969696971
+  },
+  {
+    "problem_name": "uf50072.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1060.91,
+    "MR": 1060.91
+  },
+  {
+    "problem_name": "uf50073.cnf",
+    "successes": 82,
+    "max_tries": 200,
+    "success_rate": 0.41,
+    "p_hat": 0.41,
+    "avg_flips": 3424.9756097560976,
+    "MR": 17815.219512195126
+  },
+  {
+    "problem_name": "uf50074.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1051.11,
+    "MR": 1051.11
+  },
+  {
+    "problem_name": "uf50075.cnf",
+    "successes": 181,
+    "max_tries": 200,
+    "success_rate": 0.905,
+    "p_hat": 0.905,
+    "avg_flips": 2681.939226519337,
+    "MR": 3731.6629834254136
+  },
+  {
+    "problem_name": "uf50076.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 375.08,
+    "MR": 375.08
+  },
+  {
+    "problem_name": "uf50077.cnf",
+    "successes": 167,
+    "max_tries": 200,
+    "success_rate": 0.835,
+    "p_hat": 0.835,
+    "avg_flips": 2425.982035928144,
+    "MR": 4402.029940119761
+  },
+  {
+    "problem_name": "uf50078.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 2292.702564102564,
+    "MR": 2549.1128205128207
+  },
+  {
+    "problem_name": "uf50079.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 123.085,
+    "MR": 123.085
+  },
+  {
+    "problem_name": "uf50080.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 248.22,
+    "MR": 248.22
+  },
+  {
+    "problem_name": "uf50081.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 990.8383838383838,
+    "MR": 1091.848484848485
+  },
+  {
+    "problem_name": "uf50082.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 248.995,
+    "MR": 248.995
+  },
+  {
+    "problem_name": "uf50083.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 489.045,
+    "MR": 489.045
+  },
+  {
+    "problem_name": "uf50084.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 544.06,
+    "MR": 544.06
+  },
+  {
+    "problem_name": "uf50085.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1477.4162436548224,
+    "MR": 1629.7005076142134
+  },
+  {
+    "problem_name": "uf50086.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 1629.6528497409327,
+    "MR": 1992.3471502590678
+  },
+  {
+    "problem_name": "uf50087.cnf",
+    "successes": 152,
+    "max_tries": 200,
+    "success_rate": 0.76,
+    "p_hat": 0.76,
+    "avg_flips": 1958.967105263158,
+    "MR": 5116.861842105263
+  },
+  {
+    "problem_name": "uf50088.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1042.6231155778894,
+    "MR": 1092.8743718592964
+  },
+  {
+    "problem_name": "uf50089.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 837.89,
+    "MR": 837.89
+  },
+  {
+    "problem_name": "uf50090.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 617.455,
+    "MR": 617.455
+  },
+  {
+    "problem_name": "uf50091.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 192.845,
+    "MR": 192.845
+  },
+  {
+    "problem_name": "uf50092.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 627.965,
+    "MR": 627.965
+  },
+  {
+    "problem_name": "uf50093.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1623.175,
+    "MR": 1623.175
+  },
+  {
+    "problem_name": "uf50094.cnf",
+    "successes": 138,
+    "max_tries": 200,
+    "success_rate": 0.69,
+    "p_hat": 0.69,
+    "avg_flips": 3332.31884057971,
+    "MR": 7825.072463768117
+  },
+  {
+    "problem_name": "uf50095.cnf",
+    "successes": 180,
+    "max_tries": 200,
+    "success_rate": 0.9,
+    "p_hat": 0.9,
+    "avg_flips": 2382.8055555555557,
+    "MR": 3493.9166666666665
+  },
+  {
+    "problem_name": "uf50096.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 113.6,
+    "MR": 113.6
+  },
+  {
+    "problem_name": "uf50097.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 457.1,
+    "MR": 457.1
+  },
+  {
+    "problem_name": "uf50098.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 722.18,
+    "MR": 722.18
+  },
+  {
+    "problem_name": "uf50099.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 523.725,
+    "MR": 523.725
+  },
+  {
+    "problem_name": "uf500100.cnf",
+    "successes": 150,
+    "max_tries": 200,
+    "success_rate": 0.75,
+    "p_hat": 0.75,
+    "avg_flips": 2860.3533333333335,
+    "MR": 6193.6866666666665
+  },
+  {
+    "problem_name": "uf500101.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1007.065,
+    "MR": 1007.065
+  },
+  {
+    "problem_name": "uf500102.cnf",
+    "successes": 190,
+    "max_tries": 200,
+    "success_rate": 0.95,
+    "p_hat": 0.95,
+    "avg_flips": 1383.8473684210526,
+    "MR": 1910.1631578947372
+  },
+  {
+    "problem_name": "uf500103.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 273.725,
+    "MR": 273.725
+  },
+  {
+    "problem_name": "uf500104.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 924.685,
+    "MR": 924.685
+  },
+  {
+    "problem_name": "uf500105.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 905.08,
+    "MR": 905.08
+  },
+  {
+    "problem_name": "uf500106.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 2172.4410256410256,
+    "MR": 2428.8512820512824
+  },
+  {
+    "problem_name": "uf500107.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1760.2923076923078,
+    "MR": 2016.7025641025643
+  },
+  {
+    "problem_name": "uf500108.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1388.6142131979695,
+    "MR": 1540.8984771573605
+  },
+  {
+    "problem_name": "uf500109.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 613.305,
+    "MR": 613.305
+  },
+  {
+    "problem_name": "uf500110.cnf",
+    "successes": 174,
+    "max_tries": 200,
+    "success_rate": 0.87,
+    "p_hat": 0.87,
+    "avg_flips": 1165.83908045977,
+    "MR": 2660.091954022989
+  },
+  {
+    "problem_name": "uf500111.cnf",
+    "successes": 72,
+    "max_tries": 200,
+    "success_rate": 0.36,
+    "p_hat": 0.36,
+    "avg_flips": 2540.2361111111113,
+    "MR": 20318.01388888889
+  },
+  {
+    "problem_name": "uf500112.cnf",
+    "successes": 186,
+    "max_tries": 200,
+    "success_rate": 0.93,
+    "p_hat": 0.93,
+    "avg_flips": 1956.478494623656,
+    "MR": 2709.166666666666
+  },
+  {
+    "problem_name": "uf500113.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 989.79,
+    "MR": 989.79
+  },
+  {
+    "problem_name": "uf500114.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 124.565,
+    "MR": 124.565
+  },
+  {
+    "problem_name": "uf500115.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 389.505,
+    "MR": 389.505
+  },
+  {
+    "problem_name": "uf500116.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 268.955,
+    "MR": 268.955
+  },
+  {
+    "problem_name": "uf500117.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 135.855,
+    "MR": 135.855
+  },
+  {
+    "problem_name": "uf500118.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 2239.5364583333335,
+    "MR": 2656.2031250000005
+  },
+  {
+    "problem_name": "uf500119.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1377.878787878788,
+    "MR": 1478.8888888888891
+  },
+  {
+    "problem_name": "uf500120.cnf",
+    "successes": 133,
+    "max_tries": 200,
+    "success_rate": 0.665,
+    "p_hat": 0.665,
+    "avg_flips": 3443.6691729323306,
+    "MR": 8481.263157894737
+  },
+  {
+    "problem_name": "uf500121.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 2081.422110552764,
+    "MR": 2131.6733668341712
+  },
+  {
+    "problem_name": "uf500122.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 554.865,
+    "MR": 554.865
+  },
+  {
+    "problem_name": "uf500123.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 808.07,
+    "MR": 808.07
+  },
+  {
+    "problem_name": "uf500124.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 793.1557788944724,
+    "MR": 843.4070351758795
+  },
+  {
+    "problem_name": "uf500125.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 642.115,
+    "MR": 642.115
+  },
+  {
+    "problem_name": "uf500126.cnf",
+    "successes": 190,
+    "max_tries": 200,
+    "success_rate": 0.95,
+    "p_hat": 0.95,
+    "avg_flips": 2045.8578947368421,
+    "MR": 2572.173684210527
+  },
+  {
+    "problem_name": "uf500127.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 2421.9893048128342,
+    "MR": 3117.1764705882347
+  },
+  {
+    "problem_name": "uf500128.cnf",
+    "successes": 186,
+    "max_tries": 200,
+    "success_rate": 0.93,
+    "p_hat": 0.93,
+    "avg_flips": 2481.7419354838707,
+    "MR": 3234.430107526881
+  },
+  {
+    "problem_name": "uf500129.cnf",
+    "successes": 115,
+    "max_tries": 200,
+    "success_rate": 0.575,
+    "p_hat": 0.575,
+    "avg_flips": 3362.5391304347827,
+    "MR": 10753.843478260871
+  },
+  {
+    "problem_name": "uf500130.cnf",
+    "successes": 72,
+    "max_tries": 200,
+    "success_rate": 0.36,
+    "p_hat": 0.36,
+    "avg_flips": 1381.2916666666667,
+    "MR": 19159.069444444445
+  },
+  {
+    "problem_name": "uf500131.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 415.98,
+    "MR": 415.98
+  },
+  {
+    "problem_name": "uf500132.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 291.51,
+    "MR": 291.51
+  },
+  {
+    "problem_name": "uf500133.cnf",
+    "successes": 122,
+    "max_tries": 200,
+    "success_rate": 0.61,
+    "p_hat": 0.61,
+    "avg_flips": 3342.9836065573772,
+    "MR": 9736.426229508197
+  },
+  {
+    "problem_name": "uf500134.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 2389.5958549222796,
+    "MR": 2752.2901554404148
+  },
+  {
+    "problem_name": "uf500135.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 386.445,
+    "MR": 386.445
+  },
+  {
+    "problem_name": "uf500136.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 110.005,
+    "MR": 110.005
+  },
+  {
+    "problem_name": "uf500137.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 538.635,
+    "MR": 538.635
+  },
+  {
+    "problem_name": "uf500138.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1156.15,
+    "MR": 1156.15
+  },
+  {
+    "problem_name": "uf500139.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 1318.1550802139038,
+    "MR": 2013.3422459893045
+  },
+  {
+    "problem_name": "uf500140.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 313.695,
+    "MR": 313.695
+  },
+  {
+    "problem_name": "uf500141.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 452.445,
+    "MR": 452.445
+  },
+  {
+    "problem_name": "uf500142.cnf",
+    "successes": 186,
+    "max_tries": 200,
+    "success_rate": 0.93,
+    "p_hat": 0.93,
+    "avg_flips": 1945.1559139784947,
+    "MR": 2697.844086021505
+  },
+  {
+    "problem_name": "uf500143.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 779.7692307692307,
+    "MR": 1036.1794871794873
+  },
+  {
+    "problem_name": "uf500144.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1410.5151515151515,
+    "MR": 1511.5252525252527
+  },
+  {
+    "problem_name": "uf500145.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1610.195,
+    "MR": 1610.195
+  },
+  {
+    "problem_name": "uf500146.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 2115.712121212121,
+    "MR": 2216.722222222222
+  },
+  {
+    "problem_name": "uf500147.cnf",
+    "successes": 170,
+    "max_tries": 200,
+    "success_rate": 0.85,
+    "p_hat": 0.85,
+    "avg_flips": 2881.9058823529413,
+    "MR": 4646.611764705883
+  },
+  {
+    "problem_name": "uf500148.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 2096.7875647668393,
+    "MR": 2459.4818652849744
+  },
+  {
+    "problem_name": "uf500149.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 190.715,
+    "MR": 190.715
+  },
+  {
+    "problem_name": "uf500150.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 316.2,
+    "MR": 316.2
+  },
+  {
+    "problem_name": "uf500151.cnf",
+    "successes": 184,
+    "max_tries": 200,
+    "success_rate": 0.92,
+    "p_hat": 0.92,
+    "avg_flips": 2778.0271739130435,
+    "MR": 3647.5923913043475
+  },
+  {
+    "problem_name": "uf500152.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 669.77,
+    "MR": 669.77
+  },
+  {
+    "problem_name": "uf500153.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1366.5897435897436,
+    "MR": 1623.0000000000002
+  },
+  {
+    "problem_name": "uf500154.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 832.12,
+    "MR": 832.12
+  },
+  {
+    "problem_name": "uf500155.cnf",
+    "successes": 161,
+    "max_tries": 200,
+    "success_rate": 0.805,
+    "p_hat": 0.805,
+    "avg_flips": 3402.204968944099,
+    "MR": 5824.565217391304
+  },
+  {
+    "problem_name": "uf500156.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 846.385,
+    "MR": 846.385
+  },
+  {
+    "problem_name": "uf500157.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 142.285,
+    "MR": 142.285
+  },
+  {
+    "problem_name": "uf500158.cnf",
+    "successes": 162,
+    "max_tries": 200,
+    "success_rate": 0.81,
+    "p_hat": 0.81,
+    "avg_flips": 2781.1913580246915,
+    "MR": 5126.87037037037
+  },
+  {
+    "problem_name": "uf500159.cnf",
+    "successes": 161,
+    "max_tries": 200,
+    "success_rate": 0.805,
+    "p_hat": 0.805,
+    "avg_flips": 3276.590062111801,
+    "MR": 5698.950310559006
+  },
+  {
+    "problem_name": "uf500160.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1354.6,
+    "MR": 1354.6
+  },
+  {
+    "problem_name": "uf500161.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1348.2222222222222,
+    "MR": 1449.2323232323233
+  },
+  {
+    "problem_name": "uf500162.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 2158.7958115183246,
+    "MR": 2630.0000000000005
+  },
+  {
+    "problem_name": "uf500163.cnf",
+    "successes": 173,
+    "max_tries": 200,
+    "success_rate": 0.865,
+    "p_hat": 0.865,
+    "avg_flips": 2610.098265895954,
+    "MR": 4170.791907514451
+  },
+  {
+    "problem_name": "uf500164.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1414.876923076923,
+    "MR": 1671.2871794871796
+  },
+  {
+    "problem_name": "uf500165.cnf",
+    "successes": 189,
+    "max_tries": 200,
+    "success_rate": 0.945,
+    "p_hat": 0.945,
+    "avg_flips": 1606.111111111111,
+    "MR": 2188.1216931216936
+  },
+  {
+    "problem_name": "uf500166.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1918.374358974359,
+    "MR": 2174.784615384616
+  },
+  {
+    "problem_name": "uf500167.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 703.205,
+    "MR": 703.205
+  },
+  {
+    "problem_name": "uf500168.cnf",
+    "successes": 185,
+    "max_tries": 200,
+    "success_rate": 0.925,
+    "p_hat": 0.925,
+    "avg_flips": 1427.4162162162163,
+    "MR": 2238.2270270270265
+  },
+  {
+    "problem_name": "uf500169.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 200.61,
+    "MR": 200.61
+  },
+  {
+    "problem_name": "uf500170.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 455.025,
+    "MR": 455.025
+  },
+  {
+    "problem_name": "uf500171.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 505.4,
+    "MR": 505.4
+  },
+  {
+    "problem_name": "uf500172.cnf",
+    "successes": 177,
+    "max_tries": 200,
+    "success_rate": 0.885,
+    "p_hat": 0.885,
+    "avg_flips": 2168.4858757062148,
+    "MR": 3467.9209039548023
+  },
+  {
+    "problem_name": "uf500173.cnf",
+    "successes": 169,
+    "max_tries": 200,
+    "success_rate": 0.845,
+    "p_hat": 0.845,
+    "avg_flips": 1815.8698224852071,
+    "MR": 3650.1893491124265
+  },
+  {
+    "problem_name": "uf500174.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 412.185,
+    "MR": 412.185
+  },
+  {
+    "problem_name": "uf500175.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 585.1155778894472,
+    "MR": 635.3668341708543
+  },
+  {
+    "problem_name": "uf500176.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 2530.030612244898,
+    "MR": 2734.112244897959
+  },
+  {
+    "problem_name": "uf500177.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 953.3888888888889,
+    "MR": 1054.39898989899
+  },
+  {
+    "problem_name": "uf500178.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 123.065,
+    "MR": 123.065
+  },
+  {
+    "problem_name": "uf500179.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1745.6919191919192,
+    "MR": 1846.7020202020203
+  },
+  {
+    "problem_name": "uf500180.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 898.46,
+    "MR": 898.46
+  },
+  {
+    "problem_name": "uf500181.cnf",
+    "successes": 105,
+    "max_tries": 200,
+    "success_rate": 0.525,
+    "p_hat": 0.525,
+    "avg_flips": 2076.0285714285715,
+    "MR": 11123.647619047617
+  },
+  {
+    "problem_name": "uf500182.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 2328.324607329843,
+    "MR": 2799.5287958115186
+  },
+  {
+    "problem_name": "uf500183.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 634.7,
+    "MR": 634.7
+  },
+  {
+    "problem_name": "uf500184.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 722.935,
+    "MR": 722.935
+  },
+  {
+    "problem_name": "uf500185.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 216.845,
+    "MR": 216.845
+  },
+  {
+    "problem_name": "uf500186.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1237.9137055837564,
+    "MR": 1390.1979695431473
+  },
+  {
+    "problem_name": "uf500187.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1715.3517587939698,
+    "MR": 1765.6030150753768
+  },
+  {
+    "problem_name": "uf500188.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 401.25,
+    "MR": 401.25
+  },
+  {
+    "problem_name": "uf500189.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 977.0656565656566,
+    "MR": 1078.0757575757577
+  },
+  {
+    "problem_name": "uf500190.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 531.155,
+    "MR": 531.155
+  },
+  {
+    "problem_name": "uf500191.cnf",
+    "successes": 169,
+    "max_tries": 200,
+    "success_rate": 0.845,
+    "p_hat": 0.845,
+    "avg_flips": 3030.769230769231,
+    "MR": 4865.08875739645
+  },
+  {
+    "problem_name": "uf500192.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 471.705,
+    "MR": 471.705
+  },
+  {
+    "problem_name": "uf500193.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1328.1557788944724,
+    "MR": 1378.4070351758794
+  },
+  {
+    "problem_name": "uf500194.cnf",
+    "successes": 134,
+    "max_tries": 200,
+    "success_rate": 0.67,
+    "p_hat": 0.67,
+    "avg_flips": 3813.7537313432836,
+    "MR": 8739.12686567164
+  },
+  {
+    "problem_name": "uf500195.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1251.8673469387754,
+    "MR": 1455.9489795918369
+  },
+  {
+    "problem_name": "uf500196.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 433.03,
+    "MR": 433.03
+  },
+  {
+    "problem_name": "uf500197.cnf",
+    "successes": 62,
+    "max_tries": 200,
+    "success_rate": 0.31,
+    "p_hat": 0.31,
+    "avg_flips": 2288.7096774193546,
+    "MR": 24546.774193548386
+  },
+  {
+    "problem_name": "uf500198.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 467.985,
+    "MR": 467.985
+  },
+  {
+    "problem_name": "uf500199.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 559.34,
+    "MR": 559.34
+  },
+  {
+    "problem_name": "uf500200.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 656.62,
+    "MR": 656.62
+  },
+  {
+    "problem_name": "uf500201.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1144.82,
+    "MR": 1144.82
+  },
+  {
+    "problem_name": "uf500202.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 1914.9072164948454,
+    "MR": 2224.1855670103096
+  },
+  {
+    "problem_name": "uf500203.cnf",
+    "successes": 119,
+    "max_tries": 200,
+    "success_rate": 0.595,
+    "p_hat": 0.595,
+    "avg_flips": 1935.7142857142858,
+    "MR": 8742.436974789916
+  },
+  {
+    "problem_name": "uf500204.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1227.615,
+    "MR": 1227.615
+  },
+  {
+    "problem_name": "uf500205.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1156.095,
+    "MR": 1156.095
+  },
+  {
+    "problem_name": "uf500206.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 129.535,
+    "MR": 129.535
+  },
+  {
+    "problem_name": "uf500207.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 338.135,
+    "MR": 338.135
+  },
+  {
+    "problem_name": "uf500208.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1416.6633165829146,
+    "MR": 1466.9145728643216
+  },
+  {
+    "problem_name": "uf500209.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1501.766497461929,
+    "MR": 1654.05076142132
+  },
+  {
+    "problem_name": "uf500210.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 585.43,
+    "MR": 585.43
+  },
+  {
+    "problem_name": "uf500211.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 874.2,
+    "MR": 874.2
+  },
+  {
+    "problem_name": "uf500212.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 757.05,
+    "MR": 757.05
+  },
+  {
+    "problem_name": "uf500213.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 539.04,
+    "MR": 539.04
+  },
+  {
+    "problem_name": "uf500214.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 1987.5602094240837,
+    "MR": 2458.7643979057593
+  },
+  {
+    "problem_name": "uf500215.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 1900.3101604278074,
+    "MR": 2595.497326203208
+  },
+  {
+    "problem_name": "uf500216.cnf",
+    "successes": 185,
+    "max_tries": 200,
+    "success_rate": 0.925,
+    "p_hat": 0.925,
+    "avg_flips": 815.918918918919,
+    "MR": 1626.7297297297291
+  },
+  {
+    "problem_name": "uf500217.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 2369.2552083333335,
+    "MR": 2785.9218750000005
+  },
+  {
+    "problem_name": "uf500218.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 660.929292929293,
+    "MR": 761.9393939393941
+  },
+  {
+    "problem_name": "uf500219.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 385.425,
+    "MR": 385.425
+  },
+  {
+    "problem_name": "uf500220.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 2066.451776649746,
+    "MR": 2218.736040609137
+  },
+  {
+    "problem_name": "uf500221.cnf",
+    "successes": 150,
+    "max_tries": 200,
+    "success_rate": 0.75,
+    "p_hat": 0.75,
+    "avg_flips": 3256.866666666667,
+    "MR": 6590.2
+  },
+  {
+    "problem_name": "uf500222.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 437.765,
+    "MR": 437.765
+  },
+  {
+    "problem_name": "uf500223.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 836.58,
+    "MR": 836.58
+  },
+  {
+    "problem_name": "uf500224.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 786.95,
+    "MR": 786.95
+  },
+  {
+    "problem_name": "uf500225.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 293.81,
+    "MR": 293.81
+  },
+  {
+    "problem_name": "uf500226.cnf",
+    "successes": 164,
+    "max_tries": 200,
+    "success_rate": 0.82,
+    "p_hat": 0.82,
+    "avg_flips": 2596.6768292682927,
+    "MR": 4791.798780487806
+  },
+  {
+    "problem_name": "uf500227.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 472.0,
+    "MR": 472.0
+  },
+  {
+    "problem_name": "uf500228.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1368.9435897435897,
+    "MR": 1625.3538461538462
+  },
+  {
+    "problem_name": "uf500229.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1198.665,
+    "MR": 1198.665
+  },
+  {
+    "problem_name": "uf500230.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 495.86,
+    "MR": 495.86
+  },
+  {
+    "problem_name": "uf500231.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1305.33,
+    "MR": 1305.33
+  },
+  {
+    "problem_name": "uf500232.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 964.885,
+    "MR": 964.885
+  },
+  {
+    "problem_name": "uf500233.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 510.195,
+    "MR": 510.195
+  },
+  {
+    "problem_name": "uf500234.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 312.44,
+    "MR": 312.44
+  },
+  {
+    "problem_name": "uf500235.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1224.975,
+    "MR": 1224.975
+  },
+  {
+    "problem_name": "uf500236.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 410.995,
+    "MR": 410.995
+  },
+  {
+    "problem_name": "uf500237.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 513.075,
+    "MR": 513.075
+  },
+  {
+    "problem_name": "uf500238.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 204.81,
+    "MR": 204.81
+  },
+  {
+    "problem_name": "uf500239.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 496.385,
+    "MR": 496.385
+  },
+  {
+    "problem_name": "uf500240.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 2263.7823834196893,
+    "MR": 2626.4766839378244
+  },
+  {
+    "problem_name": "uf500241.cnf",
+    "successes": 183,
+    "max_tries": 200,
+    "success_rate": 0.915,
+    "p_hat": 0.915,
+    "avg_flips": 2319.7322404371585,
+    "MR": 3248.693989071038
+  },
+  {
+    "problem_name": "uf500242.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 206.185,
+    "MR": 206.185
+  },
+  {
+    "problem_name": "uf500243.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 778.96,
+    "MR": 778.96
+  },
+  {
+    "problem_name": "uf500244.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 274.855,
+    "MR": 274.855
+  },
+  {
+    "problem_name": "uf500245.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1068.16,
+    "MR": 1068.16
+  },
+  {
+    "problem_name": "uf500246.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 1294.0,
+    "MR": 1765.2041884816758
+  },
+  {
+    "problem_name": "uf500247.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 769.0,
+    "MR": 769.0
+  },
+  {
+    "problem_name": "uf500248.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1173.97,
+    "MR": 1173.97
+  },
+  {
+    "problem_name": "uf500249.cnf",
+    "successes": 130,
+    "max_tries": 200,
+    "success_rate": 0.65,
+    "p_hat": 0.65,
+    "avg_flips": 3072.5923076923077,
+    "MR": 8457.207692307693
+  },
+  {
+    "problem_name": "uf500250.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 136.04,
+    "MR": 136.04
+  },
+  {
+    "problem_name": "uf500251.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 511.055,
+    "MR": 511.055
+  },
+  {
+    "problem_name": "uf500252.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 297.315,
+    "MR": 297.315
+  },
+  {
+    "problem_name": "uf500253.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1707.6751269035533,
+    "MR": 1859.9593908629442
+  },
+  {
+    "problem_name": "uf500254.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 198.305,
+    "MR": 198.305
+  },
+  {
+    "problem_name": "uf500255.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1687.824120603015,
+    "MR": 1738.075376884422
+  },
+  {
+    "problem_name": "uf500256.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 249.965,
+    "MR": 249.965
+  },
+  {
+    "problem_name": "uf500257.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 2599.3529411764707,
+    "MR": 3294.540106951871
+  },
+  {
+    "problem_name": "uf500258.cnf",
+    "successes": 102,
+    "max_tries": 200,
+    "success_rate": 0.51,
+    "p_hat": 0.51,
+    "avg_flips": 2388.8333333333335,
+    "MR": 11996.676470588234
+  },
+  {
+    "problem_name": "uf500259.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 405.255,
+    "MR": 405.255
+  },
+  {
+    "problem_name": "uf500260.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 217.275,
+    "MR": 217.275
+  },
+  {
+    "problem_name": "uf500261.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1648.7939698492462,
+    "MR": 1699.0452261306532
+  },
+  {
+    "problem_name": "uf500262.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1069.3535353535353,
+    "MR": 1170.3636363636365
+  },
+  {
+    "problem_name": "uf500263.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 1348.392670157068,
+    "MR": 1819.596858638744
+  },
+  {
+    "problem_name": "uf500264.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 127.095,
+    "MR": 127.095
+  },
+  {
+    "problem_name": "uf500265.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 235.875,
+    "MR": 235.875
+  },
+  {
+    "problem_name": "uf500266.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1207.96,
+    "MR": 1207.96
+  },
+  {
+    "problem_name": "uf500267.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 2088.700507614213,
+    "MR": 2240.984771573604
+  },
+  {
+    "problem_name": "uf500268.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 1777.2620320855615,
+    "MR": 2472.449197860962
+  },
+  {
+    "problem_name": "uf500269.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 182.355,
+    "MR": 182.355
+  },
+  {
+    "problem_name": "uf500270.cnf",
+    "successes": 173,
+    "max_tries": 200,
+    "success_rate": 0.865,
+    "p_hat": 0.865,
+    "avg_flips": 2470.9710982658958,
+    "MR": 4031.664739884393
+  },
+  {
+    "problem_name": "uf500271.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1333.955,
+    "MR": 1333.955
+  },
+  {
+    "problem_name": "uf500272.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 283.765,
+    "MR": 283.765
+  },
+  {
+    "problem_name": "uf500273.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 595.855,
+    "MR": 595.855
+  },
+  {
+    "problem_name": "uf500274.cnf",
+    "successes": 184,
+    "max_tries": 200,
+    "success_rate": 0.92,
+    "p_hat": 0.92,
+    "avg_flips": 2778.375,
+    "MR": 3647.940217391304
+  },
+  {
+    "problem_name": "uf500275.cnf",
+    "successes": 126,
+    "max_tries": 200,
+    "success_rate": 0.63,
+    "p_hat": 0.63,
+    "avg_flips": 2675.9126984126983,
+    "MR": 8548.928571428572
+  },
+  {
+    "problem_name": "uf500276.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1269.6683417085428,
+    "MR": 1319.9195979899498
+  },
+  {
+    "problem_name": "uf500277.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1275.19,
+    "MR": 1275.19
+  },
+  {
+    "problem_name": "uf500278.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 935.34,
+    "MR": 935.34
+  },
+  {
+    "problem_name": "uf500279.cnf",
+    "successes": 176,
+    "max_tries": 200,
+    "success_rate": 0.88,
+    "p_hat": 0.88,
+    "avg_flips": 2290.3863636363635,
+    "MR": 3654.022727272727
+  },
+  {
+    "problem_name": "uf500280.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1131.37,
+    "MR": 1131.37
+  },
+  {
+    "problem_name": "uf500281.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 392.865,
+    "MR": 392.865
+  },
+  {
+    "problem_name": "uf500282.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 534.5,
+    "MR": 534.5
+  },
+  {
+    "problem_name": "uf500283.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 670.715,
+    "MR": 670.715
+  },
+  {
+    "problem_name": "uf500284.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 899.715,
+    "MR": 899.715
+  },
+  {
+    "problem_name": "uf500285.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 658.9747474747475,
+    "MR": 759.9848484848486
+  },
+  {
+    "problem_name": "uf500286.cnf",
+    "successes": 186,
+    "max_tries": 200,
+    "success_rate": 0.93,
+    "p_hat": 0.93,
+    "avg_flips": 2329.462365591398,
+    "MR": 3082.150537634408
+  },
+  {
+    "problem_name": "uf500287.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1094.155,
+    "MR": 1094.155
+  },
+  {
+    "problem_name": "uf500288.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 213.34,
+    "MR": 213.34
+  },
+  {
+    "problem_name": "uf500289.cnf",
+    "successes": 104,
+    "max_tries": 200,
+    "success_rate": 0.52,
+    "p_hat": 0.52,
+    "avg_flips": 1077.4903846153845,
+    "MR": 10308.259615384615
+  },
+  {
+    "problem_name": "uf500290.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 1917.9635416666667,
+    "MR": 2334.630208333334
+  },
+  {
+    "problem_name": "uf500291.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 143.53,
+    "MR": 143.53
+  },
+  {
+    "problem_name": "uf500292.cnf",
+    "successes": 190,
+    "max_tries": 200,
+    "success_rate": 0.95,
+    "p_hat": 0.95,
+    "avg_flips": 1876.3157894736842,
+    "MR": 2402.631578947369
+  },
+  {
+    "problem_name": "uf500293.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 669.95,
+    "MR": 669.95
+  },
+  {
+    "problem_name": "uf500294.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 264.225,
+    "MR": 264.225
+  },
+  {
+    "problem_name": "uf500295.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1969.6243654822335,
+    "MR": 2121.9086294416247
+  },
+  {
+    "problem_name": "uf500296.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 917.09,
+    "MR": 917.09
+  },
+  {
+    "problem_name": "uf500297.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 2300.6428571428573,
+    "MR": 2504.7244897959185
+  },
+  {
+    "problem_name": "uf500298.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 485.75,
+    "MR": 485.75
+  },
+  {
+    "problem_name": "uf500299.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 458.565,
+    "MR": 458.565
+  },
+  {
+    "problem_name": "uf500300.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 282.91,
+    "MR": 282.91
+  },
+  {
+    "problem_name": "uf500301.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 2229.2834224598932,
+    "MR": 2924.4705882352937
+  },
+  {
+    "problem_name": "uf500302.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 2225.3030303030305,
+    "MR": 2326.3131313131316
+  },
+  {
+    "problem_name": "uf500303.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 357.235,
+    "MR": 357.235
+  },
+  {
+    "problem_name": "uf500304.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 403.37,
+    "MR": 403.37
+  },
+  {
+    "problem_name": "uf500305.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 205.17,
+    "MR": 205.17
+  },
+  {
+    "problem_name": "uf500306.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 1501.9424083769634,
+    "MR": 1973.1465968586392
+  },
+  {
+    "problem_name": "uf500307.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 357.98,
+    "MR": 357.98
+  },
+  {
+    "problem_name": "uf500308.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1066.09,
+    "MR": 1066.09
+  },
+  {
+    "problem_name": "uf500309.cnf",
+    "successes": 164,
+    "max_tries": 200,
+    "success_rate": 0.82,
+    "p_hat": 0.82,
+    "avg_flips": 2721.079268292683,
+    "MR": 4916.201219512196
+  },
+  {
+    "problem_name": "uf500310.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 850.2666666666667,
+    "MR": 1106.6769230769232
+  },
+  {
+    "problem_name": "uf500311.cnf",
+    "successes": 157,
+    "max_tries": 200,
+    "success_rate": 0.785,
+    "p_hat": 0.785,
+    "avg_flips": 2423.452229299363,
+    "MR": 5162.305732484076
+  },
+  {
+    "problem_name": "uf500312.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 2176.1875,
+    "MR": 2592.854166666667
+  },
+  {
+    "problem_name": "uf500313.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1411.7121212121212,
+    "MR": 1512.7222222222224
+  },
+  {
+    "problem_name": "uf500314.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 353.145,
+    "MR": 353.145
+  },
+  {
+    "problem_name": "uf500315.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 286.57,
+    "MR": 286.57
+  },
+  {
+    "problem_name": "uf500316.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 294.29,
+    "MR": 294.29
+  },
+  {
+    "problem_name": "uf500317.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 452.27,
+    "MR": 452.27
+  },
+  {
+    "problem_name": "uf500318.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 1488.7540106951872,
+    "MR": 2183.941176470588
+  },
+  {
+    "problem_name": "uf500319.cnf",
+    "successes": 190,
+    "max_tries": 200,
+    "success_rate": 0.95,
+    "p_hat": 0.95,
+    "avg_flips": 2132.942105263158,
+    "MR": 2659.2578947368424
+  },
+  {
+    "problem_name": "uf500320.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 638.2923076923076,
+    "MR": 894.7025641025643
+  },
+  {
+    "problem_name": "uf500321.cnf",
+    "successes": 165,
+    "max_tries": 200,
+    "success_rate": 0.825,
+    "p_hat": 0.825,
+    "avg_flips": 2249.430303030303,
+    "MR": 4370.6424242424255
+  },
+  {
+    "problem_name": "uf500322.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 689.835,
+    "MR": 689.835
+  },
+  {
+    "problem_name": "uf500323.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 802.675,
+    "MR": 802.675
+  },
+  {
+    "problem_name": "uf500324.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 1268.219895287958,
+    "MR": 1739.4240837696339
+  },
+  {
+    "problem_name": "uf500325.cnf",
+    "successes": 141,
+    "max_tries": 200,
+    "success_rate": 0.705,
+    "p_hat": 0.705,
+    "avg_flips": 2879.7304964539007,
+    "MR": 7064.127659574469
+  },
+  {
+    "problem_name": "uf500326.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1236.8844221105528,
+    "MR": 1287.1356783919598
+  },
+  {
+    "problem_name": "uf500327.cnf",
+    "successes": 124,
+    "max_tries": 200,
+    "success_rate": 0.62,
+    "p_hat": 0.62,
+    "avg_flips": 2464.0080645161293,
+    "MR": 8593.040322580646
+  },
+  {
+    "problem_name": "uf500328.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 496.8241206030151,
+    "MR": 547.0753768844222
+  },
+  {
+    "problem_name": "uf500329.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 882.395,
+    "MR": 882.395
+  },
+  {
+    "problem_name": "uf500330.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 399.205,
+    "MR": 399.205
+  },
+  {
+    "problem_name": "uf500331.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1517.07,
+    "MR": 1517.07
+  },
+  {
+    "problem_name": "uf500332.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 612.62,
+    "MR": 612.62
+  },
+  {
+    "problem_name": "uf500333.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 1676.1658031088082,
+    "MR": 2038.8601036269433
+  },
+  {
+    "problem_name": "uf500334.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 123.18,
+    "MR": 123.18
+  },
+  {
+    "problem_name": "uf500335.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 169.84,
+    "MR": 169.84
+  },
+  {
+    "problem_name": "uf500336.cnf",
+    "successes": 172,
+    "max_tries": 200,
+    "success_rate": 0.86,
+    "p_hat": 0.86,
+    "avg_flips": 3172.703488372093,
+    "MR": 4800.610465116279
+  },
+  {
+    "problem_name": "uf500337.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 879.5837563451777,
+    "MR": 1031.8680203045687
+  },
+  {
+    "problem_name": "uf500338.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 854.395,
+    "MR": 854.395
+  },
+  {
+    "problem_name": "uf500339.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1172.9949494949494,
+    "MR": 1274.0050505050506
+  },
+  {
+    "problem_name": "uf500340.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 830.43,
+    "MR": 830.43
+  },
+  {
+    "problem_name": "uf500341.cnf",
+    "successes": 142,
+    "max_tries": 200,
+    "success_rate": 0.71,
+    "p_hat": 0.71,
+    "avg_flips": 3199.957746478873,
+    "MR": 7284.464788732395
+  },
+  {
+    "problem_name": "uf500342.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 677.885,
+    "MR": 677.885
+  },
+  {
+    "problem_name": "uf500343.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 638.965,
+    "MR": 638.965
+  },
+  {
+    "problem_name": "uf500344.cnf",
+    "successes": 184,
+    "max_tries": 200,
+    "success_rate": 0.92,
+    "p_hat": 0.92,
+    "avg_flips": 2663.5652173913045,
+    "MR": 3533.1304347826085
+  },
+  {
+    "problem_name": "uf500345.cnf",
+    "successes": 182,
+    "max_tries": 200,
+    "success_rate": 0.91,
+    "p_hat": 0.91,
+    "avg_flips": 3023.6483516483518,
+    "MR": 4012.6593406593406
+  },
+  {
+    "problem_name": "uf500346.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 1920.0979381443299,
+    "MR": 2229.376288659794
+  },
+  {
+    "problem_name": "uf500347.cnf",
+    "successes": 128,
+    "max_tries": 200,
+    "success_rate": 0.64,
+    "p_hat": 0.64,
+    "avg_flips": 4643.3515625,
+    "MR": 10268.3515625
+  },
+  {
+    "problem_name": "uf500348.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 211.865,
+    "MR": 211.865
+  },
+  {
+    "problem_name": "uf500349.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 780.55,
+    "MR": 780.55
+  },
+  {
+    "problem_name": "uf500350.cnf",
+    "successes": 189,
+    "max_tries": 200,
+    "success_rate": 0.945,
+    "p_hat": 0.945,
+    "avg_flips": 1921.6031746031747,
+    "MR": 2503.6137566137572
+  },
+  {
+    "problem_name": "uf500351.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 503.545,
+    "MR": 503.545
+  },
+  {
+    "problem_name": "uf500352.cnf",
+    "successes": 87,
+    "max_tries": 200,
+    "success_rate": 0.435,
+    "p_hat": 0.435,
+    "avg_flips": 5049.091954022989,
+    "MR": 18037.597701149425
+  },
+  {
+    "problem_name": "uf500353.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 162.94,
+    "MR": 162.94
+  },
+  {
+    "problem_name": "uf500354.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 840.3838383838383,
+    "MR": 941.3939393939395
+  },
+  {
+    "problem_name": "uf500355.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1213.28,
+    "MR": 1213.28
+  },
+  {
+    "problem_name": "uf500356.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1144.3417085427136,
+    "MR": 1194.5929648241206
+  },
+  {
+    "problem_name": "uf500357.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 1414.580310880829,
+    "MR": 1777.2746113989642
+  },
+  {
+    "problem_name": "uf500358.cnf",
+    "successes": 157,
+    "max_tries": 200,
+    "success_rate": 0.785,
+    "p_hat": 0.785,
+    "avg_flips": 1866.312101910828,
+    "MR": 4605.165605095541
+  },
+  {
+    "problem_name": "uf500359.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1368.7091836734694,
+    "MR": 1572.7908163265308
+  },
+  {
+    "problem_name": "uf500360.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 252.135,
+    "MR": 252.135
+  },
+  {
+    "problem_name": "uf500361.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 209.295,
+    "MR": 209.295
+  },
+  {
+    "problem_name": "uf500362.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 80.6,
+    "MR": 80.6
+  },
+  {
+    "problem_name": "uf500363.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 1920.8020833333333,
+    "MR": 2337.4687500000005
+  },
+  {
+    "problem_name": "uf500364.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 683.375,
+    "MR": 683.375
+  },
+  {
+    "problem_name": "uf500365.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 527.635,
+    "MR": 527.635
+  },
+  {
+    "problem_name": "uf500366.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 2176.3821989528797,
+    "MR": 2647.5863874345555
+  },
+  {
+    "problem_name": "uf500367.cnf",
+    "successes": 141,
+    "max_tries": 200,
+    "success_rate": 0.705,
+    "p_hat": 0.705,
+    "avg_flips": 2974.77304964539,
+    "MR": 7159.170212765959
+  },
+  {
+    "problem_name": "uf500368.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 663.97,
+    "MR": 663.97
+  },
+  {
+    "problem_name": "uf500369.cnf",
+    "successes": 126,
+    "max_tries": 200,
+    "success_rate": 0.63,
+    "p_hat": 0.63,
+    "avg_flips": 2874.84126984127,
+    "MR": 8747.857142857143
+  },
+  {
+    "problem_name": "uf500370.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1109.47,
+    "MR": 1109.47
+  },
+  {
+    "problem_name": "uf500371.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 757.3,
+    "MR": 757.3
+  },
+  {
+    "problem_name": "uf500372.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 544.35,
+    "MR": 544.35
+  },
+  {
+    "problem_name": "uf500373.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1463.3467336683418,
+    "MR": 1513.5979899497488
+  },
+  {
+    "problem_name": "uf500374.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1612.0959595959596,
+    "MR": 1713.1060606060607
+  },
+  {
+    "problem_name": "uf500375.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 319.145,
+    "MR": 319.145
+  },
+  {
+    "problem_name": "uf500376.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1018.2663316582915,
+    "MR": 1068.5175879396986
+  },
+  {
+    "problem_name": "uf500377.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 952.735,
+    "MR": 952.735
+  },
+  {
+    "problem_name": "uf500378.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 176.855,
+    "MR": 176.855
+  },
+  {
+    "problem_name": "uf500379.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1001.875,
+    "MR": 1001.875
+  },
+  {
+    "problem_name": "uf500380.cnf",
+    "successes": 175,
+    "max_tries": 200,
+    "success_rate": 0.875,
+    "p_hat": 0.875,
+    "avg_flips": 1722.84,
+    "MR": 3151.4114285714286
+  },
+  {
+    "problem_name": "uf500381.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1527.8,
+    "MR": 1784.2102564102565
+  },
+  {
+    "problem_name": "uf500382.cnf",
+    "successes": 182,
+    "max_tries": 200,
+    "success_rate": 0.91,
+    "p_hat": 0.91,
+    "avg_flips": 1776.1538461538462,
+    "MR": 2765.164835164835
+  },
+  {
+    "problem_name": "uf500383.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 456.395,
+    "MR": 456.395
+  },
+  {
+    "problem_name": "uf500384.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1603.889447236181,
+    "MR": 1654.140703517588
+  },
+  {
+    "problem_name": "uf500385.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 250.66,
+    "MR": 250.66
+  },
+  {
+    "problem_name": "uf500386.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 781.2211055276382,
+    "MR": 831.4723618090453
+  },
+  {
+    "problem_name": "uf500387.cnf",
+    "successes": 167,
+    "max_tries": 200,
+    "success_rate": 0.835,
+    "p_hat": 0.835,
+    "avg_flips": 1189.0359281437127,
+    "MR": 3165.08383233533
+  },
+  {
+    "problem_name": "uf500388.cnf",
+    "successes": 164,
+    "max_tries": 200,
+    "success_rate": 0.82,
+    "p_hat": 0.82,
+    "avg_flips": 2902.140243902439,
+    "MR": 5097.262195121952
+  },
+  {
+    "problem_name": "uf500389.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1076.09,
+    "MR": 1076.09
+  },
+  {
+    "problem_name": "uf500390.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 2241.757731958763,
+    "MR": 2551.0360824742274
+  },
+  {
+    "problem_name": "uf500391.cnf",
+    "successes": 105,
+    "max_tries": 200,
+    "success_rate": 0.525,
+    "p_hat": 0.525,
+    "avg_flips": 3514.9142857142856,
+    "MR": 12562.533333333331
+  },
+  {
+    "problem_name": "uf500392.cnf",
+    "successes": 186,
+    "max_tries": 200,
+    "success_rate": 0.93,
+    "p_hat": 0.93,
+    "avg_flips": 1933.731182795699,
+    "MR": 2686.4193548387093
+  },
+  {
+    "problem_name": "uf500393.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1065.3,
+    "MR": 1065.3
+  },
+  {
+    "problem_name": "uf500394.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 696.91,
+    "MR": 696.91
+  },
+  {
+    "problem_name": "uf500395.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 669.7889447236181,
+    "MR": 720.0402010050252
+  },
+  {
+    "problem_name": "uf500396.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 350.715,
+    "MR": 350.715
+  },
+  {
+    "problem_name": "uf500397.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 347.07,
+    "MR": 347.07
+  },
+  {
+    "problem_name": "uf500398.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 506.225,
+    "MR": 506.225
+  },
+  {
+    "problem_name": "uf500399.cnf",
+    "successes": 144,
+    "max_tries": 200,
+    "success_rate": 0.72,
+    "p_hat": 0.72,
+    "avg_flips": 4090.0555555555557,
+    "MR": 7978.944444444445
+  },
+  {
+    "problem_name": "uf500400.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1636.989898989899,
+    "MR": 1738.0000000000002
+  },
+  {
+    "problem_name": "uf500401.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 920.64,
+    "MR": 920.64
+  },
+  {
+    "problem_name": "uf500402.cnf",
+    "successes": 166,
+    "max_tries": 200,
+    "success_rate": 0.83,
+    "p_hat": 0.83,
+    "avg_flips": 2577.5963855421687,
+    "MR": 4625.789156626506
+  },
+  {
+    "problem_name": "uf500403.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1805.9589743589743,
+    "MR": 2062.369230769231
+  },
+  {
+    "problem_name": "uf500404.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 142.04,
+    "MR": 142.04
+  },
+  {
+    "problem_name": "uf500405.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 614.535,
+    "MR": 614.535
+  },
+  {
+    "problem_name": "uf500406.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 366.11,
+    "MR": 366.11
+  },
+  {
+    "problem_name": "uf500407.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 550.485,
+    "MR": 550.485
+  },
+  {
+    "problem_name": "uf500408.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1817.635,
+    "MR": 1817.635
+  },
+  {
+    "problem_name": "uf500409.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 414.105,
+    "MR": 414.105
+  },
+  {
+    "problem_name": "uf500410.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 2327.0,
+    "MR": 2428.010101010101
+  },
+  {
+    "problem_name": "uf500411.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 614.335,
+    "MR": 614.335
+  },
+  {
+    "problem_name": "uf500412.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 932.615,
+    "MR": 932.615
+  },
+  {
+    "problem_name": "uf500413.cnf",
+    "successes": 159,
+    "max_tries": 200,
+    "success_rate": 0.795,
+    "p_hat": 0.795,
+    "avg_flips": 2967.012578616352,
+    "MR": 5545.628930817609
+  },
+  {
+    "problem_name": "uf500414.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1914.1767676767677,
+    "MR": 2015.1868686868688
+  },
+  {
+    "problem_name": "uf500415.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1307.1692307692308,
+    "MR": 1563.5794871794874
+  },
+  {
+    "problem_name": "uf500416.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 254.245,
+    "MR": 254.245
+  },
+  {
+    "problem_name": "uf500417.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 298.335,
+    "MR": 298.335
+  },
+  {
+    "problem_name": "uf500418.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 947.24,
+    "MR": 947.24
+  },
+  {
+    "problem_name": "uf500419.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1251.6381909547738,
+    "MR": 1301.8894472361808
+  },
+  {
+    "problem_name": "uf500420.cnf",
+    "successes": 106,
+    "max_tries": 200,
+    "success_rate": 0.53,
+    "p_hat": 0.53,
+    "avg_flips": 3770.735849056604,
+    "MR": 12638.66037735849
+  },
+  {
+    "problem_name": "uf500421.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 481.98,
+    "MR": 481.98
+  },
+  {
+    "problem_name": "uf500422.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1295.53807106599,
+    "MR": 1447.8223350253809
+  },
+  {
+    "problem_name": "uf500423.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 375.895,
+    "MR": 375.895
+  },
+  {
+    "problem_name": "uf500424.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 259.545,
+    "MR": 259.545
+  },
+  {
+    "problem_name": "uf500425.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 672.06,
+    "MR": 672.06
+  },
+  {
+    "problem_name": "uf500426.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1269.125,
+    "MR": 1269.125
+  },
+  {
+    "problem_name": "uf500427.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1836.8629441624366,
+    "MR": 1989.1472081218276
+  },
+  {
+    "problem_name": "uf500428.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 297.32,
+    "MR": 297.32
+  },
+  {
+    "problem_name": "uf500429.cnf",
+    "successes": 188,
+    "max_tries": 200,
+    "success_rate": 0.94,
+    "p_hat": 0.94,
+    "avg_flips": 2017.154255319149,
+    "MR": 2655.452127659575
+  },
+  {
+    "problem_name": "uf500430.cnf",
+    "successes": 171,
+    "max_tries": 200,
+    "success_rate": 0.855,
+    "p_hat": 0.855,
+    "avg_flips": 2292.6725146198833,
+    "MR": 3988.5789473684217
+  },
+  {
+    "problem_name": "uf500431.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 853.725,
+    "MR": 853.725
+  },
+  {
+    "problem_name": "uf500432.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 463.2713567839196,
+    "MR": 513.5226130653267
+  },
+  {
+    "problem_name": "uf500433.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 998.005,
+    "MR": 998.005
+  },
+  {
+    "problem_name": "uf500434.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 472.01,
+    "MR": 472.01
+  },
+  {
+    "problem_name": "uf500435.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1927.1116751269035,
+    "MR": 2079.3959390862947
+  },
+  {
+    "problem_name": "uf500436.cnf",
+    "successes": 103,
+    "max_tries": 200,
+    "success_rate": 0.515,
+    "p_hat": 0.515,
+    "avg_flips": 1963.0679611650485,
+    "MR": 11380.543689320388
+  },
+  {
+    "problem_name": "uf500437.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 932.125,
+    "MR": 932.125
+  },
+  {
+    "problem_name": "uf500438.cnf",
+    "successes": 179,
+    "max_tries": 200,
+    "success_rate": 0.895,
+    "p_hat": 0.895,
+    "avg_flips": 1781.1061452513966,
+    "MR": 2954.2905027932957
+  },
+  {
+    "problem_name": "uf500439.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 148.01,
+    "MR": 148.01
+  },
+  {
+    "problem_name": "uf500440.cnf",
+    "successes": 179,
+    "max_tries": 200,
+    "success_rate": 0.895,
+    "p_hat": 0.895,
+    "avg_flips": 2524.877094972067,
+    "MR": 3698.0614525139663
+  },
+  {
+    "problem_name": "uf500441.cnf",
+    "successes": 157,
+    "max_tries": 200,
+    "success_rate": 0.785,
+    "p_hat": 0.785,
+    "avg_flips": 2253.4267515923566,
+    "MR": 4992.28025477707
+  },
+  {
+    "problem_name": "uf500442.cnf",
+    "successes": 107,
+    "max_tries": 200,
+    "success_rate": 0.535,
+    "p_hat": 0.535,
+    "avg_flips": 2895.878504672897,
+    "MR": 11587.467289719625
+  },
+  {
+    "problem_name": "uf500443.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1679.545,
+    "MR": 1679.545
+  },
+  {
+    "problem_name": "uf500444.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 450.605,
+    "MR": 450.605
+  },
+  {
+    "problem_name": "uf500445.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 667.925,
+    "MR": 667.925
+  },
+  {
+    "problem_name": "uf500446.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 631.05,
+    "MR": 631.05
+  },
+  {
+    "problem_name": "uf500447.cnf",
+    "successes": 142,
+    "max_tries": 200,
+    "success_rate": 0.71,
+    "p_hat": 0.71,
+    "avg_flips": 3451.2957746478874,
+    "MR": 7535.802816901409
+  },
+  {
+    "problem_name": "uf500448.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1336.335,
+    "MR": 1336.335
+  },
+  {
+    "problem_name": "uf500449.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 619.725,
+    "MR": 619.725
+  },
+  {
+    "problem_name": "uf500450.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 661.785,
+    "MR": 661.785
+  },
+  {
+    "problem_name": "uf500451.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1136.8341708542714,
+    "MR": 1187.0854271356784
+  },
+  {
+    "problem_name": "uf500452.cnf",
+    "successes": 145,
+    "max_tries": 200,
+    "success_rate": 0.725,
+    "p_hat": 0.725,
+    "avg_flips": 2361.158620689655,
+    "MR": 6154.262068965518
+  },
+  {
+    "problem_name": "uf500453.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 1928.1082474226805,
+    "MR": 2237.386597938145
+  },
+  {
+    "problem_name": "uf500454.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1655.9040404040404,
+    "MR": 1756.9141414141416
+  },
+  {
+    "problem_name": "uf500455.cnf",
+    "successes": 104,
+    "max_tries": 200,
+    "success_rate": 0.52,
+    "p_hat": 0.52,
+    "avg_flips": 3180.3173076923076,
+    "MR": 12411.086538461539
+  },
+  {
+    "problem_name": "uf500456.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1249.7386934673366,
+    "MR": 1299.9899497487436
+  },
+  {
+    "problem_name": "uf500457.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 183.25,
+    "MR": 183.25
+  },
+  {
+    "problem_name": "uf500458.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 373.51,
+    "MR": 373.51
+  },
+  {
+    "problem_name": "uf500459.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 716.71,
+    "MR": 716.71
+  },
+  {
+    "problem_name": "uf500460.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 706.755,
+    "MR": 706.755
+  },
+  {
+    "problem_name": "uf500461.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 111.045,
+    "MR": 111.045
+  },
+  {
+    "problem_name": "uf500462.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 330.82,
+    "MR": 330.82
+  },
+  {
+    "problem_name": "uf500463.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 1096.440414507772,
+    "MR": 1459.134715025907
+  },
+  {
+    "problem_name": "uf500464.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 2350.2102564102565,
+    "MR": 2606.6205128205133
+  },
+  {
+    "problem_name": "uf500465.cnf",
+    "successes": 181,
+    "max_tries": 200,
+    "success_rate": 0.905,
+    "p_hat": 0.905,
+    "avg_flips": 2444.6629834254145,
+    "MR": 3494.3867403314916
+  },
+  {
+    "problem_name": "uf500466.cnf",
+    "successes": 170,
+    "max_tries": 200,
+    "success_rate": 0.85,
+    "p_hat": 0.85,
+    "avg_flips": 1653.6882352941177,
+    "MR": 3418.3941176470594
+  },
+  {
+    "problem_name": "uf500467.cnf",
+    "successes": 162,
+    "max_tries": 200,
+    "success_rate": 0.81,
+    "p_hat": 0.81,
+    "avg_flips": 3225.382716049383,
+    "MR": 5571.061728395061
+  },
+  {
+    "problem_name": "uf500468.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 724.62,
+    "MR": 724.62
+  },
+  {
+    "problem_name": "uf500469.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1246.5757575757575,
+    "MR": 1347.5858585858587
+  },
+  {
+    "problem_name": "uf500470.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 923.385,
+    "MR": 923.385
+  },
+  {
+    "problem_name": "uf500471.cnf",
+    "successes": 151,
+    "max_tries": 200,
+    "success_rate": 0.755,
+    "p_hat": 0.755,
+    "avg_flips": 2800.900662251656,
+    "MR": 6045.933774834437
+  },
+  {
+    "problem_name": "uf500472.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 254.49,
+    "MR": 254.49
+  },
+  {
+    "problem_name": "uf500473.cnf",
+    "successes": 108,
+    "max_tries": 200,
+    "success_rate": 0.54,
+    "p_hat": 0.54,
+    "avg_flips": 1467.8240740740741,
+    "MR": 9986.342592592593
+  },
+  {
+    "problem_name": "uf500474.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 1911.3089005235602,
+    "MR": 2382.513089005236
+  },
+  {
+    "problem_name": "uf500475.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 577.865,
+    "MR": 577.865
+  },
+  {
+    "problem_name": "uf500476.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1374.3401015228426,
+    "MR": 1526.6243654822335
+  },
+  {
+    "problem_name": "uf500477.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 481.885,
+    "MR": 481.885
+  },
+  {
+    "problem_name": "uf500478.cnf",
+    "successes": 149,
+    "max_tries": 200,
+    "success_rate": 0.745,
+    "p_hat": 0.745,
+    "avg_flips": 3340.2953020134228,
+    "MR": 6763.114093959732
+  },
+  {
+    "problem_name": "uf500479.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 705.095,
+    "MR": 705.095
+  },
+  {
+    "problem_name": "uf500480.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 200.555,
+    "MR": 200.555
+  },
+  {
+    "problem_name": "uf500481.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 255.73,
+    "MR": 255.73
+  },
+  {
+    "problem_name": "uf500482.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 437.245,
+    "MR": 437.245
+  },
+  {
+    "problem_name": "uf500483.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 216.435,
+    "MR": 216.435
+  },
+  {
+    "problem_name": "uf500484.cnf",
+    "successes": 182,
+    "max_tries": 200,
+    "success_rate": 0.91,
+    "p_hat": 0.91,
+    "avg_flips": 2738.6703296703295,
+    "MR": 3727.6813186813183
+  },
+  {
+    "problem_name": "uf500485.cnf",
+    "successes": 155,
+    "max_tries": 200,
+    "success_rate": 0.775,
+    "p_hat": 0.775,
+    "avg_flips": 2590.3806451612904,
+    "MR": 5493.606451612903
+  },
+  {
+    "problem_name": "uf500486.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 1946.8697916666667,
+    "MR": 2363.536458333334
+  },
+  {
+    "problem_name": "uf500487.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 108.945,
+    "MR": 108.945
+  },
+  {
+    "problem_name": "uf500488.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 123.46,
+    "MR": 123.46
+  },
+  {
+    "problem_name": "uf500489.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1300.5075376884422,
+    "MR": 1350.7587939698492
+  },
+  {
+    "problem_name": "uf500490.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 2412.9114583333335,
+    "MR": 2829.5781250000005
+  },
+  {
+    "problem_name": "uf500491.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1544.245,
+    "MR": 1544.245
+  },
+  {
+    "problem_name": "uf500492.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 196.695,
+    "MR": 196.695
+  },
+  {
+    "problem_name": "uf500493.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 335.76,
+    "MR": 335.76
+  },
+  {
+    "problem_name": "uf500494.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 869.77,
+    "MR": 869.77
+  },
+  {
+    "problem_name": "uf500495.cnf",
+    "successes": 79,
+    "max_tries": 200,
+    "success_rate": 0.395,
+    "p_hat": 0.395,
+    "avg_flips": 2967.3670886075947,
+    "MR": 18283.822784810127
+  },
+  {
+    "problem_name": "uf500496.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 526.26,
+    "MR": 526.26
+  },
+  {
+    "problem_name": "uf500497.cnf",
+    "successes": 94,
+    "max_tries": 200,
+    "success_rate": 0.47,
+    "p_hat": 0.47,
+    "avg_flips": 2707.2340425531916,
+    "MR": 13983.829787234044
+  },
+  {
+    "problem_name": "uf500498.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 321.355,
+    "MR": 321.355
+  },
+  {
+    "problem_name": "uf500499.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 705.58,
+    "MR": 705.58
+  },
+  {
+    "problem_name": "uf500500.cnf",
+    "successes": 181,
+    "max_tries": 200,
+    "success_rate": 0.905,
+    "p_hat": 0.905,
+    "avg_flips": 2153.9005524861877,
+    "MR": 3203.624309392265
+  },
+  {
+    "problem_name": "uf500501.cnf",
+    "successes": 181,
+    "max_tries": 200,
+    "success_rate": 0.905,
+    "p_hat": 0.905,
+    "avg_flips": 2585.281767955801,
+    "MR": 3635.0055248618783
+  },
+  {
+    "problem_name": "uf500502.cnf",
+    "successes": 178,
+    "max_tries": 200,
+    "success_rate": 0.89,
+    "p_hat": 0.89,
+    "avg_flips": 2292.6067415730336,
+    "MR": 3528.5617977528086
+  },
+  {
+    "problem_name": "uf500503.cnf",
+    "successes": 162,
+    "max_tries": 200,
+    "success_rate": 0.81,
+    "p_hat": 0.81,
+    "avg_flips": 1833.030864197531,
+    "MR": 4178.709876543209
+  },
+  {
+    "problem_name": "uf500504.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 318.96,
+    "MR": 318.96
+  },
+  {
+    "problem_name": "uf500505.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 223.62,
+    "MR": 223.62
+  },
+  {
+    "problem_name": "uf500506.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 238.93,
+    "MR": 238.93
+  },
+  {
+    "problem_name": "uf500507.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1400.425,
+    "MR": 1400.425
+  },
+  {
+    "problem_name": "uf500508.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 232.455,
+    "MR": 232.455
+  },
+  {
+    "problem_name": "uf500509.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 588.245,
+    "MR": 588.245
+  },
+  {
+    "problem_name": "uf500510.cnf",
+    "successes": 100,
+    "max_tries": 200,
+    "success_rate": 0.5,
+    "p_hat": 0.5,
+    "avg_flips": 3464.05,
+    "MR": 13464.05
+  },
+  {
+    "problem_name": "uf500511.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 384.795,
+    "MR": 384.795
+  },
+  {
+    "problem_name": "uf500512.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 444.21,
+    "MR": 444.21
+  },
+  {
+    "problem_name": "uf500513.cnf",
+    "successes": 147,
+    "max_tries": 200,
+    "success_rate": 0.735,
+    "p_hat": 0.735,
+    "avg_flips": 3313.4149659863947,
+    "MR": 6918.857142857143
+  },
+  {
+    "problem_name": "uf500514.cnf",
+    "successes": 173,
+    "max_tries": 200,
+    "success_rate": 0.865,
+    "p_hat": 0.865,
+    "avg_flips": 1731.5606936416184,
+    "MR": 3292.2543352601156
+  },
+  {
+    "problem_name": "uf500515.cnf",
+    "successes": 159,
+    "max_tries": 200,
+    "success_rate": 0.795,
+    "p_hat": 0.795,
+    "avg_flips": 1928.1761006289307,
+    "MR": 4506.792452830188
+  },
+  {
+    "problem_name": "uf500516.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 425.165,
+    "MR": 425.165
+  },
+  {
+    "problem_name": "uf500517.cnf",
+    "successes": 185,
+    "max_tries": 200,
+    "success_rate": 0.925,
+    "p_hat": 0.925,
+    "avg_flips": 2652.9675675675676,
+    "MR": 3463.778378378378
+  },
+  {
+    "problem_name": "uf500518.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 2494.8102564102564,
+    "MR": 2751.2205128205132
+  },
+  {
+    "problem_name": "uf500519.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 542.805,
+    "MR": 542.805
+  },
+  {
+    "problem_name": "uf500520.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 2223.875,
+    "MR": 2640.541666666667
+  },
+  {
+    "problem_name": "uf500521.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 195.285,
+    "MR": 195.285
+  },
+  {
+    "problem_name": "uf500522.cnf",
+    "successes": 190,
+    "max_tries": 200,
+    "success_rate": 0.95,
+    "p_hat": 0.95,
+    "avg_flips": 1887.1263157894737,
+    "MR": 2413.4421052631583
+  },
+  {
+    "problem_name": "uf500523.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 607.015,
+    "MR": 607.015
+  },
+  {
+    "problem_name": "uf500524.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 748.16,
+    "MR": 748.16
+  },
+  {
+    "problem_name": "uf500525.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 203.13,
+    "MR": 203.13
+  },
+  {
+    "problem_name": "uf500526.cnf",
+    "successes": 175,
+    "max_tries": 200,
+    "success_rate": 0.875,
+    "p_hat": 0.875,
+    "avg_flips": 2156.308571428571,
+    "MR": 3584.8799999999997
+  },
+  {
+    "problem_name": "uf500527.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 302.635,
+    "MR": 302.635
+  },
+  {
+    "problem_name": "uf500528.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 715.73,
+    "MR": 715.73
+  },
+  {
+    "problem_name": "uf500529.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 161.725,
+    "MR": 161.725
+  },
+  {
+    "problem_name": "uf500530.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1185.5858585858587,
+    "MR": 1286.5959595959598
+  },
+  {
+    "problem_name": "uf500531.cnf",
+    "successes": 164,
+    "max_tries": 200,
+    "success_rate": 0.82,
+    "p_hat": 0.82,
+    "avg_flips": 2228.5304878048782,
+    "MR": 4423.652439024391
+  },
+  {
+    "problem_name": "uf500532.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 373.425,
+    "MR": 373.425
+  },
+  {
+    "problem_name": "uf500533.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 526.29,
+    "MR": 526.29
+  },
+  {
+    "problem_name": "uf500534.cnf",
+    "successes": 170,
+    "max_tries": 200,
+    "success_rate": 0.85,
+    "p_hat": 0.85,
+    "avg_flips": 2017.9176470588236,
+    "MR": 3782.623529411765
+  },
+  {
+    "problem_name": "uf500535.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 528.965,
+    "MR": 528.965
+  },
+  {
+    "problem_name": "uf500536.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 550.415,
+    "MR": 550.415
+  },
+  {
+    "problem_name": "uf500537.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 518.795,
+    "MR": 518.795
+  },
+  {
+    "problem_name": "uf500538.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 576.675,
+    "MR": 576.675
+  },
+  {
+    "problem_name": "uf500539.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 564.75,
+    "MR": 564.75
+  },
+  {
+    "problem_name": "uf500540.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 888.96,
+    "MR": 888.96
+  },
+  {
+    "problem_name": "uf500541.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 1992.59375,
+    "MR": 2409.260416666667
+  },
+  {
+    "problem_name": "uf500542.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1216.7208121827412,
+    "MR": 1369.005076142132
+  },
+  {
+    "problem_name": "uf500543.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 61.915,
+    "MR": 61.915
+  },
+  {
+    "problem_name": "uf500544.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1187.0,
+    "MR": 1443.4102564102566
+  },
+  {
+    "problem_name": "uf500545.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 757.1060606060606,
+    "MR": 858.1161616161618
+  },
+  {
+    "problem_name": "uf500546.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1115.85,
+    "MR": 1115.85
+  },
+  {
+    "problem_name": "uf500547.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 1321.7512953367875,
+    "MR": 1684.4455958549224
+  },
+  {
+    "problem_name": "uf500548.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 285.57,
+    "MR": 285.57
+  },
+  {
+    "problem_name": "uf500549.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 205.935,
+    "MR": 205.935
+  },
+  {
+    "problem_name": "uf500550.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 736.915,
+    "MR": 736.915
+  },
+  {
+    "problem_name": "uf500551.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1068.1206030150754,
+    "MR": 1118.3718592964824
+  },
+  {
+    "problem_name": "uf500552.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 2318.565445026178,
+    "MR": 2789.769633507854
+  },
+  {
+    "problem_name": "uf500553.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 545.98,
+    "MR": 545.98
+  },
+  {
+    "problem_name": "uf500554.cnf",
+    "successes": 148,
+    "max_tries": 200,
+    "success_rate": 0.74,
+    "p_hat": 0.74,
+    "avg_flips": 3621.425675675676,
+    "MR": 7134.93918918919
+  },
+  {
+    "problem_name": "uf500555.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1127.11,
+    "MR": 1127.11
+  },
+  {
+    "problem_name": "uf500556.cnf",
+    "successes": 151,
+    "max_tries": 200,
+    "success_rate": 0.755,
+    "p_hat": 0.755,
+    "avg_flips": 1876.9006622516556,
+    "MR": 5121.933774834437
+  },
+  {
+    "problem_name": "uf500557.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1846.9949748743718,
+    "MR": 1897.2462311557788
+  },
+  {
+    "problem_name": "uf500558.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 2220.59793814433,
+    "MR": 2529.876288659794
+  },
+  {
+    "problem_name": "uf500559.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 362.035,
+    "MR": 362.035
+  },
+  {
+    "problem_name": "uf500560.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 733.085,
+    "MR": 733.085
+  },
+  {
+    "problem_name": "uf500561.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 547.81,
+    "MR": 547.81
+  },
+  {
+    "problem_name": "uf500562.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 679.14,
+    "MR": 679.14
+  },
+  {
+    "problem_name": "uf500563.cnf",
+    "successes": 96,
+    "max_tries": 200,
+    "success_rate": 0.48,
+    "p_hat": 0.48,
+    "avg_flips": 2761.09375,
+    "MR": 13594.427083333334
+  },
+  {
+    "problem_name": "uf500564.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1248.1370558375634,
+    "MR": 1400.4213197969543
+  },
+  {
+    "problem_name": "uf500565.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 2501.304812834225,
+    "MR": 3196.491978609625
+  },
+  {
+    "problem_name": "uf500566.cnf",
+    "successes": 179,
+    "max_tries": 200,
+    "success_rate": 0.895,
+    "p_hat": 0.895,
+    "avg_flips": 1936.491620111732,
+    "MR": 3109.675977653631
+  },
+  {
+    "problem_name": "uf500567.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 242.32,
+    "MR": 242.32
+  },
+  {
+    "problem_name": "uf500568.cnf",
+    "successes": 145,
+    "max_tries": 200,
+    "success_rate": 0.725,
+    "p_hat": 0.725,
+    "avg_flips": 1508.5448275862068,
+    "MR": 5301.64827586207
+  },
+  {
+    "problem_name": "uf500569.cnf",
+    "successes": 119,
+    "max_tries": 200,
+    "success_rate": 0.595,
+    "p_hat": 0.595,
+    "avg_flips": 2591.3109243697477,
+    "MR": 9398.033613445377
+  },
+  {
+    "problem_name": "uf500570.cnf",
+    "successes": 161,
+    "max_tries": 200,
+    "success_rate": 0.805,
+    "p_hat": 0.805,
+    "avg_flips": 3031.0745341614906,
+    "MR": 5453.434782608695
+  },
+  {
+    "problem_name": "uf500571.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 636.56,
+    "MR": 636.56
+  },
+  {
+    "problem_name": "uf500572.cnf",
+    "successes": 183,
+    "max_tries": 200,
+    "success_rate": 0.915,
+    "p_hat": 0.915,
+    "avg_flips": 1441.0765027322404,
+    "MR": 2370.0382513661198
+  },
+  {
+    "problem_name": "uf500573.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 522.2663316582915,
+    "MR": 572.5175879396986
+  },
+  {
+    "problem_name": "uf500574.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1049.185,
+    "MR": 1049.185
+  },
+  {
+    "problem_name": "uf500575.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 992.60101010101,
+    "MR": 1093.611111111111
+  },
+  {
+    "problem_name": "uf500576.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 274.165,
+    "MR": 274.165
+  },
+  {
+    "problem_name": "uf500577.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1285.0854271356784,
+    "MR": 1335.3366834170854
+  },
+  {
+    "problem_name": "uf500578.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1361.4444444444443,
+    "MR": 1462.4545454545455
+  },
+  {
+    "problem_name": "uf500579.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 936.155,
+    "MR": 936.155
+  },
+  {
+    "problem_name": "uf500580.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 2111.25641025641,
+    "MR": 2367.666666666667
+  },
+  {
+    "problem_name": "uf500581.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 518.68,
+    "MR": 518.68
+  },
+  {
+    "problem_name": "uf500582.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1369.27,
+    "MR": 1369.27
+  },
+  {
+    "problem_name": "uf500583.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 785.2,
+    "MR": 785.2
+  },
+  {
+    "problem_name": "uf500584.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 169.605,
+    "MR": 169.605
+  },
+  {
+    "problem_name": "uf500585.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1040.9447236180904,
+    "MR": 1091.1959798994974
+  },
+  {
+    "problem_name": "uf500586.cnf",
+    "successes": 133,
+    "max_tries": 200,
+    "success_rate": 0.665,
+    "p_hat": 0.665,
+    "avg_flips": 1938.4135338345864,
+    "MR": 6976.007518796992
+  },
+  {
+    "problem_name": "uf500587.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 770.46,
+    "MR": 770.46
+  },
+  {
+    "problem_name": "uf500588.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 852.6281407035176,
+    "MR": 902.8793969849247
+  },
+  {
+    "problem_name": "uf500589.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 324.48,
+    "MR": 324.48
+  },
+  {
+    "problem_name": "uf500590.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1180.5175879396984,
+    "MR": 1230.7688442211054
+  },
+  {
+    "problem_name": "uf500591.cnf",
+    "successes": 170,
+    "max_tries": 200,
+    "success_rate": 0.85,
+    "p_hat": 0.85,
+    "avg_flips": 1710.4235294117648,
+    "MR": 3475.1294117647067
+  },
+  {
+    "problem_name": "uf500592.cnf",
+    "successes": 172,
+    "max_tries": 200,
+    "success_rate": 0.86,
+    "p_hat": 0.86,
+    "avg_flips": 2510.0116279069766,
+    "MR": 4137.918604651162
+  },
+  {
+    "problem_name": "uf500593.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 318.19,
+    "MR": 318.19
+  },
+  {
+    "problem_name": "uf500594.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 440.225,
+    "MR": 440.225
+  },
+  {
+    "problem_name": "uf500595.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 2017.1979166666667,
+    "MR": 2433.864583333334
+  },
+  {
+    "problem_name": "uf500596.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 97.335,
+    "MR": 97.335
+  },
+  {
+    "problem_name": "uf500597.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 265.665,
+    "MR": 265.665
+  },
+  {
+    "problem_name": "uf500598.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 347.905,
+    "MR": 347.905
+  },
+  {
+    "problem_name": "uf500599.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 513.77,
+    "MR": 513.77
+  },
+  {
+    "problem_name": "uf500600.cnf",
+    "successes": 188,
+    "max_tries": 200,
+    "success_rate": 0.94,
+    "p_hat": 0.94,
+    "avg_flips": 2731.281914893617,
+    "MR": 3369.579787234043
+  },
+  {
+    "problem_name": "uf500601.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1318.1538461538462,
+    "MR": 1574.5641025641028
+  },
+  {
+    "problem_name": "uf500602.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 791.03,
+    "MR": 791.03
+  },
+  {
+    "problem_name": "uf500603.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 249.715,
+    "MR": 249.715
+  },
+  {
+    "problem_name": "uf500604.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 169.625,
+    "MR": 169.625
+  },
+  {
+    "problem_name": "uf500605.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 728.39,
+    "MR": 728.39
+  },
+  {
+    "problem_name": "uf500606.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 691.5979899497487,
+    "MR": 741.8492462311558
+  },
+  {
+    "problem_name": "uf500607.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 271.99,
+    "MR": 271.99
+  },
+  {
+    "problem_name": "uf500608.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 525.36,
+    "MR": 525.36
+  },
+  {
+    "problem_name": "uf500609.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 938.1105527638191,
+    "MR": 988.3618090452262
+  },
+  {
+    "problem_name": "uf500610.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 791.395,
+    "MR": 791.395
+  },
+  {
+    "problem_name": "uf500611.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 248.875,
+    "MR": 248.875
+  },
+  {
+    "problem_name": "uf500612.cnf",
+    "successes": 173,
+    "max_tries": 200,
+    "success_rate": 0.865,
+    "p_hat": 0.865,
+    "avg_flips": 1759.9306358381502,
+    "MR": 3320.624277456647
+  },
+  {
+    "problem_name": "uf500613.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 1668.0833333333333,
+    "MR": 2084.7500000000005
+  },
+  {
+    "problem_name": "uf500614.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1007.8994974874372,
+    "MR": 1058.1507537688442
+  },
+  {
+    "problem_name": "uf500615.cnf",
+    "successes": 185,
+    "max_tries": 200,
+    "success_rate": 0.925,
+    "p_hat": 0.925,
+    "avg_flips": 2739.427027027027,
+    "MR": 3550.2378378378376
+  },
+  {
+    "problem_name": "uf500616.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 518.19,
+    "MR": 518.19
+  },
+  {
+    "problem_name": "uf500617.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 578.815,
+    "MR": 578.815
+  },
+  {
+    "problem_name": "uf500618.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 610.245,
+    "MR": 610.245
+  },
+  {
+    "problem_name": "uf500619.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 241.41,
+    "MR": 241.41
+  },
+  {
+    "problem_name": "uf500620.cnf",
+    "successes": 179,
+    "max_tries": 200,
+    "success_rate": 0.895,
+    "p_hat": 0.895,
+    "avg_flips": 1797.6312849162011,
+    "MR": 2970.8156424581002
+  },
+  {
+    "problem_name": "uf500621.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1289.8994974874372,
+    "MR": 1340.1507537688442
+  },
+  {
+    "problem_name": "uf500622.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 236.32,
+    "MR": 236.32
+  },
+  {
+    "problem_name": "uf500623.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 345.71,
+    "MR": 345.71
+  },
+  {
+    "problem_name": "uf500624.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1596.9899497487438,
+    "MR": 1647.2412060301508
+  },
+  {
+    "problem_name": "uf500625.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1489.0150753768844,
+    "MR": 1539.2663316582914
+  },
+  {
+    "problem_name": "uf500626.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 432.755,
+    "MR": 432.755
+  },
+  {
+    "problem_name": "uf500627.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 645.2613065326633,
+    "MR": 695.5125628140704
+  },
+  {
+    "problem_name": "uf500628.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 211.205,
+    "MR": 211.205
+  },
+  {
+    "problem_name": "uf500629.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 2671.2984293193717,
+    "MR": 3142.5026178010476
+  },
+  {
+    "problem_name": "uf500630.cnf",
+    "successes": 184,
+    "max_tries": 200,
+    "success_rate": 0.92,
+    "p_hat": 0.92,
+    "avg_flips": 2353.9945652173915,
+    "MR": 3223.5597826086955
+  },
+  {
+    "problem_name": "uf500631.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1110.815,
+    "MR": 1110.815
+  },
+  {
+    "problem_name": "uf500632.cnf",
+    "successes": 172,
+    "max_tries": 200,
+    "success_rate": 0.86,
+    "p_hat": 0.86,
+    "avg_flips": 2855.3662790697676,
+    "MR": 4483.273255813954
+  },
+  {
+    "problem_name": "uf500633.cnf",
+    "successes": 181,
+    "max_tries": 200,
+    "success_rate": 0.905,
+    "p_hat": 0.905,
+    "avg_flips": 2656.0994475138123,
+    "MR": 3705.8232044198894
+  },
+  {
+    "problem_name": "uf500634.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1159.05,
+    "MR": 1159.05
+  },
+  {
+    "problem_name": "uf500635.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 64.84,
+    "MR": 64.84
+  },
+  {
+    "problem_name": "uf500636.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 197.49,
+    "MR": 197.49
+  },
+  {
+    "problem_name": "uf500637.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 351.99,
+    "MR": 351.99
+  },
+  {
+    "problem_name": "uf500638.cnf",
+    "successes": 184,
+    "max_tries": 200,
+    "success_rate": 0.92,
+    "p_hat": 0.92,
+    "avg_flips": 2688.0815217391305,
+    "MR": 3557.6467391304345
+  },
+  {
+    "problem_name": "uf500639.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 1938.279792746114,
+    "MR": 2300.974093264249
+  },
+  {
+    "problem_name": "uf500640.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 632.595,
+    "MR": 632.595
+  },
+  {
+    "problem_name": "uf500641.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 252.08,
+    "MR": 252.08
+  },
+  {
+    "problem_name": "uf500642.cnf",
+    "successes": 171,
+    "max_tries": 200,
+    "success_rate": 0.855,
+    "p_hat": 0.855,
+    "avg_flips": 2373.0818713450294,
+    "MR": 4068.9883040935674
+  },
+  {
+    "problem_name": "uf500643.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1295.82,
+    "MR": 1295.82
+  },
+  {
+    "problem_name": "uf500644.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 471.61,
+    "MR": 471.61
+  },
+  {
+    "problem_name": "uf500645.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 490.145,
+    "MR": 490.145
+  },
+  {
+    "problem_name": "uf500646.cnf",
+    "successes": 151,
+    "max_tries": 200,
+    "success_rate": 0.755,
+    "p_hat": 0.755,
+    "avg_flips": 1210.708609271523,
+    "MR": 4455.741721854305
+  },
+  {
+    "problem_name": "uf500647.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 1933.0309278350514,
+    "MR": 2242.309278350516
+  },
+  {
+    "problem_name": "uf500648.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 655.325,
+    "MR": 655.325
+  },
+  {
+    "problem_name": "uf500649.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 235.115,
+    "MR": 235.115
+  },
+  {
+    "problem_name": "uf500650.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 565.225,
+    "MR": 565.225
+  },
+  {
+    "problem_name": "uf500651.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 257.39,
+    "MR": 257.39
+  },
+  {
+    "problem_name": "uf500652.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 2153.5677083333335,
+    "MR": 2570.2343750000005
+  },
+  {
+    "problem_name": "uf500653.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1013.515,
+    "MR": 1013.515
+  },
+  {
+    "problem_name": "uf500654.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 699.425,
+    "MR": 699.425
+  },
+  {
+    "problem_name": "uf500655.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1011.0,
+    "MR": 1061.251256281407
+  },
+  {
+    "problem_name": "uf500656.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 451.65,
+    "MR": 451.65
+  },
+  {
+    "problem_name": "uf500657.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 318.515,
+    "MR": 318.515
+  },
+  {
+    "problem_name": "uf500658.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 529.245,
+    "MR": 529.245
+  },
+  {
+    "problem_name": "uf500659.cnf",
+    "successes": 186,
+    "max_tries": 200,
+    "success_rate": 0.93,
+    "p_hat": 0.93,
+    "avg_flips": 877.763440860215,
+    "MR": 1630.4516129032254
+  },
+  {
+    "problem_name": "uf500660.cnf",
+    "successes": 171,
+    "max_tries": 200,
+    "success_rate": 0.855,
+    "p_hat": 0.855,
+    "avg_flips": 2816.7251461988303,
+    "MR": 4512.631578947368
+  },
+  {
+    "problem_name": "uf500661.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 166.455,
+    "MR": 166.455
+  },
+  {
+    "problem_name": "uf500662.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 898.73,
+    "MR": 898.73
+  },
+  {
+    "problem_name": "uf500663.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1142.0707070707072,
+    "MR": 1243.0808080808083
+  },
+  {
+    "problem_name": "uf500664.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 825.305,
+    "MR": 825.305
+  },
+  {
+    "problem_name": "uf500665.cnf",
+    "successes": 183,
+    "max_tries": 200,
+    "success_rate": 0.915,
+    "p_hat": 0.915,
+    "avg_flips": 2128.311475409836,
+    "MR": 3057.2732240437153
+  },
+  {
+    "problem_name": "uf500666.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1321.2244897959183,
+    "MR": 1525.3061224489797
+  },
+  {
+    "problem_name": "uf500667.cnf",
+    "successes": 134,
+    "max_tries": 200,
+    "success_rate": 0.67,
+    "p_hat": 0.67,
+    "avg_flips": 2968.8582089552237,
+    "MR": 7894.231343283581
+  },
+  {
+    "problem_name": "uf500668.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 174.83,
+    "MR": 174.83
+  },
+  {
+    "problem_name": "uf500669.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 480.225,
+    "MR": 480.225
+  },
+  {
+    "problem_name": "uf500670.cnf",
+    "successes": 180,
+    "max_tries": 200,
+    "success_rate": 0.9,
+    "p_hat": 0.9,
+    "avg_flips": 2022.7,
+    "MR": 3133.811111111111
+  },
+  {
+    "problem_name": "uf500671.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 874.325,
+    "MR": 874.325
+  },
+  {
+    "problem_name": "uf500672.cnf",
+    "successes": 185,
+    "max_tries": 200,
+    "success_rate": 0.925,
+    "p_hat": 0.925,
+    "avg_flips": 1890.427027027027,
+    "MR": 2701.237837837837
+  },
+  {
+    "problem_name": "uf500673.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 466.825,
+    "MR": 466.825
+  },
+  {
+    "problem_name": "uf500674.cnf",
+    "successes": 122,
+    "max_tries": 200,
+    "success_rate": 0.61,
+    "p_hat": 0.61,
+    "avg_flips": 3648.5409836065573,
+    "MR": 10041.983606557376
+  },
+  {
+    "problem_name": "uf500675.cnf",
+    "successes": 189,
+    "max_tries": 200,
+    "success_rate": 0.945,
+    "p_hat": 0.945,
+    "avg_flips": 2588.291005291005,
+    "MR": 3170.3015873015875
+  },
+  {
+    "problem_name": "uf500676.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 704.535,
+    "MR": 704.535
+  },
+  {
+    "problem_name": "uf500677.cnf",
+    "successes": 188,
+    "max_tries": 200,
+    "success_rate": 0.94,
+    "p_hat": 0.94,
+    "avg_flips": 2411.7978723404253,
+    "MR": 3050.0957446808516
+  },
+  {
+    "problem_name": "uf500678.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 97.74,
+    "MR": 97.74
+  },
+  {
+    "problem_name": "uf500679.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1386.6331658291458,
+    "MR": 1436.8844221105528
+  },
+  {
+    "problem_name": "uf500680.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1172.356783919598,
+    "MR": 1222.608040201005
+  },
+  {
+    "problem_name": "uf500681.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 2071.379487179487,
+    "MR": 2327.789743589744
+  },
+  {
+    "problem_name": "uf500682.cnf",
+    "successes": 173,
+    "max_tries": 200,
+    "success_rate": 0.865,
+    "p_hat": 0.865,
+    "avg_flips": 1696.1560693641618,
+    "MR": 3256.849710982659
+  },
+  {
+    "problem_name": "uf500683.cnf",
+    "successes": 171,
+    "max_tries": 200,
+    "success_rate": 0.855,
+    "p_hat": 0.855,
+    "avg_flips": 2220.9941520467837,
+    "MR": 3916.900584795322
+  },
+  {
+    "problem_name": "uf500684.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 721.3636363636364,
+    "MR": 822.3737373737375
+  },
+  {
+    "problem_name": "uf500685.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 783.6683937823834,
+    "MR": 1146.3626943005183
+  },
+  {
+    "problem_name": "uf500686.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 662.713567839196,
+    "MR": 712.9648241206031
+  },
+  {
+    "problem_name": "uf500687.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 439.195,
+    "MR": 439.195
+  },
+  {
+    "problem_name": "uf500688.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 878.545,
+    "MR": 878.545
+  },
+  {
+    "problem_name": "uf500689.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1520.315,
+    "MR": 1520.315
+  },
+  {
+    "problem_name": "uf500690.cnf",
+    "successes": 59,
+    "max_tries": 200,
+    "success_rate": 0.295,
+    "p_hat": 0.295,
+    "avg_flips": 1518.2033898305085,
+    "MR": 25416.508474576276
+  },
+  {
+    "problem_name": "uf500691.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1193.9545454545455,
+    "MR": 1294.9646464646466
+  },
+  {
+    "problem_name": "uf500692.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 1899.4816753926702,
+    "MR": 2370.685863874346
+  },
+  {
+    "problem_name": "uf500693.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 2154.4973262032086,
+    "MR": 2849.684491978609
+  },
+  {
+    "problem_name": "uf500694.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 95.185,
+    "MR": 95.185
+  },
+  {
+    "problem_name": "uf500695.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 384.92,
+    "MR": 384.92
+  },
+  {
+    "problem_name": "uf500696.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 378.805,
+    "MR": 378.805
+  },
+  {
+    "problem_name": "uf500697.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 488.345,
+    "MR": 488.345
+  },
+  {
+    "problem_name": "uf500698.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 690.32,
+    "MR": 690.32
+  },
+  {
+    "problem_name": "uf500699.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 2522.8615384615387,
+    "MR": 2779.2717948717955
+  },
+  {
+    "problem_name": "uf500700.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1728.7755102040817,
+    "MR": 1932.8571428571431
+  },
+  {
+    "problem_name": "uf500701.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1186.0854271356784,
+    "MR": 1236.3366834170854
+  },
+  {
+    "problem_name": "uf500702.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1381.625,
+    "MR": 1381.625
+  },
+  {
+    "problem_name": "uf500703.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 463.92,
+    "MR": 463.92
+  },
+  {
+    "problem_name": "uf500704.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 482.845,
+    "MR": 482.845
+  },
+  {
+    "problem_name": "uf500705.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 536.9195979899497,
+    "MR": 587.1708542713568
+  },
+  {
+    "problem_name": "uf500706.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1569.9897959183672,
+    "MR": 1774.0714285714287
+  },
+  {
+    "problem_name": "uf500707.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 638.28,
+    "MR": 638.28
+  },
+  {
+    "problem_name": "uf500708.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1629.8520408163265,
+    "MR": 1833.933673469388
+  },
+  {
+    "problem_name": "uf500709.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 344.06,
+    "MR": 344.06
+  },
+  {
+    "problem_name": "uf500710.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1400.2261306532664,
+    "MR": 1450.4773869346734
+  },
+  {
+    "problem_name": "uf500711.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 269.56,
+    "MR": 269.56
+  },
+  {
+    "problem_name": "uf500712.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1384.7,
+    "MR": 1384.7
+  },
+  {
+    "problem_name": "uf500713.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 275.335,
+    "MR": 275.335
+  },
+  {
+    "problem_name": "uf500714.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 768.3556701030927,
+    "MR": 1077.6340206185569
+  },
+  {
+    "problem_name": "uf500715.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 243.11,
+    "MR": 243.11
+  },
+  {
+    "problem_name": "uf500716.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 154.015,
+    "MR": 154.015
+  },
+  {
+    "problem_name": "uf500717.cnf",
+    "successes": 186,
+    "max_tries": 200,
+    "success_rate": 0.93,
+    "p_hat": 0.93,
+    "avg_flips": 2807.3870967741937,
+    "MR": 3560.075268817204
+  },
+  {
+    "problem_name": "uf500718.cnf",
+    "successes": 143,
+    "max_tries": 200,
+    "success_rate": 0.715,
+    "p_hat": 0.715,
+    "avg_flips": 3568.097902097902,
+    "MR": 7554.111888111889
+  },
+  {
+    "problem_name": "uf500719.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 116.16,
+    "MR": 116.16
+  },
+  {
+    "problem_name": "uf500720.cnf",
+    "successes": 178,
+    "max_tries": 200,
+    "success_rate": 0.89,
+    "p_hat": 0.89,
+    "avg_flips": 2145.949438202247,
+    "MR": 3381.904494382022
+  },
+  {
+    "problem_name": "uf500721.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 2132.0710659898477,
+    "MR": 2284.3553299492387
+  },
+  {
+    "problem_name": "uf500722.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1444.6060606060605,
+    "MR": 1545.6161616161617
+  },
+  {
+    "problem_name": "uf500723.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 423.12,
+    "MR": 423.12
+  },
+  {
+    "problem_name": "uf500724.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 305.0,
+    "MR": 305.0
+  },
+  {
+    "problem_name": "uf500725.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 694.97,
+    "MR": 694.97
+  },
+  {
+    "problem_name": "uf500726.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 940.82,
+    "MR": 940.82
+  },
+  {
+    "problem_name": "uf500727.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 1906.8505154639174,
+    "MR": 2216.1288659793818
+  },
+  {
+    "problem_name": "uf500728.cnf",
+    "successes": 189,
+    "max_tries": 200,
+    "success_rate": 0.945,
+    "p_hat": 0.945,
+    "avg_flips": 2192.862433862434,
+    "MR": 2774.873015873017
+  },
+  {
+    "problem_name": "uf500729.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 2120.242268041237,
+    "MR": 2429.5206185567013
+  },
+  {
+    "problem_name": "uf500730.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 271.155,
+    "MR": 271.155
+  },
+  {
+    "problem_name": "uf500731.cnf",
+    "successes": 104,
+    "max_tries": 200,
+    "success_rate": 0.52,
+    "p_hat": 0.52,
+    "avg_flips": 4004.528846153846,
+    "MR": 13235.298076923076
+  },
+  {
+    "problem_name": "uf500732.cnf",
+    "successes": 181,
+    "max_tries": 200,
+    "success_rate": 0.905,
+    "p_hat": 0.905,
+    "avg_flips": 2159.276243093923,
+    "MR": 3209.0
+  },
+  {
+    "problem_name": "uf500733.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 961.84,
+    "MR": 961.84
+  },
+  {
+    "problem_name": "uf500734.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 2279.807486631016,
+    "MR": 2974.9946524064167
+  },
+  {
+    "problem_name": "uf500735.cnf",
+    "successes": 174,
+    "max_tries": 200,
+    "success_rate": 0.87,
+    "p_hat": 0.87,
+    "avg_flips": 1933.83908045977,
+    "MR": 3428.091954022989
+  },
+  {
+    "problem_name": "uf500736.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 971.2323232323232,
+    "MR": 1072.2424242424242
+  },
+  {
+    "problem_name": "uf500737.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 521.25,
+    "MR": 521.25
+  },
+  {
+    "problem_name": "uf500738.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1476.93,
+    "MR": 1476.93
+  },
+  {
+    "problem_name": "uf500739.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 408.64,
+    "MR": 408.64
+  },
+  {
+    "problem_name": "uf500740.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1290.5628140703518,
+    "MR": 1340.8140703517588
+  },
+  {
+    "problem_name": "uf500741.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1971.5204081632653,
+    "MR": 2175.6020408163267
+  },
+  {
+    "problem_name": "uf500742.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 968.0552763819095,
+    "MR": 1018.3065326633166
+  },
+  {
+    "problem_name": "uf500743.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 646.675,
+    "MR": 646.675
+  },
+  {
+    "problem_name": "uf500744.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 904.7357512953367,
+    "MR": 1267.430051813472
+  },
+  {
+    "problem_name": "uf500745.cnf",
+    "successes": 63,
+    "max_tries": 200,
+    "success_rate": 0.315,
+    "p_hat": 0.315,
+    "avg_flips": 3922.8888888888887,
+    "MR": 25668.920634920636
+  },
+  {
+    "problem_name": "uf500746.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 175.895,
+    "MR": 175.895
+  },
+  {
+    "problem_name": "uf500747.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 227.82,
+    "MR": 227.82
+  },
+  {
+    "problem_name": "uf500748.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 368.48,
+    "MR": 368.48
+  },
+  {
+    "problem_name": "uf500749.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 500.575,
+    "MR": 500.575
+  },
+  {
+    "problem_name": "uf500750.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 419.96,
+    "MR": 419.96
+  },
+  {
+    "problem_name": "uf500751.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1578.6010101010102,
+    "MR": 1679.6111111111113
+  },
+  {
+    "problem_name": "uf500752.cnf",
+    "successes": 180,
+    "max_tries": 200,
+    "success_rate": 0.9,
+    "p_hat": 0.9,
+    "avg_flips": 1756.1444444444444,
+    "MR": 2867.2555555555555
+  },
+  {
+    "problem_name": "uf500753.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 163.01,
+    "MR": 163.01
+  },
+  {
+    "problem_name": "uf500754.cnf",
+    "successes": 183,
+    "max_tries": 200,
+    "success_rate": 0.915,
+    "p_hat": 0.915,
+    "avg_flips": 1819.4371584699454,
+    "MR": 2748.398907103825
+  },
+  {
+    "problem_name": "uf500755.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 859.939393939394,
+    "MR": 960.9494949494951
+  },
+  {
+    "problem_name": "uf500756.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1139.251256281407,
+    "MR": 1189.502512562814
+  },
+  {
+    "problem_name": "uf500757.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 977.965,
+    "MR": 977.965
+  },
+  {
+    "problem_name": "uf500758.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 579.38,
+    "MR": 579.38
+  },
+  {
+    "problem_name": "uf500759.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1167.815,
+    "MR": 1167.815
+  },
+  {
+    "problem_name": "uf500760.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1068.715,
+    "MR": 1068.715
+  },
+  {
+    "problem_name": "uf500761.cnf",
+    "successes": 126,
+    "max_tries": 200,
+    "success_rate": 0.63,
+    "p_hat": 0.63,
+    "avg_flips": 1949.2698412698412,
+    "MR": 7822.285714285715
+  },
+  {
+    "problem_name": "uf500762.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1348.0820512820512,
+    "MR": 1604.4923076923078
+  },
+  {
+    "problem_name": "uf500763.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 766.395,
+    "MR": 766.395
+  },
+  {
+    "problem_name": "uf500764.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 578.625,
+    "MR": 578.625
+  },
+  {
+    "problem_name": "uf500765.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1624.297435897436,
+    "MR": 1880.7076923076925
+  },
+  {
+    "problem_name": "uf500766.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 368.175,
+    "MR": 368.175
+  },
+  {
+    "problem_name": "uf500767.cnf",
+    "successes": 93,
+    "max_tries": 200,
+    "success_rate": 0.465,
+    "p_hat": 0.465,
+    "avg_flips": 3069.2903225806454,
+    "MR": 14574.666666666666
+  },
+  {
+    "problem_name": "uf500768.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 637.365,
+    "MR": 637.365
+  },
+  {
+    "problem_name": "uf500769.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 894.2323232323232,
+    "MR": 995.2424242424244
+  },
+  {
+    "problem_name": "uf500770.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 258.98,
+    "MR": 258.98
+  },
+  {
+    "problem_name": "uf500771.cnf",
+    "successes": 189,
+    "max_tries": 200,
+    "success_rate": 0.945,
+    "p_hat": 0.945,
+    "avg_flips": 2922.8888888888887,
+    "MR": 3504.8994708994715
+  },
+  {
+    "problem_name": "uf500772.cnf",
+    "successes": 156,
+    "max_tries": 200,
+    "success_rate": 0.78,
+    "p_hat": 0.78,
+    "avg_flips": 3275.576923076923,
+    "MR": 6096.089743589742
+  },
+  {
+    "problem_name": "uf500773.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1849.39,
+    "MR": 1849.39
+  },
+  {
+    "problem_name": "uf500774.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 1735.778350515464,
+    "MR": 2045.056701030928
+  },
+  {
+    "problem_name": "uf500775.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 423.87,
+    "MR": 423.87
+  },
+  {
+    "problem_name": "uf500776.cnf",
+    "successes": 165,
+    "max_tries": 200,
+    "success_rate": 0.825,
+    "p_hat": 0.825,
+    "avg_flips": 3087.8242424242426,
+    "MR": 5209.0363636363645
+  },
+  {
+    "problem_name": "uf500777.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 245.07,
+    "MR": 245.07
+  },
+  {
+    "problem_name": "uf500778.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 727.075,
+    "MR": 727.075
+  },
+  {
+    "problem_name": "uf500779.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 425.48,
+    "MR": 425.48
+  },
+  {
+    "problem_name": "uf500780.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 407.585,
+    "MR": 407.585
+  },
+  {
+    "problem_name": "uf500781.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1382.641414141414,
+    "MR": 1483.6515151515152
+  },
+  {
+    "problem_name": "uf500782.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 271.155,
+    "MR": 271.155
+  },
+  {
+    "problem_name": "uf500783.cnf",
+    "successes": 165,
+    "max_tries": 200,
+    "success_rate": 0.825,
+    "p_hat": 0.825,
+    "avg_flips": 2077.5878787878787,
+    "MR": 4198.800000000001
+  },
+  {
+    "problem_name": "uf500784.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 384.34,
+    "MR": 384.34
+  },
+  {
+    "problem_name": "uf500785.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 786.715,
+    "MR": 786.715
+  },
+  {
+    "problem_name": "uf500786.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 275.525,
+    "MR": 275.525
+  },
+  {
+    "problem_name": "uf500787.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 234.065,
+    "MR": 234.065
+  },
+  {
+    "problem_name": "uf500788.cnf",
+    "successes": 156,
+    "max_tries": 200,
+    "success_rate": 0.78,
+    "p_hat": 0.78,
+    "avg_flips": 3373.0128205128203,
+    "MR": 6193.525641025641
+  },
+  {
+    "problem_name": "uf500789.cnf",
+    "successes": 182,
+    "max_tries": 200,
+    "success_rate": 0.91,
+    "p_hat": 0.91,
+    "avg_flips": 2087.4175824175823,
+    "MR": 3076.428571428571
+  },
+  {
+    "problem_name": "uf500790.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 1801.640625,
+    "MR": 2218.307291666667
+  },
+  {
+    "problem_name": "uf500791.cnf",
+    "successes": 140,
+    "max_tries": 200,
+    "success_rate": 0.7,
+    "p_hat": 0.7,
+    "avg_flips": 1900.2,
+    "MR": 6185.914285714286
+  },
+  {
+    "problem_name": "uf500792.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 351.55,
+    "MR": 351.55
+  },
+  {
+    "problem_name": "uf500793.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 992.935,
+    "MR": 992.935
+  },
+  {
+    "problem_name": "uf500794.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 759.6767676767677,
+    "MR": 860.6868686868688
+  },
+  {
+    "problem_name": "uf500795.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1062.035175879397,
+    "MR": 1112.286432160804
+  },
+  {
+    "problem_name": "uf500796.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1042.52,
+    "MR": 1042.52
+  },
+  {
+    "problem_name": "uf500797.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 227.035,
+    "MR": 227.035
+  },
+  {
+    "problem_name": "uf500798.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 232.305,
+    "MR": 232.305
+  },
+  {
+    "problem_name": "uf500799.cnf",
+    "successes": 189,
+    "max_tries": 200,
+    "success_rate": 0.945,
+    "p_hat": 0.945,
+    "avg_flips": 2344.613756613757,
+    "MR": 2926.6243386243395
+  },
+  {
+    "problem_name": "uf500800.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 125.695,
+    "MR": 125.695
+  },
+  {
+    "problem_name": "uf500801.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 1705.8770053475937,
+    "MR": 2401.064171122994
+  },
+  {
+    "problem_name": "uf500802.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 185.855,
+    "MR": 185.855
+  },
+  {
+    "problem_name": "uf500803.cnf",
+    "successes": 164,
+    "max_tries": 200,
+    "success_rate": 0.82,
+    "p_hat": 0.82,
+    "avg_flips": 2510.006097560976,
+    "MR": 4705.128048780489
+  },
+  {
+    "problem_name": "uf500804.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1362.15,
+    "MR": 1362.15
+  },
+  {
+    "problem_name": "uf500805.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 150.96,
+    "MR": 150.96
+  },
+  {
+    "problem_name": "uf500806.cnf",
+    "successes": 185,
+    "max_tries": 200,
+    "success_rate": 0.925,
+    "p_hat": 0.925,
+    "avg_flips": 2572.437837837838,
+    "MR": 3383.248648648648
+  },
+  {
+    "problem_name": "uf500807.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 538.375,
+    "MR": 538.375
+  },
+  {
+    "problem_name": "uf500808.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 381.5,
+    "MR": 381.5
+  },
+  {
+    "problem_name": "uf500809.cnf",
+    "successes": 123,
+    "max_tries": 200,
+    "success_rate": 0.615,
+    "p_hat": 0.615,
+    "avg_flips": 2615.5772357723577,
+    "MR": 8875.739837398374
+  },
+  {
+    "problem_name": "uf500810.cnf",
+    "successes": 178,
+    "max_tries": 200,
+    "success_rate": 0.89,
+    "p_hat": 0.89,
+    "avg_flips": 2303.876404494382,
+    "MR": 3539.831460674157
+  },
+  {
+    "problem_name": "uf500811.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 113.76,
+    "MR": 113.76
+  },
+  {
+    "problem_name": "uf500812.cnf",
+    "successes": 171,
+    "max_tries": 200,
+    "success_rate": 0.855,
+    "p_hat": 0.855,
+    "avg_flips": 1396.970760233918,
+    "MR": 3092.877192982456
+  },
+  {
+    "problem_name": "uf500813.cnf",
+    "successes": 184,
+    "max_tries": 200,
+    "success_rate": 0.92,
+    "p_hat": 0.92,
+    "avg_flips": 2126.7554347826085,
+    "MR": 2996.3206521739125
+  },
+  {
+    "problem_name": "uf500814.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 983.175,
+    "MR": 983.175
+  },
+  {
+    "problem_name": "uf500815.cnf",
+    "successes": 166,
+    "max_tries": 200,
+    "success_rate": 0.83,
+    "p_hat": 0.83,
+    "avg_flips": 1416.5301204819277,
+    "MR": 3464.7228915662654
+  },
+  {
+    "problem_name": "uf500816.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 269.97,
+    "MR": 269.97
+  },
+  {
+    "problem_name": "uf500817.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 167.17,
+    "MR": 167.17
+  },
+  {
+    "problem_name": "uf500818.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 599.61,
+    "MR": 599.61
+  },
+  {
+    "problem_name": "uf500819.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 915.885,
+    "MR": 915.885
+  },
+  {
+    "problem_name": "uf500820.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 751.97,
+    "MR": 751.97
+  },
+  {
+    "problem_name": "uf500821.cnf",
+    "successes": 129,
+    "max_tries": 200,
+    "success_rate": 0.645,
+    "p_hat": 0.645,
+    "avg_flips": 2891.8527131782944,
+    "MR": 8395.728682170542
+  },
+  {
+    "problem_name": "uf500822.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 199.29,
+    "MR": 199.29
+  },
+  {
+    "problem_name": "uf500823.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1952.4020100502512,
+    "MR": 2002.6532663316582
+  },
+  {
+    "problem_name": "uf500824.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 637.35,
+    "MR": 637.35
+  },
+  {
+    "problem_name": "uf500825.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1490.2462311557788,
+    "MR": 1540.4974874371858
+  },
+  {
+    "problem_name": "uf500826.cnf",
+    "successes": 160,
+    "max_tries": 200,
+    "success_rate": 0.8,
+    "p_hat": 0.8,
+    "avg_flips": 1404.3375,
+    "MR": 3904.3374999999996
+  },
+  {
+    "problem_name": "uf500827.cnf",
+    "successes": 40,
+    "max_tries": 200,
+    "success_rate": 0.2,
+    "p_hat": 0.2,
+    "avg_flips": 2803.05,
+    "MR": 42803.05
+  },
+  {
+    "problem_name": "uf500828.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 400.515,
+    "MR": 400.515
+  },
+  {
+    "problem_name": "uf500829.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1027.635,
+    "MR": 1027.635
+  },
+  {
+    "problem_name": "uf500830.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 373.105,
+    "MR": 373.105
+  },
+  {
+    "problem_name": "uf500831.cnf",
+    "successes": 182,
+    "max_tries": 200,
+    "success_rate": 0.91,
+    "p_hat": 0.91,
+    "avg_flips": 1045.2142857142858,
+    "MR": 2034.2252747252746
+  },
+  {
+    "problem_name": "uf500832.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1891.8434343434344,
+    "MR": 1992.8535353535356
+  },
+  {
+    "problem_name": "uf500833.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 594.565,
+    "MR": 594.565
+  },
+  {
+    "problem_name": "uf500834.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 675.13,
+    "MR": 675.13
+  },
+  {
+    "problem_name": "uf500835.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 633.5527638190955,
+    "MR": 683.8040201005026
+  },
+  {
+    "problem_name": "uf500836.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 503.575,
+    "MR": 503.575
+  },
+  {
+    "problem_name": "uf500837.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1504.8426395939086,
+    "MR": 1657.1269035532996
+  },
+  {
+    "problem_name": "uf500838.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 406.69,
+    "MR": 406.69
+  },
+  {
+    "problem_name": "uf500839.cnf",
+    "successes": 144,
+    "max_tries": 200,
+    "success_rate": 0.72,
+    "p_hat": 0.72,
+    "avg_flips": 2905.1805555555557,
+    "MR": 6794.069444444445
+  },
+  {
+    "problem_name": "uf500840.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 247.81,
+    "MR": 247.81
+  },
+  {
+    "problem_name": "uf500841.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 550.955,
+    "MR": 550.955
+  },
+  {
+    "problem_name": "uf500842.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1110.3869346733668,
+    "MR": 1160.6381909547738
+  },
+  {
+    "problem_name": "uf500843.cnf",
+    "successes": 90,
+    "max_tries": 200,
+    "success_rate": 0.45,
+    "p_hat": 0.45,
+    "avg_flips": 1668.3555555555556,
+    "MR": 13890.577777777778
+  },
+  {
+    "problem_name": "uf500844.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 2387.2642487046633,
+    "MR": 2749.9585492227984
+  },
+  {
+    "problem_name": "uf500845.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 615.275,
+    "MR": 615.275
+  },
+  {
+    "problem_name": "uf500846.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 128.84,
+    "MR": 128.84
+  },
+  {
+    "problem_name": "uf500847.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 312.645,
+    "MR": 312.645
+  },
+  {
+    "problem_name": "uf500848.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 164.47,
+    "MR": 164.47
+  },
+  {
+    "problem_name": "uf500849.cnf",
+    "successes": 145,
+    "max_tries": 200,
+    "success_rate": 0.725,
+    "p_hat": 0.725,
+    "avg_flips": 3079.496551724138,
+    "MR": 6872.6
+  },
+  {
+    "problem_name": "uf500850.cnf",
+    "successes": 178,
+    "max_tries": 200,
+    "success_rate": 0.89,
+    "p_hat": 0.89,
+    "avg_flips": 1652.247191011236,
+    "MR": 2888.2022471910113
+  },
+  {
+    "problem_name": "uf500851.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1082.7179487179487,
+    "MR": 1339.1282051282053
+  },
+  {
+    "problem_name": "uf500852.cnf",
+    "successes": 188,
+    "max_tries": 200,
+    "success_rate": 0.94,
+    "p_hat": 0.94,
+    "avg_flips": 2022.6117021276596,
+    "MR": 2660.909574468086
+  },
+  {
+    "problem_name": "uf500853.cnf",
+    "successes": 187,
+    "max_tries": 200,
+    "success_rate": 0.935,
+    "p_hat": 0.935,
+    "avg_flips": 2836.3529411764707,
+    "MR": 3531.540106951871
+  },
+  {
+    "problem_name": "uf500854.cnf",
+    "successes": 190,
+    "max_tries": 200,
+    "success_rate": 0.95,
+    "p_hat": 0.95,
+    "avg_flips": 2714.2842105263157,
+    "MR": 3240.6000000000004
+  },
+  {
+    "problem_name": "uf500855.cnf",
+    "successes": 152,
+    "max_tries": 200,
+    "success_rate": 0.76,
+    "p_hat": 0.76,
+    "avg_flips": 3076.1973684210525,
+    "MR": 6234.0921052631575
+  },
+  {
+    "problem_name": "uf500856.cnf",
+    "successes": 176,
+    "max_tries": 200,
+    "success_rate": 0.88,
+    "p_hat": 0.88,
+    "avg_flips": 3189.6079545454545,
+    "MR": 4553.244318181818
+  },
+  {
+    "problem_name": "uf500857.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 927.01,
+    "MR": 927.01
+  },
+  {
+    "problem_name": "uf500858.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 277.97,
+    "MR": 277.97
+  },
+  {
+    "problem_name": "uf500859.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1790.253807106599,
+    "MR": 1942.53807106599
+  },
+  {
+    "problem_name": "uf500860.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 1528.21875,
+    "MR": 1944.885416666667
+  },
+  {
+    "problem_name": "uf500861.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 915.45,
+    "MR": 915.45
+  },
+  {
+    "problem_name": "uf500862.cnf",
+    "successes": 175,
+    "max_tries": 200,
+    "success_rate": 0.875,
+    "p_hat": 0.875,
+    "avg_flips": 1631.3714285714286,
+    "MR": 3059.942857142857
+  },
+  {
+    "problem_name": "uf500863.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 2173.8693467336684,
+    "MR": 2224.1206030150756
+  },
+  {
+    "problem_name": "uf500864.cnf",
+    "successes": 180,
+    "max_tries": 200,
+    "success_rate": 0.9,
+    "p_hat": 0.9,
+    "avg_flips": 2260.788888888889,
+    "MR": 3371.8999999999996
+  },
+  {
+    "problem_name": "uf500865.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 2321.683937823834,
+    "MR": 2684.3782383419693
+  },
+  {
+    "problem_name": "uf500866.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 648.56,
+    "MR": 648.56
+  },
+  {
+    "problem_name": "uf500867.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 481.48,
+    "MR": 481.48
+  },
+  {
+    "problem_name": "uf500868.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 938.96,
+    "MR": 938.96
+  },
+  {
+    "problem_name": "uf500869.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1270.93,
+    "MR": 1270.93
+  },
+  {
+    "problem_name": "uf500870.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1181.505,
+    "MR": 1181.505
+  },
+  {
+    "problem_name": "uf500871.cnf",
+    "successes": 197,
+    "max_tries": 200,
+    "success_rate": 0.985,
+    "p_hat": 0.985,
+    "avg_flips": 1035.766497461929,
+    "MR": 1188.05076142132
+  },
+  {
+    "problem_name": "uf500872.cnf",
+    "successes": 190,
+    "max_tries": 200,
+    "success_rate": 0.95,
+    "p_hat": 0.95,
+    "avg_flips": 1794.3315789473684,
+    "MR": 2320.647368421053
+  },
+  {
+    "problem_name": "uf500873.cnf",
+    "successes": 111,
+    "max_tries": 200,
+    "success_rate": 0.555,
+    "p_hat": 0.555,
+    "avg_flips": 2325.4774774774774,
+    "MR": 10343.495495495494
+  },
+  {
+    "problem_name": "uf500874.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 773.785,
+    "MR": 773.785
+  },
+  {
+    "problem_name": "uf500875.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 885.985,
+    "MR": 885.985
+  },
+  {
+    "problem_name": "uf500876.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 1060.0310880829015,
+    "MR": 1422.7253886010367
+  },
+  {
+    "problem_name": "uf500877.cnf",
+    "successes": 188,
+    "max_tries": 200,
+    "success_rate": 0.94,
+    "p_hat": 0.94,
+    "avg_flips": 777.0691489361702,
+    "MR": 1415.3670212765965
+  },
+  {
+    "problem_name": "uf500878.cnf",
+    "successes": 94,
+    "max_tries": 200,
+    "success_rate": 0.47,
+    "p_hat": 0.47,
+    "avg_flips": 2841.404255319149,
+    "MR": 14118.000000000002
+  },
+  {
+    "problem_name": "uf500879.cnf",
+    "successes": 83,
+    "max_tries": 200,
+    "success_rate": 0.415,
+    "p_hat": 0.415,
+    "avg_flips": 3097.987951807229,
+    "MR": 17194.373493975905
+  },
+  {
+    "problem_name": "uf500880.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1598.141414141414,
+    "MR": 1699.1515151515152
+  },
+  {
+    "problem_name": "uf500881.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 240.255,
+    "MR": 240.255
+  },
+  {
+    "problem_name": "uf500882.cnf",
+    "successes": 151,
+    "max_tries": 200,
+    "success_rate": 0.755,
+    "p_hat": 0.755,
+    "avg_flips": 2669.9139072847684,
+    "MR": 5914.94701986755
+  },
+  {
+    "problem_name": "uf500883.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 143.455,
+    "MR": 143.455
+  },
+  {
+    "problem_name": "uf500884.cnf",
+    "successes": 172,
+    "max_tries": 200,
+    "success_rate": 0.86,
+    "p_hat": 0.86,
+    "avg_flips": 2365.3081395348836,
+    "MR": 3993.2151162790697
+  },
+  {
+    "problem_name": "uf500885.cnf",
+    "successes": 188,
+    "max_tries": 200,
+    "success_rate": 0.94,
+    "p_hat": 0.94,
+    "avg_flips": 1710.7659574468084,
+    "MR": 2349.0638297872347
+  },
+  {
+    "problem_name": "uf500886.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 193.62,
+    "MR": 193.62
+  },
+  {
+    "problem_name": "uf500887.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 286.04,
+    "MR": 286.04
+  },
+  {
+    "problem_name": "uf500888.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 254.81,
+    "MR": 254.81
+  },
+  {
+    "problem_name": "uf500889.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1338.985,
+    "MR": 1338.985
+  },
+  {
+    "problem_name": "uf500890.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 2016.3979057591623,
+    "MR": 2487.602094240838
+  },
+  {
+    "problem_name": "uf500891.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 245.595,
+    "MR": 245.595
+  },
+  {
+    "problem_name": "uf500892.cnf",
+    "successes": 158,
+    "max_tries": 200,
+    "success_rate": 0.79,
+    "p_hat": 0.79,
+    "avg_flips": 2274.4493670886077,
+    "MR": 4932.677215189873
+  },
+  {
+    "problem_name": "uf500893.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 463.275,
+    "MR": 463.275
+  },
+  {
+    "problem_name": "uf500894.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 661.265,
+    "MR": 661.265
+  },
+  {
+    "problem_name": "uf500895.cnf",
+    "successes": 190,
+    "max_tries": 200,
+    "success_rate": 0.95,
+    "p_hat": 0.95,
+    "avg_flips": 2310.2263157894736,
+    "MR": 2836.542105263158
+  },
+  {
+    "problem_name": "uf500896.cnf",
+    "successes": 149,
+    "max_tries": 200,
+    "success_rate": 0.745,
+    "p_hat": 0.745,
+    "avg_flips": 3422.3892617449665,
+    "MR": 6845.208053691275
+  },
+  {
+    "problem_name": "uf500897.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1696.2397959183672,
+    "MR": 1900.3214285714287
+  },
+  {
+    "problem_name": "uf500898.cnf",
+    "successes": 151,
+    "max_tries": 200,
+    "success_rate": 0.755,
+    "p_hat": 0.755,
+    "avg_flips": 2081.2317880794703,
+    "MR": 5326.264900662252
+  },
+  {
+    "problem_name": "uf500899.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 763.37,
+    "MR": 763.37
+  },
+  {
+    "problem_name": "uf500900.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 379.835,
+    "MR": 379.835
+  },
+  {
+    "problem_name": "uf500901.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1222.9848484848485,
+    "MR": 1323.9949494949497
+  },
+  {
+    "problem_name": "uf500902.cnf",
+    "successes": 142,
+    "max_tries": 200,
+    "success_rate": 0.71,
+    "p_hat": 0.71,
+    "avg_flips": 2131.218309859155,
+    "MR": 6215.725352112677
+  },
+  {
+    "problem_name": "uf500903.cnf",
+    "successes": 134,
+    "max_tries": 200,
+    "success_rate": 0.67,
+    "p_hat": 0.67,
+    "avg_flips": 2994.7985074626868,
+    "MR": 7920.171641791044
+  },
+  {
+    "problem_name": "uf500904.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 453.355,
+    "MR": 453.355
+  },
+  {
+    "problem_name": "uf500905.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 2441.2244897959185,
+    "MR": 2645.3061224489797
+  },
+  {
+    "problem_name": "uf500906.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1040.82,
+    "MR": 1040.82
+  },
+  {
+    "problem_name": "uf500907.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 288.335,
+    "MR": 288.335
+  },
+  {
+    "problem_name": "uf500908.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 865.6544502617801,
+    "MR": 1336.858638743456
+  },
+  {
+    "problem_name": "uf500909.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1461.6381909547738,
+    "MR": 1511.8894472361808
+  },
+  {
+    "problem_name": "uf500910.cnf",
+    "successes": 177,
+    "max_tries": 200,
+    "success_rate": 0.885,
+    "p_hat": 0.885,
+    "avg_flips": 1461.1525423728813,
+    "MR": 2760.587570621469
+  },
+  {
+    "problem_name": "uf500911.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1611.265,
+    "MR": 1611.265
+  },
+  {
+    "problem_name": "uf500912.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1157.225,
+    "MR": 1157.225
+  },
+  {
+    "problem_name": "uf500913.cnf",
+    "successes": 194,
+    "max_tries": 200,
+    "success_rate": 0.97,
+    "p_hat": 0.97,
+    "avg_flips": 2075.953608247423,
+    "MR": 2385.231958762887
+  },
+  {
+    "problem_name": "uf500914.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 410.235,
+    "MR": 410.235
+  },
+  {
+    "problem_name": "uf500915.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 305.83,
+    "MR": 305.83
+  },
+  {
+    "problem_name": "uf500916.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 715.07,
+    "MR": 715.07
+  },
+  {
+    "problem_name": "uf500917.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1977.148717948718,
+    "MR": 2233.558974358975
+  },
+  {
+    "problem_name": "uf500918.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 529.79,
+    "MR": 529.79
+  },
+  {
+    "problem_name": "uf500919.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 887.335,
+    "MR": 887.335
+  },
+  {
+    "problem_name": "uf500920.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 998.286432160804,
+    "MR": 1048.537688442211
+  },
+  {
+    "problem_name": "uf500921.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 252.96,
+    "MR": 252.96
+  },
+  {
+    "problem_name": "uf500922.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 214.135,
+    "MR": 214.135
+  },
+  {
+    "problem_name": "uf500923.cnf",
+    "successes": 159,
+    "max_tries": 200,
+    "success_rate": 0.795,
+    "p_hat": 0.795,
+    "avg_flips": 2955.3522012578615,
+    "MR": 5533.968553459119
+  },
+  {
+    "problem_name": "uf500924.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1158.445,
+    "MR": 1158.445
+  },
+  {
+    "problem_name": "uf500925.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 91.61,
+    "MR": 91.61
+  },
+  {
+    "problem_name": "uf500926.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 206.785,
+    "MR": 206.785
+  },
+  {
+    "problem_name": "uf500927.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 2023.1435897435897,
+    "MR": 2279.5538461538463
+  },
+  {
+    "problem_name": "uf500928.cnf",
+    "successes": 158,
+    "max_tries": 200,
+    "success_rate": 0.79,
+    "p_hat": 0.79,
+    "avg_flips": 2957.6392405063293,
+    "MR": 5615.867088607594
+  },
+  {
+    "problem_name": "uf500929.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 758.59,
+    "MR": 758.59
+  },
+  {
+    "problem_name": "uf500930.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 609.375,
+    "MR": 609.375
+  },
+  {
+    "problem_name": "uf500931.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 694.36,
+    "MR": 694.36
+  },
+  {
+    "problem_name": "uf500932.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 532.88,
+    "MR": 532.88
+  },
+  {
+    "problem_name": "uf500933.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 146.735,
+    "MR": 146.735
+  },
+  {
+    "problem_name": "uf500934.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1150.889447236181,
+    "MR": 1201.140703517588
+  },
+  {
+    "problem_name": "uf500935.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 271.89,
+    "MR": 271.89
+  },
+  {
+    "problem_name": "uf500936.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 123.17,
+    "MR": 123.17
+  },
+  {
+    "problem_name": "uf500937.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 297.13,
+    "MR": 297.13
+  },
+  {
+    "problem_name": "uf500938.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 659.495,
+    "MR": 659.495
+  },
+  {
+    "problem_name": "uf500939.cnf",
+    "successes": 147,
+    "max_tries": 200,
+    "success_rate": 0.735,
+    "p_hat": 0.735,
+    "avg_flips": 2536.5578231292516,
+    "MR": 6142.0
+  },
+  {
+    "problem_name": "uf500940.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 228.72,
+    "MR": 228.72
+  },
+  {
+    "problem_name": "uf500941.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 1980.559585492228,
+    "MR": 2343.253886010363
+  },
+  {
+    "problem_name": "uf500942.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 646.1407035175879,
+    "MR": 696.391959798995
+  },
+  {
+    "problem_name": "uf500943.cnf",
+    "successes": 198,
+    "max_tries": 200,
+    "success_rate": 0.99,
+    "p_hat": 0.99,
+    "avg_flips": 1924.8181818181818,
+    "MR": 2025.828282828283
+  },
+  {
+    "problem_name": "uf500944.cnf",
+    "successes": 170,
+    "max_tries": 200,
+    "success_rate": 0.85,
+    "p_hat": 0.85,
+    "avg_flips": 1622.7588235294118,
+    "MR": 3387.4647058823534
+  },
+  {
+    "problem_name": "uf500945.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1838.7587939698492,
+    "MR": 1889.0100502512562
+  },
+  {
+    "problem_name": "uf500946.cnf",
+    "successes": 186,
+    "max_tries": 200,
+    "success_rate": 0.93,
+    "p_hat": 0.93,
+    "avg_flips": 2803.8279569892475,
+    "MR": 3556.5161290322576
+  },
+  {
+    "problem_name": "uf500947.cnf",
+    "successes": 192,
+    "max_tries": 200,
+    "success_rate": 0.96,
+    "p_hat": 0.96,
+    "avg_flips": 2037.6145833333333,
+    "MR": 2454.2812500000005
+  },
+  {
+    "problem_name": "uf500948.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 922.28,
+    "MR": 922.28
+  },
+  {
+    "problem_name": "uf500949.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 405.08,
+    "MR": 405.08
+  },
+  {
+    "problem_name": "uf500950.cnf",
+    "successes": 169,
+    "max_tries": 200,
+    "success_rate": 0.845,
+    "p_hat": 0.845,
+    "avg_flips": 2605.775147928994,
+    "MR": 4440.094674556213
+  },
+  {
+    "problem_name": "uf500951.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 501.875,
+    "MR": 501.875
+  },
+  {
+    "problem_name": "uf500952.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 417.58,
+    "MR": 417.58
+  },
+  {
+    "problem_name": "uf500953.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 809.48,
+    "MR": 809.48
+  },
+  {
+    "problem_name": "uf500954.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 752.16,
+    "MR": 752.16
+  },
+  {
+    "problem_name": "uf500955.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 146.155,
+    "MR": 146.155
+  },
+  {
+    "problem_name": "uf500956.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 348.74,
+    "MR": 348.74
+  },
+  {
+    "problem_name": "uf500957.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 1737.738219895288,
+    "MR": 2208.9424083769636
+  },
+  {
+    "problem_name": "uf500958.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1133.86,
+    "MR": 1133.86
+  },
+  {
+    "problem_name": "uf500959.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 355.495,
+    "MR": 355.495
+  },
+  {
+    "problem_name": "uf500960.cnf",
+    "successes": 188,
+    "max_tries": 200,
+    "success_rate": 0.94,
+    "p_hat": 0.94,
+    "avg_flips": 1968.4893617021276,
+    "MR": 2606.787234042554
+  },
+  {
+    "problem_name": "uf500961.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1444.72,
+    "MR": 1444.72
+  },
+  {
+    "problem_name": "uf500962.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 901.86,
+    "MR": 901.86
+  },
+  {
+    "problem_name": "uf500963.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1602.3618090452262,
+    "MR": 1652.6130653266332
+  },
+  {
+    "problem_name": "uf500964.cnf",
+    "successes": 147,
+    "max_tries": 200,
+    "success_rate": 0.735,
+    "p_hat": 0.735,
+    "avg_flips": 1504.734693877551,
+    "MR": 5110.1768707483
+  },
+  {
+    "problem_name": "uf500965.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 478.505,
+    "MR": 478.505
+  },
+  {
+    "problem_name": "uf500966.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 840.715,
+    "MR": 840.715
+  },
+  {
+    "problem_name": "uf500967.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 153.15,
+    "MR": 153.15
+  },
+  {
+    "problem_name": "uf500968.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 744.535,
+    "MR": 744.535
+  },
+  {
+    "problem_name": "uf500969.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1225.93,
+    "MR": 1225.93
+  },
+  {
+    "problem_name": "uf500970.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 978.325,
+    "MR": 978.325
+  },
+  {
+    "problem_name": "uf500971.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 778.055,
+    "MR": 778.055
+  },
+  {
+    "problem_name": "uf500972.cnf",
+    "successes": 171,
+    "max_tries": 200,
+    "success_rate": 0.855,
+    "p_hat": 0.855,
+    "avg_flips": 2505.315789473684,
+    "MR": 4201.222222222223
+  },
+  {
+    "problem_name": "uf500973.cnf",
+    "successes": 191,
+    "max_tries": 200,
+    "success_rate": 0.955,
+    "p_hat": 0.955,
+    "avg_flips": 1673.7277486910996,
+    "MR": 2144.931937172775
+  },
+  {
+    "problem_name": "uf500974.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1205.48,
+    "MR": 1205.48
+  },
+  {
+    "problem_name": "uf500975.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 479.955,
+    "MR": 479.955
+  },
+  {
+    "problem_name": "uf500976.cnf",
+    "successes": 169,
+    "max_tries": 200,
+    "success_rate": 0.845,
+    "p_hat": 0.845,
+    "avg_flips": 2293.213017751479,
+    "MR": 4127.532544378699
+  },
+  {
+    "problem_name": "uf500977.cnf",
+    "successes": 189,
+    "max_tries": 200,
+    "success_rate": 0.945,
+    "p_hat": 0.945,
+    "avg_flips": 1949.9100529100529,
+    "MR": 2531.920634920635
+  },
+  {
+    "problem_name": "uf500978.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 892.6130653266332,
+    "MR": 942.8643216080403
+  },
+  {
+    "problem_name": "uf500979.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 559.36,
+    "MR": 559.36
+  },
+  {
+    "problem_name": "uf500980.cnf",
+    "successes": 181,
+    "max_tries": 200,
+    "success_rate": 0.905,
+    "p_hat": 0.905,
+    "avg_flips": 1901.3038674033148,
+    "MR": 2951.0276243093917
+  },
+  {
+    "problem_name": "uf500981.cnf",
+    "successes": 166,
+    "max_tries": 200,
+    "success_rate": 0.83,
+    "p_hat": 0.83,
+    "avg_flips": 3600.4277108433735,
+    "MR": 5648.620481927712
+  },
+  {
+    "problem_name": "uf500982.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 2435.7875647668393,
+    "MR": 2798.4818652849744
+  },
+  {
+    "problem_name": "uf500983.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 698.06,
+    "MR": 698.06
+  },
+  {
+    "problem_name": "uf500984.cnf",
+    "successes": 199,
+    "max_tries": 200,
+    "success_rate": 0.995,
+    "p_hat": 0.995,
+    "avg_flips": 1317.7939698492462,
+    "MR": 1368.0452261306532
+  },
+  {
+    "problem_name": "uf500985.cnf",
+    "successes": 193,
+    "max_tries": 200,
+    "success_rate": 0.965,
+    "p_hat": 0.965,
+    "avg_flips": 1358.1865284974094,
+    "MR": 1720.8808290155444
+  },
+  {
+    "problem_name": "uf500986.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1006.18,
+    "MR": 1006.18
+  },
+  {
+    "problem_name": "uf500987.cnf",
+    "successes": 196,
+    "max_tries": 200,
+    "success_rate": 0.98,
+    "p_hat": 0.98,
+    "avg_flips": 1916.811224489796,
+    "MR": 2120.8928571428573
+  },
+  {
+    "problem_name": "uf500988.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 634.315,
+    "MR": 634.315
+  },
+  {
+    "problem_name": "uf500989.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 571.255,
+    "MR": 571.255
+  },
+  {
+    "problem_name": "uf500990.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1520.7897435897437,
+    "MR": 1777.2000000000003
+  },
+  {
+    "problem_name": "uf500991.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1375.64,
+    "MR": 1375.64
+  },
+  {
+    "problem_name": "uf500992.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 197.745,
+    "MR": 197.745
+  },
+  {
+    "problem_name": "uf500993.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 931.595,
+    "MR": 931.595
+  },
+  {
+    "problem_name": "uf500994.cnf",
+    "successes": 188,
+    "max_tries": 200,
+    "success_rate": 0.94,
+    "p_hat": 0.94,
+    "avg_flips": 2023.5478723404256,
+    "MR": 2661.8457446808516
+  },
+  {
+    "problem_name": "uf500995.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 886.09,
+    "MR": 886.09
+  },
+  {
+    "problem_name": "uf500996.cnf",
+    "successes": 195,
+    "max_tries": 200,
+    "success_rate": 0.975,
+    "p_hat": 0.975,
+    "avg_flips": 1049.697435897436,
+    "MR": 1306.1076923076926
+  },
+  {
+    "problem_name": "uf500997.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 320.6,
+    "MR": 320.6
+  },
+  {
+    "problem_name": "uf500998.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 1101.55,
+    "MR": 1101.55
+  },
+  {
+    "problem_name": "uf500999.cnf",
+    "successes": 200,
+    "max_tries": 200,
+    "success_rate": 1.0,
+    "p_hat": 1.0,
+    "avg_flips": 597.43,
+    "MR": 597.43
+  },
+  {
+    "problem_name": "uf5001000.cnf",
+    "successes": 135,
+    "max_tries": 200,
+    "success_rate": 0.675,
+    "p_hat": 0.675,
+    "avg_flips": 3149.177777777778,
+    "MR": 7963.992592592592
+  }
+]

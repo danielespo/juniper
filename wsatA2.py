@@ -24,6 +24,14 @@ def read_dimacs(filename):
                     clauses.append(clause)
     return num_vars, clauses
 
+
+# Now the genwral idea is to benchmark
+# and fail fast; the problem is that we have not defined 
+#the failure mode nor the winning mode very well
+
+
+# How to quantify the parallel flips from the sequential onea
+# if they look the same
 # Regular WalkSAT with no frills
 def walkSAT(clauses, max_tries, max_flips, p):
     flips = 0
