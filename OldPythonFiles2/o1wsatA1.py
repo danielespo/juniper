@@ -8,7 +8,7 @@ import concurrent.futures  # Added for parallelization
 # This is entirely AI generated code except for the helper functions from before.
 # Done as an experiment to see how O1 Preview from OpenAI does
 # when given a novel problem to solve in algorithms.
-
+# Not for publication and not used to perform the experiments in the paper. Will delete before publishing github.
 # Helper functions as provided
 def read_dimacs(filename):
     clauses = []
